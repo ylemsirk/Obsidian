@@ -1,15 +1,16 @@
 
 ### SUB-TOPICS
 
-- [ ] Kerberos
+- [x] Kerberos ✅ 2026-10-07
 - [x] WinRM ✅ 2026-10-07
 - [x] SMTP ✅ 2026-10-07
 - [x] FTP ✅ 2026-10-07
 - [x] IMAP ✅ 2026-10-07
 - [x] POP3 ✅ 2026-10-07
 - [ ] LDAP
-- [ ] RDP
+- [x] RDP ✅ 2026-10-07
 - [x] SSH ✅ 2026-10-07
+- [ ] SMB
 
 
 ### FULL TOPICS
