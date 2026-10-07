@@ -1,0 +1,16 @@
+{
+  "a-unique-id@@the-color": "#FFFFFF",
+  "retroma-obsidian-theme@@nav-btn-style-selection": "rtm-ss-btn-style-neubrutalism",
+  "retroma-obsidian-theme@@rtm-btn-corner-shape": "bevel",
+  "retroma-obsidian-theme@@rtm-btn-radius": 5,
+  "retroma-obsidian-theme@@rtm-btn-outline-width": 2,
+  "retroma-obsidian-theme@@rtm-btn-outline-style": "solid",
+  "retroma-obsidian-theme@@rtm-btn-outline-focus-width": 3,
+  "retroma-obsidian-theme@@workspace-font-selection": "rtm-font-cascadia-code",
+  "retroma-obsidian-theme@@workspace-color-scheme": "rtm-cs-monochromatic-colors",
+  "retroma-obsidian-theme@@rtm-ss-nav-folder-pane-header-simple": true,
+  "retroma-obsidian-theme@@rtm-ss-nav-folder-pane-content-simple": true,
+  "retroma-obsidian-theme@@nav-item-title-txt-wrapping": "null",
+  "retroma-obsidian-theme@@rtm-nav-folder-radius": 6,
+  "retroma-obsidian-theme@@rtm-nav-folder-corner-shape": "bevel"
+}

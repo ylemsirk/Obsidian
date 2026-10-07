@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"cc0ca1a66e3b8525","type":"group","x":-820,"y":-1500,"width":1460,"height":697,"label":"Knowledge"},
+		{"id":"94a9d8d9f3120269","type":"group","x":-803,"y":-576,"width":891,"height":400,"label":"Skills"},
+		{"id":"b1bd6614c2af62e8","type":"text","text":"[Active Directory](Active%20Directory)","x":-800,"y":-887,"width":200,"height":53,"color":"4"},
+		{"id":"c5241b021c971ea5","type":"text","text":"[Networking](Networking)","x":-600,"y":-1480,"width":160,"height":60,"color":"5"},
+		{"id":"37663633c5925ce6","type":"text","text":"[Windows](Windows)","x":-580,"y":-1054,"width":120,"height":50,"color":"5"},
+		{"id":"4dab88c7c5c5e42c","type":"text","text":"[Microsoft 365](Microsoft%20365)","x":-435,"y":-883,"width":200,"height":53,"color":"4"},
+		{"id":"a5f53569b4f7d196","type":"text","text":"[Linux](Linux)","x":-247,"y":-1054,"width":105,"height":50,"color":"3"},
+		{"id":"75bac6e996e447dc","type":"text","text":"[Operating Systems](Operating%20Systems.md)","x":-135,"y":-1300,"width":223,"height":60,"color":"5"},
+		{"id":"bbb039f632ce7a7e","type":"text","text":"[Hardware](Hardware)","x":-93,"y":-1480,"width":140,"height":60,"color":"5"},
+		{"id":"e0e30584694b06a3","type":"text","text":"[macOS](macOs)","x":88,"y":-1054,"width":100,"height":50,"color":"2"},
+		{"id":"3df584060fd7c3e5","type":"text","text":"[Virtualization + Cloud](Virtualization%20+%20Cloud)","x":360,"y":-1300,"width":260,"height":60,"color":"2"},
+		{"id":"bde75dc9674fdfef","type":"text","text":"[Security](Security)","x":-74,"y":-883,"width":125,"height":60,"color":"3"},
+		{"id":"e88e536b81e368b4","type":"text","text":"Inglés Técnico","x":-692,"y":-470,"width":185,"height":60,"color":"5"},
+		{"id":"800eebb860225556","type":"text","text":"[Troubleshooting](Troubleshooting)","x":-350,"y":-360,"width":207,"height":55,"color":"5"},
+		{"id":"f4c707addbd5cdd7","type":"text","text":"[ITIL](ITIL)","x":-570,"y":-305,"width":100,"height":60,"color":"2"},
+		{"id":"18e413d7ffb954f0","type":"text","text":"[Remote Support + Ticketing-ITSM](Remote%20Support%20+%20Ticketing-ITSM.md)","x":-366,"y":-500,"width":344,"height":60,"color":"5"}
+	],
+	"edges":[
+		{"id":"16b49ba25ceb5079","fromNode":"c5241b021c971ea5","fromSide":"right","toNode":"bbb039f632ce7a7e","toSide":"left","fromEnd":"arrow"},
+		{"id":"861e90472d0dcb0d","fromNode":"37663633c5925ce6","fromSide":"bottom","toNode":"b1bd6614c2af62e8","toSide":"top"},
+		{"id":"4180c6bcb74aab51","fromNode":"bbb039f632ce7a7e","fromSide":"bottom","toNode":"75bac6e996e447dc","toSide":"top"},
+		{"id":"148259f23cf85c76","fromNode":"75bac6e996e447dc","fromSide":"bottom","toNode":"37663633c5925ce6","toSide":"top"},
+		{"id":"18be6eef9a1017b5","fromNode":"75bac6e996e447dc","fromSide":"bottom","toNode":"a5f53569b4f7d196","toSide":"top"},
+		{"id":"260ebf09c32f7e9f","fromNode":"75bac6e996e447dc","fromSide":"bottom","toNode":"e0e30584694b06a3","toSide":"top"},
+		{"id":"70f623e7c2f390a2","fromNode":"c5241b021c971ea5","fromSide":"bottom","toNode":"37663633c5925ce6","toSide":"top"},
+		{"id":"fb9211439f2a3970","fromNode":"c5241b021c971ea5","fromSide":"bottom","toNode":"a5f53569b4f7d196","toSide":"top"},
+		{"id":"95df81f38656512a","fromNode":"c5241b021c971ea5","fromSide":"bottom","toNode":"e0e30584694b06a3","toSide":"top"},
+		{"id":"1d5959feb2c68ebe","fromNode":"37663633c5925ce6","fromSide":"bottom","toNode":"4dab88c7c5c5e42c","toSide":"top"},
+		{"id":"c65b362ddf55ff30","fromNode":"37663633c5925ce6","fromSide":"bottom","toNode":"bde75dc9674fdfef","toSide":"top"},
+		{"id":"b7a081f3fedc6742","fromNode":"a5f53569b4f7d196","fromSide":"bottom","toNode":"bde75dc9674fdfef","toSide":"top"},
+		{"id":"a3997e61876438a0","fromNode":"e0e30584694b06a3","fromSide":"bottom","toNode":"bde75dc9674fdfef","toSide":"top"},
+		{"id":"2d7c23c46fb38818","fromNode":"c5241b021c971ea5","fromSide":"bottom","toNode":"3df584060fd7c3e5","toSide":"top"},
+		{"id":"1b8d31dc42f91cd2","fromNode":"bbb039f632ce7a7e","fromSide":"bottom","toNode":"3df584060fd7c3e5","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"nodes":[
+		{"id":"1a46318392065225","type":"group","x":-800,"y":-320,"width":1380,"height":140,"label":"Línea Primaria"},
+		{"id":"fdc3643ad91d133f","type":"group","x":-140,"y":40,"width":620,"height":120,"label":"Universo Tangente"},
+		{"id":"9d2287c85d5b5a46","type":"text","text":"Frank llama a Donnie","x":-780,"y":-280,"width":250,"height":60,"color":"5"},
+		{"id":"8d446f49921557e6","type":"text","text":"Donnie no se encuentra en casa","x":-460,"y":-280,"width":250,"height":60,"color":"5"},
+		{"id":"0efe7ae2b4c4db3b","type":"text","text":"Cae la turbina","x":-120,"y":-280,"width":200,"height":60,"color":"5"},
+		{"id":"fa8155773718f55b","type":"text","text":"Donnie muere","x":280,"y":-280,"width":250,"height":60,"color":"5"},
+		{"id":"18d8c6b60455dc7e","type":"text","text":"Donnie mata al Frank real","x":-120,"y":60,"width":200,"height":60,"color":"3"},
+		{"id":"58abacd06f297fe9","type":"text","text":"Donnie devuelve la turbina ","x":180,"y":60,"width":250,"height":60,"color":"3"},
+		{"id":"d54b79ff4240c0c8","type":"text","text":"Se fragmenta la realidad","x":-120,"y":-120,"width":200,"height":60}
+	],
+	"edges":[
+		{"id":"8cc5fd0e09fcc34f","fromNode":"0efe7ae2b4c4db3b","fromSide":"bottom","toNode":"d54b79ff4240c0c8","toSide":"top"},
+		{"id":"d77508cc8181a611","fromNode":"9d2287c85d5b5a46","fromSide":"right","toNode":"8d446f49921557e6","toSide":"left"},
+		{"id":"9cd46bf4960f586b","fromNode":"8d446f49921557e6","fromSide":"right","toNode":"0efe7ae2b4c4db3b","toSide":"left"},
+		{"id":"909ef5b640de6c38","fromNode":"d54b79ff4240c0c8","fromSide":"bottom","toNode":"18d8c6b60455dc7e","toSide":"top"},
+		{"id":"883cbc19350749b6","fromNode":"18d8c6b60455dc7e","fromSide":"right","toNode":"58abacd06f297fe9","toSide":"left"},
+		{"id":"37e60d48f0db1a08","fromNode":"58abacd06f297fe9","fromSide":"right","toNode":"0efe7ae2b4c4db3b","toSide":"right"},
+		{"id":"43beee78e3978baf","fromNode":"0efe7ae2b4c4db3b","fromSide":"right","toNode":"fa8155773718f55b","toSide":"left"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
