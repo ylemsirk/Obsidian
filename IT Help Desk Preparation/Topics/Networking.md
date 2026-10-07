@@ -38,7 +38,7 @@
 31. <mark style="background:#affad1">Describe three common types of Ethernet cabling (Cat5e, Cat6, fiber) and their typical maximum speeds and distances. A user complains of intermittent disconnects at their desk; how would you rule out a faulty patch cable?</mark>
 32. <mark style="background:#affad1">What is a VLAN? In a corporate office, the HR department and Engineering are on separate VLANs. Explain why a PC in HR cannot directly reach a printer in Engineering without a router, and how you would explain this limitation to a non-technical user.</mark>
 33. Explain the purpose of a patch panel. When a wall jack is labeled “A-14,” how do you trace this back to the switch port, and why is organized cabling critical for a Help Desk technician performing moves/adds/changes?
-34. What is Power over Ethernet (PoE)? You receive a ticket that a VoIP phone has no power and no link light. How would you determine whether the issue is the phone, the cable, or the switch port’s PoE capability?
+34. <mark style="background:#affad1">What is Power over Ethernet (PoE)? You receive a ticket that a VoIP phone has no power and no link light. How would you determine whether the issue is the phone, the cable, or the switch port’s PoE capability?</mark>
 35. A user connects a small unmanaged switch under their desk to add more ports, and suddenly multiple nearby users report network instability. What possible problems (broadcast storms, spanning tree issues, rogue DHCP) could this cause, and how would you begin investigating?
 
 ### Wireless Networking
