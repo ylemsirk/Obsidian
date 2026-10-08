@@ -25,10 +25,10 @@
 20. <mark style="background:#affad1">How does DHCP work (DORA process)? Walk through the conversation between a client and server when a laptop first connects to the network. If a user gets an APIPA address, what step in DORA likely failed?</mark>
 21. <mark style="background:#affad1">Explain DNS resolution from the moment a user types a URL to when the page loads. A user says “the internet works but I can’t get to any websites by name; IPs work fine.” What service is broken, and how would you test it with nslookup?</mark>
 22. <mark style="background:#affad1">What is the purpose of the local DNS cache? A user can access a website by IP but not by hostname. How would you clear and inspect the DNS cache on Windows, and when would doing so actually help?</mark>
-23. A user can resolve external websites but cannot resolve internal corporate hostnames while connected to VPN. What DNS configurations or routing issues could cause this?
+23. <mark style="background:#affad1">A user can resolve external websites but cannot resolve internal corporate hostnames while connected to VPN. What DNS configurations or routing issues could cause this?</mark>
 24. <mark style="background:#affad1">A user can access resources on their local subnet but cannot access anything outside it. Their IP and subnet mask appear correct. What routing-related problems could cause this?</mark>
 25. <mark style="background:#affad1">Why is it important for a Help Desk agent to know that DNS uses both UDP and TCP (port 53)? Give an example of when a large response might switch to TCP and cause a firewall to block it.</mark>
-26. What is a routing table? How does Windows decide which interface and gateway to use when sending traffic to a destination? How would you inspect the routing table?
+26. <mark style="background:#affad1">What is a routing table? How does Windows decide which interface and gateway to use when sending traffic to a destination? How would you inspect the routing table?</mark>
 27. <mark style="background:#affad1">Explain what happens when a user enters https://example.com into a browser, from DNS resolution through TCP/TLS establishment to the HTTP request and response.</mark>
 28. <mark style="background:#affad1">What do HTTP status codes 200, 301/302, 400, 401, 403, 404, and 500 generally indicate? Give a Help Desk example for each.</mark>
 29. <mark style="background:#affad1">Explain the difference between accessing a share by hostname (\\server\share) and by IP address (\\192.168.1.10\share). If the IP works but the hostname does not, what does that suggest?</mark>
@@ -47,7 +47,7 @@
 38. A user works from a coffee shop and calls because the corporate VPN connection drops every few minutes. What Wi-Fi specific factors (signal strength, channel congestion, captive portals, AP roaming) could cause this, and what troubleshooting steps would you have them perform?
 39. <mark style="background:#affad1">What is an SSID? How can you determine if a user’s connectivity issue is because they are connected to a guest network instead of the corporate one, and what quick indicator on their device would you ask them to check?</mark>
 40. <mark style="background:#affad1">What is the difference between an SSID, BSSID, and wireless channel?</mark>
-41. What is 802.1X authentication? At a high level, explain the roles of the supplicant, authenticator, and authentication server. What symptoms might a user see if 802.1X authentication fails?
+41. <mark style="background:#affad1">What is 802.1X authentication? At a high level, explain the roles of the supplicant, authenticator, and authentication server. What symptoms might a user see if 802.1X authentication fails?</mark>
 42. <mark style="background:#affad1">What is a proxy server? A user can access some websites but not others, and their browser shows a proxy-related error. How would you check whether an incorrect proxy configuration is responsible?</mark>
 
 ### Troubleshooting Methodology & Tools
