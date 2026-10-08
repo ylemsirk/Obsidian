@@ -94,7 +94,7 @@
 80. What is the difference between Public, Private, and Domain network profiles in Windows? How can the wrong profile affect firewall behavior and network access?
 
 ### Deeper Understanding & Growing Your Expertise
-81. Explain what NAT (Network Address Translation) does, using a home router as an example. Why can you not simply reach an employee’s home PC from the internet using their public IP without port forwarding? How does this help with troubleshooting when a user tries to host a game server on their work laptop (policy aside)?
+81. <mark style="background:#affad1">Explain what NAT (Network Address Translation) does, using a home router as an example. Why can you not simply reach an employee’s home PC from the internet using their public IP without port forwarding? How does this help with troubleshooting when a user tries to host a game server on their work laptop (policy aside)?</mark>
 82. What is a subnet mask in binary terms and how does a device use it to decide if a destination is on the local network or requires the default gateway? Illustrate with a simple ANDing example that a Help Desk agent could use to solve a misconfigured mask problem.
 83. Describe the difference between link speed and throughput. A user’s NIC shows 1 Gbps connection, but a file transfer crawls at 10 Mbps. What network bottlenecks (disk I/O, bandwidth shaping, high latency, congestion) would you investigate?
 84. How does a switch learn MAC addresses and build its CAM table? What happens if the table is full or if an attacker floods it? While you won’t fix a CAM overflow as Help Desk, what symptom might a user report that could indicate a switch problem?
