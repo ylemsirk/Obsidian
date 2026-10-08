@@ -44,7 +44,7 @@
 ### Wireless Networking
 36. <mark style="background:#affad1">Explain the difference between 2.4 GHz and 5 GHz Wi-Fi bands. A user’s laptop is far from the access point; which band would you recommend they connect to for better range, and why? Which one is more susceptible to microwave interference?</mark>
 37. What are common Wi-Fi security protocols (WEP, WPA, WPA2, WPA3)? A user’s old laptop cannot connect to the corporate Wi-Fi; you discover the network requires WPA2-AES but the laptop only supports WPA-TKIP. How would you explain the issue and propose a secure solution?
-38. A user works from a coffee shop and calls because the corporate VPN connection drops every few minutes. What Wi-Fi specific factors (signal strength, channel congestion, captive portals, AP roaming) could cause this, and what troubleshooting steps would you have them perform?
+38. <mark style="background:#affad1">A user works from a coffee shop and calls because the corporate VPN connection drops every few minutes. What Wi-Fi specific factors (signal strength, channel congestion, captive portals, AP roaming) could cause this, and what troubleshooting steps would you have them perform?</mark>
 39. <mark style="background:#affad1">What is an SSID? How can you determine if a user’s connectivity issue is because they are connected to a guest network instead of the corporate one, and what quick indicator on their device would you ask them to check?</mark>
 40. <mark style="background:#affad1">What is the difference between an SSID, BSSID, and wireless channel?</mark>
 41. <mark style="background:#affad1">What is 802.1X authentication? At a high level, explain the roles of the supplicant, authenticator, and authentication server. What symptoms might a user see if 802.1X authentication fails?</mark>
@@ -81,7 +81,7 @@
 68. **Scenario:** A new hire’s laptop cannot obtain an IP address in the conference room, but works fine at their desk. Explain how DHCP scopes, VLAN assignments, or 802.1X authentication could be responsible, and how you would gather evidence for the network team.
 
 ### Security Awareness & Safe Practices (Help Desk Context)
-70. Explain the concept of social engineering and phishing. A user calls because they received an email from “IT Support” asking for their password to “fix their mailbox.” How should you handle the call, and what immediate steps would you advise the user to take?
+70. <mark style="background:#affad1">Explain the concept of social engineering and phishing. A user calls because they received an email from “IT Support” asking for their password to “fix their mailbox.” How should you handle the call, and what immediate steps would you advise the user to take?</mark>
 71. What is a firewall and how does a stateful firewall differ from a simple packet filter? In a Help Desk context, how do you quickly verify if the Windows Defender Firewall is blocking an application, and what rule modification is safe for you to make?
 72. Why is it critical that Help Desk agents never share or reset passwords without verifying the caller’s identity? Describe a secure verification process using a ticket system, manager callback, or MFA push notification.
 73. A user reports a pop‑up claiming their computer is infected and they must call a number. They want to know if it’s real. How do you explain this tech support scam using simple language, and what network-related signs (unfamiliar remote access tools, proxy changes) might you check remotely?
@@ -98,7 +98,7 @@
 82. <mark style="background:#affad1">What is a subnet mask in binary terms and how does a device use it to decide if a destination is on the local network or requires the default gateway? Illustrate with a simple ANDing example that a Help Desk agent could use to solve a misconfigured mask problem.</mark>
 83. Describe the difference between link speed and throughput. A user’s NIC shows 1 Gbps connection, but a file transfer crawls at 10 Mbps. What network bottlenecks (disk I/O, bandwidth shaping, high latency, congestion) would you investigate?
 84. How does a switch learn MAC addresses and build its CAM table? What happens if the table is full or if an attacker floods it? While you won’t fix a CAM overflow as Help Desk, what symptom might a user report that could indicate a switch problem?
-85. What is a default route? When a workstation sends traffic to an IP address on the internet, what role does the default gateway play? If a user’s default gateway is misconfigured as 192.168.1.250 but the real router is .1, what connectivity symptoms would they experience (local works, internet fails)?
+85. <mark style="background:#affad1">What is a default route? When a workstation sends traffic to an IP address on the internet, what role does the default gateway play? If a user’s default gateway is misconfigured as 192.168.1.250 but the real router is .1, what connectivity symptoms would they experience (local works, internet fails)?</mark>
 86. Explain the difference between static IP assignment and DHCP reservation. When would you request a DHCP reservation for a user’s workstation or a printer, and what information do you need to provide to the network team?
 
 ### Integration & Soft Skills
