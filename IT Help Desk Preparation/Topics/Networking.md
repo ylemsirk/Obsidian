@@ -17,7 +17,7 @@
 14. <mark style="background:#affad1">What is the difference between a DHCP lease, reservation, and static IP configuration? When would each be appropriate in an enterprise environment?</mark>
 
 ### Core Protocols & Their Ports
-15. For each of the following protocols, state the default port(s), the transport layer protocol (TCP/UDP), and a simple Help Desk scenario where you would need to know that port is being blocked: HTTP, HTTPS, DNS, DHCP, SSH, RDP, SMB, SMTP, FTP, IMAP, POP3, LDAP, LDAPS, Kerberos, WinRM, SFTP.
+15. <mark style="background:#affad1">For each of the following protocols, state the default port(s), the transport layer protocol (TCP/UDP), and a simple Help Desk scenario where you would need to know that port is being blocked: HTTP, HTTPS, DNS, DHCP, SSH, RDP, SMB, SMTP, FTP, IMAP, POP3, LDAP, LDAPS, Kerberos, WinRM, SFTP.</mark>
 16. <mark style="background:#affad1">Explain the TCP three-way handshake (SYN, SYN-ACK, ACK) in your own words. A user reports that a legacy application “hangs” when connecting to a server. How could a firewall blocking the handshake cause this, and how would you test it?</mark>
 17. <mark style="background:#affad1">Contrast TCP and UDP, giving examples of applications that use each. If a VoIP call has poor quality but web pages load fine, why might UDP be the clue that helps you identify a network issue like packet loss?</mark>
 18. <mark style="background:#affad1">What is ICMP? Demonstrate how you would use ping and tracert (traceroute) to isolate whether a connectivity failure lies on the local network, the ISP, or the destination server. Explain what a “Request timed out” at hop 4 consistently means versus a “Destination net unreachable.”</mark>
