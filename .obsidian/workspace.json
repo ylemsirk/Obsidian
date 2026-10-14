@@ -11,14 +11,17 @@
             "id": "a47e45fdc009da6d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "IT Help Desk Preparation/Topics/Networking.md",
-                "mode": "source",
-                "source": false
+                "file": "IT Help Desk Preparation/Maps/Job Path.canvas",
+                "viewState": {
+                  "x": -133.4404396707505,
+                  "y": -151.30090898857722,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "Networking"
+              "icon": "lucide-layout-dashboard",
+              "title": "Job Path"
             }
           }
         ]
@@ -202,14 +205,16 @@
   },
   "active": "a47e45fdc009da6d",
   "lastOpenFiles": [
+    "IT Help Desk Preparation/Maps",
+    "IT Help Desk Preparation/Topics/Networking.md",
+    "IT Help Desk Preparation/Maps/Job Path.canvas",
     "IT Help Desk Preparation/Topics/TTD.md",
-    "IT Help Desk Preparation/Map.canvas",
+    "IT Help Desk Preparation/Maps/Topics Map.canvas",
     "IT Help Desk Preparation/Topics/Windows.md",
     "IT Help Desk Preparation/Topics/macOS.md",
     "IT Help Desk Preparation/Topics/Microsoft 365.md",
     "IT Help Desk Preparation/Topics/Hardware.md",
     "IT Help Desk Preparation/Topics/Active Directory.md",
-    "IT Help Desk Preparation/Topics/Networking.md",
     "IT Help Desk Preparation/Topics/Operating Systems.md",
     "IT Help Desk Preparation/Topics/Troubleshooting.md",
     "IT Help Desk Preparation/Topics/Security.md",
