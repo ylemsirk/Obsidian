@@ -1,15 +1,7 @@
 {
 	"nodes":[
-		{
-			"id":"850d62cccb0ba328",
-			"type":"text",
-			"text":"Interview Preparation",
-			"styleAttributes":{},
-			"x":-290,
-			"y":-480,
-			"width":200,
-			"height":60
-		},
+		{"id":"e1c86c86927189fb","type":"group","x":-645,"y":-680,"width":900,"height":360,"label":"2027"},
+		{"id":"77d75085f14ee386","type":"group","x":-620,"y":-260,"width":810,"height":100,"label":"2028"},
 		{
 			"id":"aa3c6934daa231a1",
 			"type":"text",
@@ -17,28 +9,116 @@
 			"styleAttributes":{
 				"shape":null
 			},
-			"x":-250,
-			"y":-600,
+			"x":-275,
+			"y":-660,
 			"width":120,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"b26067cd4d499677",
+			"type":"text",
+			"text":"ITLA Graduate",
+			"styleAttributes":{},
+			"x":-345,
+			"y":-420,
+			"width":260,
 			"height":60
 		},
 		{
-			"id":"300f408384188bda",
+			"id":"850d62cccb0ba328",
 			"type":"text",
-			"text":"Help Desk Tier 1 Job",
-			"styleAttributes":{"shape":"diamond"},
-			"x":-320,
-			"y":-360,
-			"width":260,
+			"text":"Interview Preparation",
+			"styleAttributes":{},
+			"x":-315,
+			"y":-540,
+			"width":200,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"222cc2a483246c45",
+			"type":"text",
+			"text":"TryHackMe SOC Level 1 Path",
+			"styleAttributes":{},
+			"x":-605,
+			"y":-660,
+			"width":220,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"ed5c41f3c6a8bbc4",
+			"type":"text",
+			"text":"Start Applying for Jobs",
+			"styleAttributes":{},
+			"x":15,
+			"y":-480,
+			"width":200,
 			"height":60
 		},
 		{
 			"id":"15c69a899e785bae",
 			"type":"text",
-			"text":"",
+			"text":"Security +",
 			"styleAttributes":{},
-			"x":-320,
-			"y":-160,
+			"x":-600,
+			"y":-240,
+			"width":160,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"f73bb7a43200bc86",
+			"type":"text",
+			"text":"BTL1",
+			"styleAttributes":{},
+			"x":70,
+			"y":-240,
+			"width":100,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"f0e0ba37a85f5e43",
+			"type":"text",
+			"text":"SOC Analyst L1",
+			"styleAttributes":{},
+			"x":-340,
+			"y":-100,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"643c2861b68d300a",
+			"type":"text",
+			"text":"Cysa+",
+			"styleAttributes":{},
+			"x":-555,
+			"y":-100,
+			"width":120,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"300f408384188bda",
+			"type":"text",
+			"text":"Help Desk Tier 1 Job",
+			"styleAttributes":{
+				"shape":null
+			},
+			"x":-345,
+			"y":-240,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"6c2d884fc9165bec",
+			"type":"text",
+			"text":"ASW Certified Security",
+			"styleAttributes":{},
+			"x":20,
+			"y":-100,
 			"width":260,
 			"height":60
 		}
@@ -61,21 +141,105 @@
 			"fromFloating":false,
 			"fromNode":"850d62cccb0ba328",
 			"fromSide":"bottom",
-			"toNode":"300f408384188bda",
+			"toNode":"b26067cd4d499677",
 			"toSide":"top"
 		},
 		{
 			"id":"8ad44aab4a593c47",
+			"styleAttributes":{"path":"dotted"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"300f408384188bda",
+			"fromSide":"left",
+			"toNode":"15c69a899e785bae",
+			"toSide":"right",
+			"fromEnd":"arrow"
+		},
+		{
+			"id":"3a3c72d96ab2c849",
+			"styleAttributes":{"path":"dotted"},
+			"toFloating":false,
+			"fromNode":"300f408384188bda",
+			"fromSide":"right",
+			"toNode":"f73bb7a43200bc86",
+			"toSide":"left",
+			"fromEnd":"arrow"
+		},
+		{
+			"id":"fc70a2b94cf7e4fe",
+			"styleAttributes":{"path":"dotted"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"aa3c6934daa231a1",
+			"fromSide":"left",
+			"toNode":"222cc2a483246c45",
+			"toSide":"right",
+			"fromEnd":"arrow"
+		},
+		{
+			"id":"efda88ad62f6ff42",
 			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"b26067cd4d499677",
+			"fromSide":"bottom",
+			"toNode":"300f408384188bda",
+			"toSide":"top"
+		},
+		{
+			"id":"2207ff323d30a4fb",
+			"styleAttributes":{"path":"dotted"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"850d62cccb0ba328",
+			"fromSide":"right",
+			"toNode":"ed5c41f3c6a8bbc4",
+			"toSide":"left",
+			"fromEnd":"arrow"
+		},
+		{
+			"id":"11bc91ba7e6500fe",
+			"styleAttributes":{"path":"dotted"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"b26067cd4d499677",
+			"fromSide":"right",
+			"toNode":"ed5c41f3c6a8bbc4",
+			"toSide":"left",
+			"fromEnd":"arrow"
+		},
+		{
+			"id":"3c51d3cd984c595a",
+			"styleAttributes":{
+				"path":null
+			},
 			"toFloating":false,
 			"fromNode":"300f408384188bda",
 			"fromSide":"bottom",
-			"toNode":"15c69a899e785bae",
+			"toNode":"f0e0ba37a85f5e43",
 			"toSide":"top"
+		},
+		{
+			"id":"c412aa496fbb2790",
+			"styleAttributes":{"path":"dotted"},
+			"toFloating":false,
+			"fromNode":"f0e0ba37a85f5e43",
+			"fromSide":"left",
+			"toNode":"643c2861b68d300a",
+			"toSide":"right"
+		},
+		{
+			"id":"4bc0919d0f3b831c",
+			"styleAttributes":{"path":"dotted"},
+			"toFloating":false,
+			"fromNode":"f0e0ba37a85f5e43",
+			"fromSide":"right",
+			"toNode":"6c2d884fc9165bec",
+			"toSide":"left"
 		}
 	],
 	"metadata":{
 		"version":"1.0-1.0",
-		"frontmatter":{}
+		"frontmatter":{},
+		"startNode":"0f415e4afef000d5"
 	}
 }
