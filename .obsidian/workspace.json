@@ -15,9 +15,9 @@
               "state": {
                 "file": "IT Help Desk Preparation/Maps/Job Path.canvas",
                 "viewState": {
-                  "x": -114.12804591954347,
-                  "y": 2.2497355840915265,
-                  "zoom": -0.6565695624012762
+                  "x": -10.22093278149265,
+                  "y": -79.48894956323788,
+                  "zoom": -0.43389652653015964
                 }
               },
               "icon": "lucide-layout-dashboard",
@@ -205,11 +205,11 @@
   },
   "active": "a47e45fdc009da6d",
   "lastOpenFiles": [
+    "IT Help Desk Preparation/Maps/Topics Map.canvas",
+    "IT Help Desk Preparation/Maps/Job Path.canvas",
     "IT Help Desk Preparation/Maps",
     "IT Help Desk Preparation/Topics/Networking.md",
-    "IT Help Desk Preparation/Maps/Job Path.canvas",
     "IT Help Desk Preparation/Topics/TTD.md",
-    "IT Help Desk Preparation/Maps/Topics Map.canvas",
     "IT Help Desk Preparation/Topics/Windows.md",
     "IT Help Desk Preparation/Topics/macOS.md",
     "IT Help Desk Preparation/Topics/Microsoft 365.md",
@@ -246,7 +246,6 @@
     "PROYECTO FINAL/EX20/EX20.canvas",
     "PROYECTO FINAL/EX19/EX19.canvas",
     "PROYECTO FINAL/EX20",
-    "PROYECTO FINAL/EX19",
     "PExcelint/Diagrama.canvas"
   ]
 }
