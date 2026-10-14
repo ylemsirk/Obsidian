@@ -82,7 +82,7 @@
 
 ### Security Awareness & Safe Practices (Help Desk Context)
 69. <mark style="background:#affad1">Explain the concept of social engineering and phishing. A user calls because they received an email from “IT Support” asking for their password to “fix their mailbox.” How should you handle the call, and what immediate steps would you advise the user to take?</mark>
-70. What is a firewall and how does a stateful firewall differ from a simple packet filter? In a Help Desk context, how do you quickly verify if the Windows Defender Firewall is blocking an application, and what rule modification is safe for you to make?
+70. <mark style="background:#affad1">What is a firewall and how does a stateful firewall differ from a simple packet filter? In a Help Desk context, how do you quickly verify if the Windows Defender Firewall is blocking an application, and what rule modification is safe for you to make?</mark>
 71. Why is it critical that Help Desk agents never share or reset passwords without verifying the caller’s identity? Describe a secure verification process using a ticket system, manager callback, or MFA push notification.
 72. A user reports a pop‑up claiming their computer is infected and they must call a number. They want to know if it’s real. How do you explain this tech support scam using simple language, and what network-related signs (unfamiliar remote access tools, proxy changes) might you check remotely?
 73. What is a VPN and how does it protect a remote user’s traffic? A user complains their home printer disappears when connected to the corporate VPN. How do you explain this to them and what client setting (split tunneling) would you suggest the security team consider?

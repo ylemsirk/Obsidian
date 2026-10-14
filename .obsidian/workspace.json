@@ -11,17 +11,14 @@
             "id": "a47e45fdc009da6d",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "IT Help Desk Preparation/Maps/Job Path.canvas",
-                "viewState": {
-                  "x": -10.22093278149265,
-                  "y": -79.48894956323788,
-                  "zoom": -0.43389652653015964
-                }
+                "file": "IT Help Desk Preparation/Topics/Networking.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Job Path"
+              "icon": "lucide-file",
+              "title": "Networking"
             }
           }
         ]
@@ -205,10 +202,10 @@
   },
   "active": "a47e45fdc009da6d",
   "lastOpenFiles": [
-    "IT Help Desk Preparation/Maps/Topics Map.canvas",
     "IT Help Desk Preparation/Maps/Job Path.canvas",
-    "IT Help Desk Preparation/Maps",
     "IT Help Desk Preparation/Topics/Networking.md",
+    "IT Help Desk Preparation/Maps/Topics Map.canvas",
+    "IT Help Desk Preparation/Maps",
     "IT Help Desk Preparation/Topics/TTD.md",
     "IT Help Desk Preparation/Topics/Windows.md",
     "IT Help Desk Preparation/Topics/macOS.md",
