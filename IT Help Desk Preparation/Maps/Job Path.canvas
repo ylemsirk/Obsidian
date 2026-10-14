@@ -1,62 +1,10 @@
 {
 	"nodes":[
-		{"id":"e1c86c86927189fb","type":"group","x":-645,"y":-680,"width":900,"height":360,"label":"2027"},
-		{"id":"77d75085f14ee386","type":"group","x":-620,"y":-260,"width":810,"height":100,"label":"2028"},
-		{
-			"id":"aa3c6934daa231a1",
-			"type":"text",
-			"text":"Topics",
-			"styleAttributes":{
-				"shape":null
-			},
-			"x":-275,
-			"y":-660,
-			"width":120,
-			"height":60,
-			"color":"3"
-		},
-		{
-			"id":"b26067cd4d499677",
-			"type":"text",
-			"text":"ITLA Graduate",
-			"styleAttributes":{},
-			"x":-345,
-			"y":-420,
-			"width":260,
-			"height":60
-		},
-		{
-			"id":"850d62cccb0ba328",
-			"type":"text",
-			"text":"Interview Preparation",
-			"styleAttributes":{},
-			"x":-315,
-			"y":-540,
-			"width":200,
-			"height":60,
-			"color":"3"
-		},
-		{
-			"id":"222cc2a483246c45",
-			"type":"text",
-			"text":"TryHackMe SOC Level 1 Path",
-			"styleAttributes":{},
-			"x":-605,
-			"y":-660,
-			"width":220,
-			"height":60,
-			"color":"3"
-		},
-		{
-			"id":"ed5c41f3c6a8bbc4",
-			"type":"text",
-			"text":"Start Applying for Jobs",
-			"styleAttributes":{},
-			"x":15,
-			"y":-480,
-			"width":200,
-			"height":60
-		},
+		{"id":"e1c86c86927189fb","type":"group","x":-640,"y":-680,"width":900,"height":360,"label":"2027"},
+		{"id":"77d75085f14ee386","type":"group","x":-620,"y":-260,"width":810,"height":200,"label":"2028"},
+		{"id":"6c6ac11af02f597f","type":"group","x":-700,"y":220,"width":960,"height":120,"label":"2030"},
+		{"id":"6a45e5b45e33cffe","type":"group","x":-580,"y":20,"width":875,"height":100,"label":"BTE of 2028 - BTE of 2029"},
+		{"id":"2c5b6a7d0282cb3b","type":"group","x":-392,"y":460,"width":355,"height":120,"label":"2031"},
 		{
 			"id":"15c69a899e785bae",
 			"type":"text",
@@ -69,36 +17,59 @@
 			"color":"1"
 		},
 		{
-			"id":"f73bb7a43200bc86",
+			"id":"850d62cccb0ba328",
 			"type":"text",
-			"text":"BTL1",
+			"text":"Interview Preparation",
 			"styleAttributes":{},
-			"x":70,
-			"y":-240,
-			"width":100,
+			"x":-310,
+			"y":-540,
+			"width":200,
 			"height":60,
-			"color":"1"
+			"color":"3"
 		},
 		{
-			"id":"f0e0ba37a85f5e43",
+			"id":"ed5c41f3c6a8bbc4",
 			"type":"text",
-			"text":"SOC Analyst L1",
+			"text":"Start Applying for Jobs",
+			"styleAttributes":{},
+			"x":20,
+			"y":-480,
+			"width":200,
+			"height":60
+		},
+		{
+			"id":"b26067cd4d499677",
+			"type":"text",
+			"text":"ITLA Graduate",
 			"styleAttributes":{},
 			"x":-340,
-			"y":-100,
+			"y":-420,
 			"width":260,
 			"height":60
 		},
 		{
-			"id":"643c2861b68d300a",
+			"id":"aa3c6934daa231a1",
 			"type":"text",
-			"text":"Cysa+",
-			"styleAttributes":{},
-			"x":-555,
-			"y":-100,
-			"width":120,
+			"text":"IT and Cybersecurity Basics",
+			"styleAttributes":{
+				"shape":null
+			},
+			"x":-341,
+			"y":-660,
+			"width":263,
 			"height":60,
-			"color":"1"
+			"color":"3"
+		},
+		{
+			"id":"222cc2a483246c45",
+			"type":"text",
+			"text":"TryHackMe SOC Level 1 Path",
+			"styleAttributes":{},
+			"x":-625,
+			"y":-660,
+			"width":220,
+			"height":60,
+			"color":"3"
 		},
 		{
 			"id":"300f408384188bda",
@@ -107,9 +78,82 @@
 			"styleAttributes":{
 				"shape":null
 			},
-			"x":-345,
-			"y":-240,
+			"x":-340,
+			"y":-180,
 			"width":260,
+			"height":60
+		},
+		{
+			"id":"5031497589f1acba",
+			"type":"text",
+			"text":"Home Labs",
+			"styleAttributes":{},
+			"x":20,
+			"y":-150,
+			"width":140,
+			"height":60,
+			"color":"3"
+		},
+		{
+			"id":"f73bb7a43200bc86",
+			"type":"text",
+			"text":"BTL1",
+			"styleAttributes":{},
+			"x":40,
+			"y":-240,
+			"width":100,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"643c2861b68d300a",
+			"type":"text",
+			"text":"Cysa+",
+			"styleAttributes":{},
+			"x":-560,
+			"y":40,
+			"width":120,
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"f0e0ba37a85f5e43",
+			"type":"text",
+			"text":"SOC Analyst L1",
+			"styleAttributes":{},
+			"x":-345,
+			"y":40,
+			"width":260,
+			"height":60
+		},
+		{
+			"id":"0ffc2104adf93bc5",
+			"type":"text",
+			"text":"Cloud SOC Analyst L2",
+			"styleAttributes":{},
+			"x":-655,
+			"y":240,
+			"width":255,
+			"height":60
+		},
+		{
+			"id":"0f1404713567a448",
+			"type":"text",
+			"text":"SOC Analyst L2",
+			"styleAttributes":{},
+			"x":-5,
+			"y":240,
+			"width":205,
+			"height":60
+		},
+		{
+			"id":"7aeb7d71e8f57597",
+			"type":"text",
+			"text":"Cloud Security Engineer",
+			"styleAttributes":{},
+			"x":-360,
+			"y":480,
+			"width":298,
 			"height":60
 		},
 		{
@@ -117,10 +161,22 @@
 			"type":"text",
 			"text":"ASW Certified Security",
 			"styleAttributes":{},
-			"x":20,
-			"y":-100,
+			"x":-338,
+			"y":240,
 			"width":260,
-			"height":60
+			"height":60,
+			"color":"1"
+		},
+		{
+			"id":"2b5d65a03d537971",
+			"type":"text",
+			"text":"AWS Certified Solutions Architect",
+			"styleAttributes":{},
+			"x":0,
+			"y":40,
+			"width":240,
+			"height":60,
+			"color":"1"
 		}
 	],
 	"edges":[
@@ -233,8 +289,76 @@
 			"toFloating":false,
 			"fromNode":"f0e0ba37a85f5e43",
 			"fromSide":"right",
-			"toNode":"6c2d884fc9165bec",
+			"toNode":"2b5d65a03d537971",
 			"toSide":"left"
+		},
+		{
+			"id":"1ce9f81b1497ff91",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f0e0ba37a85f5e43",
+			"fromSide":"bottom",
+			"toNode":"0ffc2104adf93bc5",
+			"toSide":"top"
+		},
+		{
+			"id":"b7dcdbc789fbb675",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"f0e0ba37a85f5e43",
+			"fromSide":"bottom",
+			"toNode":"0f1404713567a448",
+			"toSide":"top"
+		},
+		{
+			"id":"68f344c838aaa463",
+			"styleAttributes":{"path":"dotted"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"5031497589f1acba",
+			"fromSide":"left",
+			"toNode":"300f408384188bda",
+			"toSide":"right",
+			"fromEnd":"arrow"
+		},
+		{
+			"id":"9219b432f313a715",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0ffc2104adf93bc5",
+			"fromSide":"bottom",
+			"toNode":"7aeb7d71e8f57597",
+			"toSide":"top"
+		},
+		{
+			"id":"3b4a3c0f77c7a9ff",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"0f1404713567a448",
+			"fromSide":"bottom",
+			"toNode":"7aeb7d71e8f57597",
+			"toSide":"top"
+		},
+		{
+			"id":"ff46a82168c3f466",
+			"styleAttributes":{"path":"dotted"},
+			"toFloating":false,
+			"fromNode":"0ffc2104adf93bc5",
+			"fromSide":"right",
+			"toNode":"6c2d884fc9165bec",
+			"toSide":"left",
+			"fromEnd":"arrow"
+		},
+		{
+			"id":"b4e1fcac14bb0156",
+			"styleAttributes":{"path":"dotted"},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"0f1404713567a448",
+			"fromSide":"left",
+			"toNode":"6c2d884fc9165bec",
+			"toSide":"right",
+			"fromEnd":"arrow"
 		}
 	],
 	"metadata":{
