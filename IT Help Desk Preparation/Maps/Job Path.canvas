@@ -3,7 +3,7 @@
 		{"id":"e1c86c86927189fb","type":"group","x":-640,"y":-680,"width":900,"height":360,"label":"2027"},
 		{"id":"77d75085f14ee386","type":"group","x":-620,"y":-260,"width":810,"height":200,"label":"2028"},
 		{"id":"6c6ac11af02f597f","type":"group","x":-700,"y":220,"width":960,"height":120,"label":"2030"},
-		{"id":"6a45e5b45e33cffe","type":"group","x":-580,"y":20,"width":875,"height":100,"label":"BTE of 2028 - BTE of 2029"},
+		{"id":"6a45e5b45e33cffe","type":"group","x":-580,"y":20,"width":840,"height":100,"label":"BTE of 2028 - BTE of 2029"},
 		{"id":"2c5b6a7d0282cb3b","type":"group","x":-392,"y":460,"width":355,"height":120,"label":"2031"},
 		{
 			"id":"15c69a899e785bae",
@@ -84,17 +84,6 @@
 			"height":60
 		},
 		{
-			"id":"5031497589f1acba",
-			"type":"text",
-			"text":"Home Labs",
-			"styleAttributes":{},
-			"x":20,
-			"y":-150,
-			"width":140,
-			"height":60,
-			"color":"3"
-		},
-		{
 			"id":"f73bb7a43200bc86",
 			"type":"text",
 			"text":"BTL1",
@@ -104,6 +93,17 @@
 			"width":100,
 			"height":60,
 			"color":"1"
+		},
+		{
+			"id":"5031497589f1acba",
+			"type":"text",
+			"text":"Home Labs",
+			"styleAttributes":{},
+			"x":20,
+			"y":-150,
+			"width":140,
+			"height":60,
+			"color":"3"
 		},
 		{
 			"id":"643c2861b68d300a",
@@ -147,16 +147,6 @@
 			"height":60
 		},
 		{
-			"id":"7aeb7d71e8f57597",
-			"type":"text",
-			"text":"Cloud Security Engineer",
-			"styleAttributes":{},
-			"x":-360,
-			"y":480,
-			"width":298,
-			"height":60
-		},
-		{
 			"id":"6c2d884fc9165bec",
 			"type":"text",
 			"text":"ASW Certified Security",
@@ -177,6 +167,16 @@
 			"width":240,
 			"height":60,
 			"color":"1"
+		},
+		{
+			"id":"7aeb7d71e8f57597",
+			"type":"text",
+			"text":"Cloud Security Engineer",
+			"styleAttributes":{},
+			"x":-360,
+			"y":480,
+			"width":298,
+			"height":60
 		}
 	],
 	"edges":[
