@@ -11,14 +11,17 @@
             "id": "a47e45fdc009da6d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "IT Help Desk Preparation/Topics/Networking.md",
-                "mode": "source",
-                "source": false
+                "file": "Misc/Darko.canvas",
+                "viewState": {
+                  "x": -110,
+                  "y": -80,
+                  "zoom": -0.09831425817595035
+                }
               },
-              "icon": "lucide-file",
-              "title": "Networking"
+              "icon": "lucide-layout-dashboard",
+              "title": "Darko"
             }
           }
         ]
@@ -202,32 +205,32 @@
   },
   "active": "a47e45fdc009da6d",
   "lastOpenFiles": [
-    "IT Help Desk Preparation/Topics/Windows.md",
-    "IT Help Desk Preparation/Topics/Operating Systems.md",
-    "IT Help Desk Preparation/Topics/Hardware.md",
-    "IT Help Desk Preparation/Topics/Networking.md",
     "Excalidraw/Drawing 2026-10-16 01.02.53.excalidraw.md",
-    "IT Help Desk Preparation/Topics/Active Directory.md",
+    "Excalidraw/Drawing 2026-09-11 22.52.00.excalidraw.md",
+    "IT Help Desk Preparation/Topics/Microsoft 365.md",
+    "IT Help Desk Preparation/Topics/macOS.md",
+    "IT Help Desk Preparation/Topics/Hardware.md",
+    "IT Help Desk Preparation/Topics/ITIL.md",
+    "IT Help Desk Preparation/Topics/Troubleshooting.md",
+    "IT Help Desk Preparation/Topics/TTD.md",
+    "Misc/Sin título.md",
     "IT Help Desk Preparation/Maps/Job Path.canvas",
     "IT Help Desk Preparation/Maps/Topics Map.canvas",
+    "IT Help Desk Preparation/Topics/Networking.md",
+    "IT Help Desk Preparation/Topics/Windows.md",
+    "IT Help Desk Preparation/Topics/Operating Systems.md",
+    "IT Help Desk Preparation/Topics/Active Directory.md",
     "IT Help Desk Preparation/Maps",
-    "IT Help Desk Preparation/Topics/TTD.md",
-    "IT Help Desk Preparation/Topics/macOS.md",
-    "IT Help Desk Preparation/Topics/Microsoft 365.md",
-    "IT Help Desk Preparation/Topics/Troubleshooting.md",
     "IT Help Desk Preparation/Topics/Security.md",
     "IT Help Desk Preparation/Topics/Remote Support + Ticketing-ITSM.md",
     "IT Help Desk Preparation/Topics/Virtualization + Cloud.md",
     "IT Help Desk Preparation/Topics/Linux.md",
-    "IT Help Desk Preparation/Topics/ITIL.md",
     "Project Soul Absorber/Color Palettes/Kenji.md",
     "Project Soul Absorber/Color Palettes",
     "Project Soul Absorber/COLOR PALETTES.md",
     "Project Soul Absorber",
     "Misc/Darko.canvas",
-    "Excalidraw/Drawing 2026-09-11 22.52.00.excalidraw.md",
     "Excalidraw",
-    "Misc/Sin título.md",
     "Misc",
     "Remote Support + Ticketing-FITSM.md",
     "Remote Support + Ticketing%2fITSM.md",
@@ -236,7 +239,6 @@
     "Remote Support + Ticketing",
     "Linux.md",
     "Active.md",
-    "IT Help Desk Preparation/Map.md",
     "IT Help Desk Preparation/Topics",
     "IT Help Desk Preparation",
     "Sin título 1.canvas",
