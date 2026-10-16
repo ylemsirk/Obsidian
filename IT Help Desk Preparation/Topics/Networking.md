@@ -51,9 +51,9 @@
 42. <mark style="background:#affad1">What is a proxy server? A user can access some websites but not others, and their browser shows a proxy-related error. How would you check whether an incorrect proxy configuration is responsible?</mark>
 
 ### Troubleshooting Methodology & Tools
-43. Describe a structured troubleshooting methodology (e.g., identify symptoms, establish theory, test, implement solution, verify, document). Apply it to a ticket where a user reports “My email is not working, but the internet is fine.”
+43. <mark style="background:#affad1">Describe a structured troubleshooting methodology (e.g., identify symptoms, establish theory, test, implement solution, verify, document). Apply it to a ticket where a user reports “My email is not working, but the internet is fine.”</mark>
 44. <mark style="background:#affad1">List the essential network diagnostic commands for a Windows environment (ipconfig, ping, tracert, nslookup, netstat, route print). For each, give an example of output you would expect when everything is normal, and an anomaly that would point you to a specific problem.</mark>
-45. What is the purpose of the hosts file on a workstation? A user’s machine cannot access a specific internal web application by name, but ping to the IP works. How could a misconfigured hosts entry cause this, and how would you check it?
+45. <mark style="background:#affad1">What is the purpose of the hosts file on a workstation? A user’s machine cannot access a specific internal web application by name, but ping to the IP works. How could a misconfigured hosts entry cause this, and how would you check it?</mark>
 46. <mark style="background:#affad1">Explain the difference between a forward and reverse DNS lookup. If you suspect a server’s PTR record is incorrect and causing authentication failures for a legacy application, what nslookup command would you run to verify?</mark>
 47. <mark style="background:#affad1">When is it appropriate to use a packet capture tool like Wireshark in a Help Desk role? Describe a situation where you would capture traffic on a user’s machine to prove to the network team that a specific application is being blocked.</mark>
 48. A user complains that a website loads very slowly. You run a continuous ping to the site and see intermittent high latency and occasional packet loss. How would you narrow this down: local Wi-Fi issue, ISP problem, or the web server itself? Include specific ping options and traceroute analysis.
@@ -88,10 +88,10 @@
 73. <mark style="background:#affad1">What is a VPN and how does it protect a remote user’s traffic? A user complains their home printer disappears when connected to the corporate VPN. How do you explain this to them and what client setting (split tunneling) would you suggest the security team consider?</mark>
 74. <mark style="background:#affad1">A VPN client says "Connected", but the user cannot access internal applications. What would you check first, and how would you distinguish between a DNS, routing, authentication, firewall, or application problem?</mark>
 75. <mark style="background:#affad1">What is the difference between a VPN authentication problem and a VPN connectivity problem? Give examples of symptoms that would distinguish them.</mark>
-76. A user connects to the corporate VPN from home and their Internet becomes extremely slow. What could cause this? Explain the role of full-tunnel VPN, split tunneling, DNS, and bandwidth.
+76. <mark style="background:#affad1">A user connects to the corporate VPN from home and their Internet becomes extremely slow. What could cause this? Explain the role of full-tunnel VPN, split tunneling, DNS, and bandwidth.</mark>
 77. <mark style="background:#affad1">A user can access some internal resources over VPN but not others. What does this suggest, and what would you investigate?</mark>
 78. <mark style="background:#affad1">Describe the purpose of MAC address filtering on a wireless network. If a user’s personal laptop cannot connect to the corporate Wi‑Fi, and you suspect MAC filtering is enabled, how would you locate the correct MAC address and who would you submit the request to?</mark>
-79. What is the difference between Public, Private, and Domain network profiles in Windows? How can the wrong profile affect firewall behavior and network access?
+79. <mark style="background:#affad1">What is the difference between Public, Private, and Domain network profiles in Windows? How can the wrong profile affect firewall behavior and network access?</mark>
 
 ### Deeper Understanding & Growing Your Expertise
 80. <mark style="background:#affad1">Explain what NAT (Network Address Translation) does, using a home router as an example. Why can you not simply reach an employee’s home PC from the internet using their public IP without port forwarding? How does this help with troubleshooting when a user tries to host a game server on their work laptop (policy aside)?</mark>
