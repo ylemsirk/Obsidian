@@ -5,7 +5,7 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 *Expected criteria:* distinguishes throttling/thermal symptoms from RAM errors (BSOD, memory errors) and storage symptoms (clicking, corruption, extreme slowness); avoids concluding a specific component is dead from a single symptom.
 
 **2.** Differentiate volatile memory (RAM) from non-volatile storage (SSD/HDD) in plain terms, and explain why a user’s confusion between "memory" and "disk space" changes your diagnostic path. **(L1)**
-*Expected criteria:* RAM is temporary working memory; storage is persistent. User says "I ran out of memory" → clarify which one before acting.
+*Expected criteria:* RAM is temporary working memory; storage is persistent. Users say "I ran out of memory" ambiguously; clarify before acting. SSD = no moving parts, faster boot/app load, more shock-resistant; caveats = data migration, capacity per cost, backup before cloning, warranty/company policy on opening the unit.
 
 **3.** Describe the motherboard’s role in relation to CPU, RAM, storage, expansion cards, and ports. If a single USB or Ethernet port stops working while others work, what does that suggest and how do you isolate it? **(L1)**
 *Expected criteria:* checks cable, device, driver, and alternative port first; a single dead port points to the port itself rather than the whole board; does not jump to "motherboard replacement."
@@ -13,8 +13,8 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 **4.** Compare integrated and dedicated GPUs. A desktop appears powered on but shows no image and has a dedicated GPU. Outline your checks before concluding the GPU is faulty. **(L1)**
 *Expected criteria:* verify monitor input, cable, and whether the video cable is plugged into the dGPU or the motherboard; try the integrated output if available; reseat only with authorization.
 
-**5.** Explain what a desktop PSU does, common signs of PSU failure, and why a Tier 1 technician must never open or internally test a PSU. **(L1)**
-*Expected criteria:* random shutdowns, failure to power on, burning smell; PSUs hold lethal charge; document, replace under warranty, or escalate.
+**5.** Explain what a desktop PSU does, its common failure symptoms, and the difference between replacing a complete PSU and opening/repairing a PSU. Which action, if any, may a Tier 1 technician take, and what does that depend on? (L1)
+Expected criteria: PSU converts AC to DC and supplies regulated rails; symptoms = no power, random shutdowns, burning smell, tripped breaker. Opening or repairing the PSU is never authorized — internal capacitors hold lethal charge even unplugged. Replacing the entire unit with an identical or approved equivalent may be within Tier 1 scope only if training, written authorization, company policy, and warranty conditions permit. Otherwise swap the machine, use a spare, or escalate. Always unplug from the wall before any physical intervention.
 
 **6.** Describe laptop power subsystems: AC adapter, DC jack, battery, and internal charging circuit. List symptoms that could point to each. **(L1)**
 *Expected criteria:* no LED with known-good charger → charger or jack; LED on but battery drains → battery or charging circuit; escalates internal repairs.
@@ -69,16 +69,17 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 *Expected criteria:* battery health, battery seating, power settings, charging circuit; uses manufacturer battery report; escalates internal repair if battery is not user-replaceable.
 
 **22.** A device (USB drive, webcam, printer) is not detected. Describe your isolation approach: port, cable, driver, device on another machine. **(L1)**
-*Expected criteria:* change one variable at a time; if the device works on another machine, the problem is the original machine’s port/driver/config.
+*Expected criteria:* A device (USB flash drive, external HDD, webcam, printer, or a specific USB port) is not detected. Describe your isolation approach: port, cable, driver, device on another machine, and known-good substitution. **(L1)**  
+_Expected criteria:_ change one variable at a time. Test the device on another machine and test another device on the original port. If the device works elsewhere, the fault is the original machine's port, driver, or configuration. If the port works with another device, the fault is the original device. **Do not initialize, format, or repartition an external drive that holds user data — first check Disk Management, drive letter conflicts, and cable/port, and escalate before any destructive action.** A device that works elsewhere does not prove the machine is fine; it only narrows the fault.
 
 **23.** A workstation restarts randomly. What evidence would you collect before concluding it is hardware? **(L2 — Windows overlap)**
 *Expected criteria:* Event Viewer for unexpected shutdown, thermal readings, recent updates or driver changes, power events; does not label PSU/GPU as the cause without evidence.
 
-**24.** A user reports slow performance, overheating, fan noise, or freezing. How do you distinguish a hardware cause from an OS, malware, or configuration cause? **(L1)**
-*Expected criteria:* Resource Monitor/Task Manager first, temperature readings, physical inspection for dust; avoids assuming disk or CPU is failing.
+**24.** A user reports slow performance, slow boot, high disk usage, or freezing. How do you distinguish a hardware cause from an OS, malware, or configuration cause? (L1)
+Expected criteria: Resource Monitor and Task Manager first, temperature readings, physical inspection for dust. "Disk usage 100%" in Task Manager does not prove the drive is faulty — common causes include Windows Search, SysMain, Windows Update, antivirus scans, and pending updates. Slow boot is usually startup programs, pending updates, HDD vs SSD, or malware — not the CPU or PSU. Identify what is using the resource before disabling anything. Escalate for hardware only when there is corroborating evidence (SMART warnings, disk errors in Event Viewer, physical noise, overheating under idle load).
 
-**25.** A storage drive shows symptoms of failure (clicking, SMART warnings, file corruption, extremely slow access). What should you do first, and what must you never do? **(L1)**
-*Expected criteria:* back up or make data accessible first; do not run chkdsk or defrag on a suspected failing drive; do not power-cycle repeatedly; escalate for data recovery if needed.
+**25.** A storage drive shows symptoms of failure (clicking, SMART warnings, file corruption, extremely slow access). What is the correct order of actions? (L1)
+Expected criteria: Preserve user data first — copy what is still readable to a known-good location or hand to data recovery, with the user's awareness and the company's procedure. Do not run chkdsk, defrag, or any intensive diagnostic on a drive suspected of mechanical failure — this can accelerate data loss. Do not repeatedly power-cycle. Document SMART values if a read-only tool is available. Escalate to Tier 2, the backup team, or a data-recovery service. Tier 1 does not attempt to "fix" a failing drive.
 
 **26.** A peripheral (monitor, keyboard, mouse, webcam, headset, printer) stops working. Outline the general isolation steps that apply to any peripheral. **(L1)**
 *Expected criteria:* power, cable, port, driver, alternative device, alternative machine; substitute a known-good component to isolate.
@@ -100,8 +101,8 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 **31.** How do you safely clean a computer’s interior and vents? What should you never do? **(L1)**
 *Expected criteria:* approved compressed air, short bursts, hold fans to prevent over-spinning, lint-free cloths; never liquid inside, never touch pins, never over-spin fans.
 
-**32.** A user shows you a swollen or leaking battery. What are the immediate safety actions, and why must you not puncture, bend, or continue using it? **(L1)**
-*Expected criteria:* stop use, do not charge, isolate from flammable materials, follow local battery disposal policy; puncturing risks fire/chemical exposure.
+**32.** A user shows a laptop with a bulging chassis and a trackpad that is hard to click. What are the immediate safety actions, what must you never do, and what is the escalation path? (L1)
+Expected criteria: Stop using and stop charging the laptop immediately. Do not press, bend, puncture, or attempt to remove the battery. Keep it away from flammable materials and heat. Follow the company's battery-hazard policy for isolation, transport, and disposal. Do not continue troubleshooting the laptop on-site. Escalate to the authorized repair path or vendor — battery replacement in a swollen-unit scenario is not a Tier 1 task, regardless of training.
 
 **33.** Why should a Tier 1 technician not open or repair a PSU? **(L1)**
 *Expected criteria:* dangerous stored voltage even when unplugged; replacement or warranty route only.
@@ -123,14 +124,14 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 **38.** Under what conditions would updating firmware/BIOS be justified, and why must a Tier 1 technician not perform it without an approved procedure? **(L1)**
 *Expected criteria:* manufacturer security advisory, compatibility fix, vendor instruction; power loss during flashing can brick the device; requires approved procedure and stable power.
 
-**39.** Which built-in Windows tools are appropriate for Tier 1 hardware diagnosis (Device Manager, Task Manager, System Information, Event Viewer, Disk Management, vendor diagnostics)? Describe what each reveals. **(L1)**
-*Expected criteria:* Device Manager = device/driver status; Task Manager = resource use; System Information = model/specs; Event Viewer = error timeline; Disk Management = volumes/letters; vendor diagnostics = component tests.
+**39.** Which built-in Windows tools are appropriate for Tier 1 hardware diagnosis (Device Manager, Task Manager, System Information, Event Viewer, Disk Management, vendor diagnostics)? Describe what each reveals. (L1)
+Expected criteria: Device Manager = device and driver status; Task Manager = live resource use; System Information = model/specs; Event Viewer = error timeline; Disk Management = volumes/letters; vendor diagnostics = component-level hardware tests. When a device is misbehaving, decide between updating, rolling back, uninstalling, or reinstalling a driver based on evidence: roll back after a recent update, uninstall/reinstall after corruption, update only when a compatible newer driver is documented. Do not change drivers "just in case."
 
 **40.** How would you use vendor hardware diagnostics, and when is that preferable to Windows-based troubleshooting? **(L2)**
 *Expected criteria:* hardware self-tests (Dell ePSA, HP UEFI diagnostics, Lenovo diagnostics) give component-level results independent of Windows; preferable when OS cannot boot or when hardware is suspected.
 
-**41.** What can Event Viewer tell you about unexpected shutdowns or hardware errors, and what are the limits? **(L2)**
-*Expected criteria:* Kernel-Power 41 = unexpected shutdown, not root cause; disk error events point to storage but require vendor diagnostic confirmation.
+**41.** Which built-in Windows tools are appropriate for Tier 1 hardware diagnosis (Device Manager, Task Manager, System Information, Event Viewer, Disk Management, vendor diagnostics)? Describe what each reveals. (L1)
+Expected criteria: Device Manager = device and driver status; Task Manager = live resource use; System Information = model/specs; Event Viewer = error timeline; Disk Management = volumes/letters; vendor diagnostics = component-level hardware tests. When a device is misbehaving, decide between updating, rolling back, uninstalling, or reinstalling a driver based on evidence: roll back after a recent update, uninstall/reinstall after corruption, update only when a compatible newer driver is documented. Do not change drivers "just in case."
 
 ### Section F — Monitors, Peripherals & Docking Stations
 
@@ -160,14 +161,14 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 **49.** What is the Print Spooler, and what symptoms suggest it is stuck? How do you safely restart it? **(L1)**
 *Expected criteria:* services.msc restart, clear stuck jobs, verify driver; safe on a workstation, be cautious on a print server (escalate if shared).
 
-**50.** A printer responds to ping but Windows reports it offline. What does this tell you and what do you investigate next? **(L1)**
-*Expected criteria:* network path OK; check the queue, printer port configuration, spooler, printer power state, correct printer object (stale IP).
+**50.** A printer responds to ping but Windows reports it offline. What does the ping actually tell you, and what do you investigate next? (L1)
+Expected criteria: A successful ping only confirms an ICMP response from the device's IP stack — it does not prove that printing services, the print queue, the printer port, or the driver are working. Investigate whether the printer is a shared/print-server device or a direct IP printer; check the print spooler, the printer port configuration, the printer's own panel/status, and the queue. Also determine scope: a single user unable to print is usually a driver, queue, or profile issue; multiple users unable to print points to the printer, the print server, or the network path. After any change, have the user print a test page and confirm the original document can print.
 
-**51.** A test page prints fine but one application cannot print. What does that suggest, and how do you narrow the cause? **(L1)**
-*Expected criteria:* application-side issue; test from Notepad, check app print settings, permissions, print-to-PDF, reinstall app printer reference.
+**51.** A test page prints fine but one application cannot print (or the output is garbled). What does that suggest, and how do you narrow the cause? (L1)
+Expected criteria: A successful test page proves the printer, port, and driver work for the OS test path. Failures in a single application point to that application's print settings, its driver selection, permissions, or file format. Garbled output from all applications points to a wrong or corrupt driver. Narrow by testing Notepad, Print-to-PDF, and the specific application; only reinstall the driver when evidence supports it.
 
-**52.** A print job is stuck in the queue. What steps do you take before deleting and reinstalling the printer? **(L1)**
-*Expected criteria:* cancel job, restart spooler, verify printer online, clear queue, test page; only reinstall if the problem persists.
+**52.** A print job is stuck in the queue. What steps do you take before deleting and reinstalling the printer? (L1)
+Expected criteria: cancel the job, restart the Print Spooler service locally, verify the printer is online and has no panel error, clear the queue, print a test page. On a shared print server, do not restart the spooler without coordinating with the print admin. Reinstall the printer only if the problem persists after these steps.
 
 ### Section H — Professional Workflow, Documentation & Escalation
 
@@ -189,30 +190,32 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 **58.** How do you confirm with the user that the issue is resolved, and what do you do if it recurs? **(L1)**
 *Expected criteria:* have the user verify the original task, confirm peripheral functions, document outcome, reopen or escalate if recurrence.
 
+<p align="left">59. How do you distinguish a system suffering from insufficient RAM from one with CPU overload? What built-in tools do you use, what indicators do you look at, and how do the remediation steps differ? (L1)
+Expected criteria: Task Manager / Resource Monitor → Memory vs CPU tab; RAM pressure = high memory %, heavy paging, disk thrash, low free memory; CPU overload = sustained high CPU on one or more processes with memory still available. Fixes differ: RAM pressure → reduce startup items, identify memory-hungry applications, escalate for hardware upgrade if the machine is under-spec; CPU overload → identify the process, check for malware or runaway tasks, and do not add RAM to fix a CPU problem.</p>
+
+<p align="left">60. A laptop suddenly cannot see any Wi-Fi networks. What hardware and software checks do you perform before considering a driver reinstall or a hardware fault? (L1)
+Expected criteria: check airplane mode, physical wireless switch, Fn key toggle, Device Manager for a disabled or missing adapter, adapter status in Network Connections, driver status and recent updates, then try a USB Wi-Fi adapter to isolate hardware from configuration. Reinstall or roll back the driver only after the above is exhausted; escalate if the adapter is not detected by the OS at all.</p>
+
+<p align="left">61. A user reports a blue screen with the stop code MEMORY_MANAGEMENT. How do you triage this as a Tier 1 technician? What evidence do you collect, what tools do you use, and what conclusions can and cannot be drawn from a single stop code? (L2)
+Expected criteria: collect the exact stop code, the minidump existence, time of the crash, recent changes (driver, update, hardware). Check Event Viewer and Reliability Monitor. A stop code names a symptom, not the cause — MEMORY_MANAGEMENT can result from faulty RAM, a bad driver, or software corruption. Do not replace RAM based on the stop code alone. Use Windows Memory Diagnostic or the vendor's hardware diagnostic if warranted, and escalate for deeper triage.</p>
+
+<p align="left">62. A user complains their laptop battery drains quickly. How do you generate a battery report, what key values do you examine, and when does this become an escalation? (L1)
+Expected criteria: powercfg /batteryreport produces an HTML report with design capacity, full-charge capacity, cycle count, and recent usage. Compare design vs current full-charge capacity to estimate wear. If wear is significant or the machine shuts down unexpectedly on battery, escalate for battery replacement — Tier 1 does not replace internal batteries on sealed units unless company policy permits.</p>
+
+<p align="left">63. A user is prompted for a BitLocker recovery key after a motherboard or BIOS update. How do you handle this, what security rules apply to the recovery key, and what should never be stored or transmitted insecurely? (L2)
+Expected criteria: explain why the prompt appeared (hardware or firmware change breaks the TPM-bound key protector); guide the user to retrieve the key from the authorized escrow (company AD/Entra ID, Microsoft account, or printed copy per policy). Never store the recovery key in email, chat, tickets, or unmanaged files. Never read the key aloud on a recorded line. Verify the user's identity through the authorized process before releasing any recovery information. After recovery, recommend re-enabling protection and re-escrowing. If no key is available, escalate — do not bypass or disable BitLocker without authorization.</p>
+
+<p align="left">64. A laptop's built-in keyboard stops responding, but an external USB keyboard works. How do you isolate whether the problem is hardware, driver, or configuration? (L1)
+Expected criteria: check Device Manager for a disabled or errored keyboard device, try on-screen keyboard to confirm the OS is responsive, check for a recent driver update, test in BIOS/UEFI — if the internal keyboard also fails in BIOS, the fault is hardware and must be escalated; if it works in BIOS but not in Windows, the fault is driver or configuration. A working external keyboard does not mean the internal keyboard is fine; it just confirms the OS can accept input from another source.</p>
+
+<p align="left">65. A laptop's brightness slider is grayed out, or an external monitor shows "Out of Range." How do you diagnose and correct each case? (L1)
+Expected criteria: brightness grayed out → check display driver status, monitor driver (generic PnP vs vendor), power settings, and whether a group policy restricts brightness. "Out of Range" on an external monitor → the resolution or refresh rate exceeds what the monitor supports; boot into a low-resolution mode or Safe Mode, lower the resolution/refresh, then reconnect. Do not assume the monitor is faulty.</p>
+
+<p align="left">66. A user reports no audio from their speakers or USB headset. How do you isolate whether the problem is the output device, the driver, the application, or Windows configuration? (L1)
+Expected criteria: check default playback device, volume mixer per application, mute state, whether a different output (headphones, another headset) works, whether audio works in another application, and whether Windows Audio and related services are running. Test with a known-good headset to isolate hardware. Reinstall the audio driver only when evidence supports a driver fault.</p>
+
 ---
-
-## PART 3 — MISSING TOPICS ADDED & TOPICS MOVED
-
-**Competencies added (not sufficiently covered in the original):**
-- ESD and physical handling safety (Q28–31).
-- Pre-work preparation and post-intervention verification (Q29, Q34).
-- Warranty and authorization boundaries (Q35, Q38).
-- Component compatibility methodology (Q11–17), especially RAM, storage, charger, and USB-C capability.
-- Structured diagnostic reasoning for on-site work (Q18–27).
-- Professional workflow: ticketing, minimal intervention, data protection, escalation documentation (Q53–58).
-- Explicit separation between "suspect" and "confirm" for hardware failures.
-
-**Topics reduced or moved to other modules:**
-- **Networking module:** NIC driver/switch-port logic, intermittent Ethernet, packet-level diagnosis, IP/VLAN/firewall troubleshooting (part of Q8; original Q9).
-- **Windows support module:** deep Event Viewer analysis, svchost, services, msconfig, power plans, driver architecture, BitLocker recovery workflow (original Q18, Q21, Q27, Q28, Q54).
-- **Enterprise applications module:** Teams, Zoom, browser camera permissions, headset sidetone software (original Q45, Q52, Q63).
-- **Advanced printing module:** WSD, TWAIN, IPP, scan-to-folder, print server administration (original Q38, Q44).
-- **Security/identity module:** smart card/USB security key middleware and certificate issues, MFA, malware diagnosis (original Q82 and the security-side of several scenarios).
-- **Tier 2 / vendor module:** internal laptop repairs, thermal repaste, PSU repair, motherboard-level diagnosis (original Q65, Q68, parts of Q11 and Q80).
-
----
-
-## PART 4 — INTEGRATIVE PRACTICAL SCENARIOS
+## INTEGRATIVE PRACTICAL SCENARIOS
 
 ### Scenario 1 — Desktop will not power on
 - **Situation:** A user reports their desktop does not turn on. No lights, no fans.
@@ -239,28 +242,45 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 - **Resolve or escalate criteria:** Cable or setting issue → resolve. Firmware/dock hardware issue → escalate with documented tests.
 
 ### Scenario 4 — Printer reported offline
-- **Situation:** Multiple users report a network printer as offline.
-- **Information to obtain:** Printer IP, whether it responds to ping, printer display status, recent network changes.
-- **Evidence to look for:** Ping result, printer panel, print queue, spooler status, IP consistency.
-- **Appropriate initial actions:** Ping printer; check printer panel for errors; verify correct printer object and port; restart spooler locally.
-- **Errors to avoid:** Reinstalling the printer before checking basic reachability; changing printer IP without coordination.
-- **Resolve or escalate criteria:** Single-user queue issue → resolve. Printer-side or network-side → escalate.
+ - **Situation:** Multiple users report the same network printer as offline.
+    
+- **Information to obtain:** whether one user or several are affected, printer IP and panel status, whether anything changed on the network or print server.
+    
+- **Evidence to look for:** a successful ping confirms only that the printer's IP stack responds; it does **not** confirm that the print service, queue, port, or driver are functional. Check the printer's own panel, the print-server queue, and the driver status.
+    
+- **Appropriate initial actions:** determine scope (single user vs multiple users). If multiple users are affected, suspect the printer, print server, or network path. If a single user is affected, suspect that user's driver, queue, or profile.
+    
+- **Errors to avoid:** concluding the printer is fine because it answers ping; reinstalling drivers before checking scope; restarting the print server spooler without coordination.
+    
+- **Resolve or escalate criteria:** single-user driver/queue issue → resolve after the user prints the original document successfully. Multiple-user or printer/server-side → escalate with documented tests.
 
-### Scenario 5 — Slow PC with 100% disk usage
-- **Situation:** A user reports the PC is slow and Task Manager shows 100% disk usage.
-- **Information to obtain:** How long, what changed recently, which process is at the top, drive type.
-- **Evidence to look for:** Process name, drive model (SSD vs HDD), Event Viewer disk errors, SMART status.
-- **Appropriate initial actions:** Identify the process; check storage type; verify free space; collect evidence before disabling anything.
-- **Errors to avoid:** Disabling services blindly; declaring the drive faulty.
-- **Resolve or escalate criteria:** Identified non-critical process or free space → resolve. SMART warnings or disk errors → escalate for hardware.
+### Scenario 5 — Slow PC with 100% disk usage (corrected)
 
-### Scenario 6 — Random reboots
+- **Situation:** A user reports slow performance; Task Manager shows 100% disk usage.
+    
+- **Information to obtain:** how long it has been happening, what changed recently, which process is at the top, drive type.
+    
+- **Evidence to look for:** top process, drive model (SSD vs HDD), Event Viewer disk errors, SMART values if a read-only tool is available.
+    
+- **Appropriate initial actions:** identify the process; verify free space; collect evidence before disabling anything.
+    
+- **Errors to avoid:** disabling services blindly; **declaring the drive faulty from "100%" alone**; running chkdsk on a suspect disk.
+    
+- **Resolve or escalate criteria:** identified a non-critical process or freed space → verify performance actually improves with the user before closing. SMART warnings or disk errors in Event Viewer → escalate for hardware.
+
+### Scenario 6 — Random reboots (corrected)
+
 - **Situation:** A desktop restarts randomly during the workday.
-- **Information to obtain:** Frequency, load at time of reboot, recent changes, room temperature.
-- **Evidence to look for:** Event Viewer (Kernel-Power 41, thermal events), dust buildup, fan behavior.
-- **Appropriate initial actions:** Clean vents (with authorization), verify airflow, document timestamps and processes running.
-- **Errors to avoid:** Replacing the PSU or GPU without evidence; ignoring event logs.
-- **Resolve or escalate criteria:** Thermal/dust issue → resolve with cleaning. Persistent after cleaning → escalate.
+    
+- **Information to obtain:** frequency, load at the time of reboot, recent changes, room temperature.
+    
+- **Evidence to look for:** Event Viewer (Kernel-Power 41, thermal events), dust buildup, fan behavior. Kernel-Power 41 records the unexpected shutdown but not its cause.
+    
+- **Appropriate initial actions:** clean vents if authorized, verify airflow, document timestamps and processes running.
+    
+- **Errors to avoid:** replacing PSU or GPU without evidence.
+    
+- **Resolve or escalate criteria:** after cleaning and airflow correction, **verify with the user that the reboots stop over a documented period** before closing. Persistent reboots → escalate.
 
 ### Scenario 7 — USB peripheral not detected
 - **Situation:** A user’s USB headset is not detected on their workstation but works on a colleague’s PC.
@@ -270,26 +290,44 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 - **Errors to avoid:** Assuming the device is defective; installing random drivers.
 - **Resolve or escalate criteria:** Port issue → resolve. Recurring controller errors → escalate.
 
-### Scenario 8 — Swollen laptop battery
-- **Situation:** A user shows a laptop with a bulging chassis and reports the trackpad is hard to click.
-- **Information to obtain:** When noticed, whether the laptop is still in use, warranty status.
-- **Evidence to look for:** Physical bulge, heat, odor.
-- **Appropriate initial actions:** Advise stopping use immediately; do not charge; isolate from flammables; follow disposal/replacement policy.
-- **Errors to avoid:** Pressing on the battery; continuing to use the laptop; attempting DIY replacement on a warranty unit.
-- **Resolve or escalate criteria:** Always escalate for safe battery replacement; ensure the user is safe first.
+### Scenario 8 — Swollen laptop battery (corrected)
 
-### Scenario 9 — Clicking hard drive with slow file access
+- **Situation:** A user shows a laptop with a bulging chassis and a hard-to-click trackpad.
+    
+- **Information to obtain:** when it was noticed, warranty status, whether the laptop is still in use.
+    
+- **Evidence to look for:** physical bulge, heat, odor.
+    
+- **Appropriate initial actions:** **stop use and stop charging immediately**; isolate from flammables and heat; follow the company's battery-hazard disposal procedure.
+    
+- **Errors to avoid:** pressing, bending, puncturing, or attempting to remove the battery; continuing to troubleshoot on-site.
+    
+- **Resolve or escalate criteria:** always escalate to the authorized battery-replacement path. Tier 1 does not replace swollen batteries.
+
+### Scenario 9 — Clicking hard drive with slow file access (corrected)
+
 - **Situation:** A desktop HDD makes a repetitive clicking noise and file access is extremely slow.
-- **Information to obtain:** Frequency, presence of critical data, recent backups.
-- **Evidence to look for:** SMART data, Event Viewer disk errors, listen to drive behavior.
-- **Appropriate initial actions:** Stop non-essential use; advise user not to save new data; escalate immediately for backup/recovery.
-- **Errors to avoid:** Running chkdsk or defrag; assuming software slowness.
-- **Resolve or escalate criteria:** Always escalate when mechanical failure is suspected; prioritize data protection.
+    
+- **Information to obtain:** presence of critical data, recent backup status.
+    
+- **Evidence to look for:** SMART data (read-only), Event Viewer disk errors, physical drive noise.
+    
+- **Appropriate initial actions:** **prioritize data preservation** — copy readable data to a known-good location or route to data recovery with the user's awareness and company procedure. Do not run chkdsk, defrag, or intensive diagnostics.
+    
+- **Errors to avoid:** running chkdsk "to fix" the drive; repeated power-cycling; declaring the disk dead before data is preserved.
+    
+- **Resolve or escalate criteria:** always escalate when mechanical failure is suspected; the priority is data, not drive repair.
 
-### Scenario 10 — Peripheral works elsewhere
-- **Situation:** A user’s webcam works on a personal laptop but not on the corporate desktop.
-- **Information to obtain:** Ports tried, driver state, privacy settings, application used.
-- **Evidence to look for:** Device Manager, camera permissions, test in Windows Camera app.
-- **Appropriate initial actions:** Test on another USB port; test in the built-in Camera app; check permissions.
-- **Errors to avoid:** Reinstalling the OS; assuming the webcam is broken.
-- **Resolve or escalate criteria:** Driver or permission issue → resolve. Persistent controller issue → escalate.
+### Scenario 10 — Peripheral works elsewhere (corrected)
+
+- **Situation:** A user's webcam works on a personal laptop but not on the corporate desktop.
+    
+- **Information to obtain:** which ports were tried, driver state, privacy settings, and application used.
+    
+- **Evidence to look for:** Device Manager, camera permissions, test in the Windows Camera app.
+    
+- **Appropriate initial actions:** test on another USB port; test in the built-in Camera app; check permissions.
+    
+- **Errors to avoid:** reinstalling the OS; assuming the webcam is broken; concluding the desktop is fine just because the peripheral works elsewhere.
+    
+- **Resolve or escalate criteria:** after resolving, **verify with the user in the original application** before closing. Persistent controller issue → escalate.
