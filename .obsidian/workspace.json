@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IT Help Desk Preparation/Topics/Networking.md",
+                "file": "IT Help Desk Preparation/Topics/Hardware.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Networking"
+              "title": "Hardware"
             }
           }
         ]
@@ -202,6 +202,7 @@
   },
   "active": "a47e45fdc009da6d",
   "lastOpenFiles": [
+    "IT Help Desk Preparation/Topics/Networking.md",
     "IT Help Desk Preparation/Topics/Windows.md",
     "IT Help Desk Preparation/Topics/Active Directory.md",
     "Misc/Darko.canvas",
@@ -216,7 +217,6 @@
     "Misc/Sin título.md",
     "IT Help Desk Preparation/Maps/Job Path.canvas",
     "IT Help Desk Preparation/Maps/Topics Map.canvas",
-    "IT Help Desk Preparation/Topics/Networking.md",
     "IT Help Desk Preparation/Topics/Operating Systems.md",
     "IT Help Desk Preparation/Maps",
     "IT Help Desk Preparation/Topics/Security.md",
