@@ -87,10 +87,10 @@
 72. <mark style="background:#affad1">A user reports a pop‑up claiming their computer is infected and they must call a number. They want to know if it’s real. How do you explain this tech support scam using simple language, and what network-related signs (unfamiliar remote access tools, proxy changes) might you check remotely?</mark>
 73. <mark style="background:#affad1">What is a VPN and how does it protect a remote user’s traffic? A user complains their home printer disappears when connected to the corporate VPN. How do you explain this to them and what client setting (split tunneling) would you suggest the security team consider?</mark>
 74. <mark style="background:#affad1">A VPN client says "Connected", but the user cannot access internal applications. What would you check first, and how would you distinguish between a DNS, routing, authentication, firewall, or application problem?</mark>
-75. What is the difference between a VPN authentication problem and a VPN connectivity problem? Give examples of symptoms that would distinguish them.
+75. <mark style="background:#affad1">What is the difference between a VPN authentication problem and a VPN connectivity problem? Give examples of symptoms that would distinguish them.</mark>
 76. A user connects to the corporate VPN from home and their Internet becomes extremely slow. What could cause this? Explain the role of full-tunnel VPN, split tunneling, DNS, and bandwidth.
-77. A user can access some internal resources over VPN but not others. What does this suggest, and what would you investigate?
-78. Describe the purpose of MAC address filtering on a wireless network. If a user’s personal laptop cannot connect to the corporate Wi‑Fi, and you suspect MAC filtering is enabled, how would you locate the correct MAC address and who would you submit the request to?
+77. <mark style="background:#affad1">A user can access some internal resources over VPN but not others. What does this suggest, and what would you investigate?</mark>
+78. <mark style="background:#affad1">Describe the purpose of MAC address filtering on a wireless network. If a user’s personal laptop cannot connect to the corporate Wi‑Fi, and you suspect MAC filtering is enabled, how would you locate the correct MAC address and who would you submit the request to?</mark>
 79. What is the difference between Public, Private, and Domain network profiles in Windows? How can the wrong profile affect firewall behavior and network access?
 
 ### Deeper Understanding & Growing Your Expertise
@@ -99,7 +99,7 @@
 82. Describe the difference between link speed and throughput. A user’s NIC shows 1 Gbps connection, but a file transfer crawls at 10 Mbps. What network bottlenecks (disk I/O, bandwidth shaping, high latency, congestion) would you investigate?
 83. How does a switch learn MAC addresses and build its CAM table? What happens if the table is full or if an attacker floods it? While you won’t fix a CAM overflow as Help Desk, what symptom might a user report that could indicate a switch problem?
 84. <mark style="background:#affad1">What is a default route? When a workstation sends traffic to an IP address on the internet, what role does the default gateway play? If a user’s default gateway is misconfigured as 192.168.1.250 but the real router is .1, what connectivity symptoms would they experience (local works, internet fails)?</mark>
-85. Explain the difference between static IP assignment and DHCP reservation. When would you request a DHCP reservation for a user’s workstation or a printer, and what information do you need to provide to the network team?
+85. <mark style="background:#affad1">Explain the difference between static IP assignment and DHCP reservation. When would you request a DHCP reservation for a user’s workstation or a printer, and what information do you need to provide to the network team?</mark>
 
 ### Integration & Soft Skills
 86. A user is frustrated and insists “the network is broken” because their single application fails, but you can see they are otherwise online. How would you diplomatically explain that the problem is likely with the application or a specific port, not the entire network, while still addressing their concern?
