@@ -1,8 +1,8 @@
 Priority key: **L1 = must master before applying**, **L2 = important but secondary**, **L3 = defer / adjacent module**.
 ### Section A — Hardware Fundamentals & Component Function
 
-**1.** Explain the role of the CPU and describe common symptoms of a CPU-related problem (overheating, throttling, sudden shutdowns under load). Which symptoms point toward the CPU, and which are more consistent with RAM or storage? **(L1)**
-*Expected criteria:* distinguishes throttling/thermal symptoms from RAM errors (BSOD, memory errors) and storage symptoms (clicking, corruption, extreme slowness); avoids concluding a specific component is dead from a single symptom.
+<mark style="background:#affad1">**1.** Explain the role of the CPU and describe common symptoms of a CPU-related problem (overheating, throttling, sudden shutdowns under load). Which symptoms point toward the CPU, and which are more consistent with RAM or storage? **(L1)**</mark>
+<mark style="background:#affad1">*Expected criteria:* distinguishes throttling/thermal symptoms from RAM errors (BSOD, memory errors) and storage symptoms (clicking, corruption, extreme slowness); avoids concluding a specific component is dead from a single symptom.</mark>
 
 **2.** Differentiate volatile memory (RAM) from non-volatile storage (SSD/HDD) in plain terms, and explain why a user’s confusion between "memory" and "disk space" changes your diagnostic path. **(L1)**
 *Expected criteria:* RAM is temporary working memory; storage is persistent. Users say "I ran out of memory" ambiguously; clarify before acting. SSD = no moving parts, faster boot/app load, more shock-resistant; caveats = data migration, capacity per cost, backup before cloning, warranty/company policy on opening the unit.
