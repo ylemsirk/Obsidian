@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d2df5a6f8a9bee81",
+        "id": "90c762c9937370f2",
         "type": "tabs",
         "children": [
           {
-            "id": "a47e45fdc009da6d",
+            "id": "53d938c2ec2361c2",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "IT Help Desk Preparation/Topics/Hardware.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "Hardware"
             }
           }
         ]
@@ -200,13 +200,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a47e45fdc009da6d",
+  "active": "53d938c2ec2361c2",
   "lastOpenFiles": [
+    "IT Help Desk Preparation/Topics/Active Directory.md",
+    "IT Help Desk Preparation/Topics/Networking.md",
     "IT Help Desk Preparation/Topics/Hardware.md",
     "IT Help Desk Preparation/Topics/Operating Systems.md",
-    "IT Help Desk Preparation/Topics/Networking.md",
     "IT Help Desk Preparation/Topics/Windows.md",
-    "IT Help Desk Preparation/Topics/Active Directory.md",
     "Misc/Darko.canvas",
     "Excalidraw/Drawing 2026-10-16 01.02.53.excalidraw.md",
     "Excalidraw/Drawing 2026-09-11 22.52.00.excalidraw.md",
