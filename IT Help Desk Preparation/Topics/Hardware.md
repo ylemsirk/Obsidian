@@ -7,8 +7,8 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 <mark style="background:#affad1">**2.** Differentiate volatile memory (RAM) from non-volatile storage (SSD/HDD) in plain terms, and explain why a user’s confusion between "memory" and "disk space" changes your diagnostic path. **(L1)**</mark>
 <mark style="background:#affad1">*Expected criteria:* RAM is temporary working memory; storage is persistent. Users say "I ran out of memory" ambiguously; clarify before acting. SSD = no moving parts, faster boot/app load, more shock-resistant; caveats = data migration, capacity per cost, backup before cloning, warranty/company policy on opening the unit.</mark>
 
-**3.** Describe the motherboard’s role in relation to CPU, RAM, storage, expansion cards, and ports. If a single USB or Ethernet port stops working while others work, what does that suggest and how do you isolate it? **(L1)**
-*Expected criteria:* checks cable, device, driver, and alternative port first; a single dead port points to the port itself rather than the whole board; does not jump to "motherboard replacement."
+<mark style="background:#affad1">**3.** Describe the motherboard’s role in relation to CPU, RAM, storage, expansion cards, and ports. If a single USB or Ethernet port stops working while others work, what does that suggest and how do you isolate it? **(L1)**</mark>
+<mark style="background:#affad1">*Expected criteria:* checks cable, device, driver, and alternative port first; a single dead port points to the port itself rather than the whole board; does not jump to "motherboard replacement."</mark>
 
 **4.** Compare integrated and dedicated GPUs. A desktop appears powered on but shows no image and has a dedicated GPU. Outline your checks before concluding the GPU is faulty. **(L1)**
 *Expected criteria:* verify monitor input, cable, and whether the video cable is plugged into the dGPU or the motherboard; try the integrated output if available; reseat only with authorization.

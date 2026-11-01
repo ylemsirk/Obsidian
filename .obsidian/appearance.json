@@ -1,5 +1,9 @@
 {
   "accentColor": "#a798d7",
   "cssTheme": "Catppuccin",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "interfaceFontFamily": "DejaVu Sans Mono,Liberation Mono",
+  "textFontFamily": "DejaVu Sans Mono",
+  "monospaceFontFamily": "Pixelify Sans,Source Code Pro",
+  "baseFontSizeAction": true
 }

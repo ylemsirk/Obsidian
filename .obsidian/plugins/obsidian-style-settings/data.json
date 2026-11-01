@@ -12,5 +12,8 @@
   "retroma-obsidian-theme@@rtm-ss-nav-folder-pane-content-simple": true,
   "retroma-obsidian-theme@@nav-item-title-txt-wrapping": "null",
   "retroma-obsidian-theme@@rtm-nav-folder-radius": 6,
-  "retroma-obsidian-theme@@rtm-nav-folder-corner-shape": "bevel"
+  "retroma-obsidian-theme@@rtm-nav-folder-corner-shape": "bevel",
+  "catppuccin-theme-settings@@catppuccin-theme-dark": "ctp-mocha",
+  "catppuccin-theme-settings@@catppuccin-theme-accents": "ctp-accent-pink",
+  "catppuccin-interface-styles@@ctp-bold-folder-title": true
 }
