@@ -320,14 +320,14 @@ Expected criteria: check default playback device, volume mixer per application, 
 
 ### Scenario 10 — Peripheral works elsewhere (corrected)
 
-- **Situation:** A user's webcam works on a personal laptop but not on the corporate desktop.
+<mark style="background:#affad1">- **Situation:** A user's webcam works on a personal laptop but not on the corporate desktop.</mark>
     
-- **Information to obtain:** which ports were tried, driver state, privacy settings, and application used.
+<mark style="background:#affad1">- **Information to obtain:** which ports were tried, driver state, privacy settings, and application used.</mark>
     
-- **Evidence to look for:** Device Manager, camera permissions, test in the Windows Camera app.
+<mark style="background:#affad1">- **Evidence to look for:** Device Manager, camera permissions, test in the Windows Camera app.</mark>
     
-- **Appropriate initial actions:** test on another USB port; test in the built-in Camera app; check permissions.
+<mark style="background:#affad1">- **Appropriate initial actions:** test on another USB port; test in the built-in Camera app; check permissions.</mark>
     
-- **Errors to avoid:** reinstalling the OS; assuming the webcam is broken; concluding the desktop is fine just because the peripheral works elsewhere.
+<mark style="background:#affad1">- **Errors to avoid:** reinstalling the OS; assuming the webcam is broken; concluding the desktop is fine just because the peripheral works elsewhere.</mark>
     
-- **Resolve or escalate criteria:** after resolving, **verify with the user in the original application** before closing. Persistent controller issue → escalate.
+<mark style="background:#affad1">- **Resolve or escalate criteria:** after resolving, **verify with the user in the original application** before closing. Persistent controller issue → escalate.</mark>
