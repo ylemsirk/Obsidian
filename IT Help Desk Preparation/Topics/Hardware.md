@@ -283,12 +283,12 @@ Expected criteria: check default playback device, volume mixer per application, 
 - **Resolve or escalate criteria:** after cleaning and airflow correction, **verify with the user that the reboots stop over a documented period** before closing. Persistent reboots → escalate.
 
 ### Scenario 7 — USB peripheral not detected
-- **Situation:** A user’s USB headset is not detected on their workstation but works on a colleague’s PC.
-- **Information to obtain:** Port used, cable, driver state, other USB devices working.
-- **Evidence to look for:** Device Manager entries, USB controller status, alternative port test.
-- **Appropriate initial actions:** Try another port, another cable, another machine; check Device Manager.
-- **Errors to avoid:** Assuming the device is defective; installing random drivers.
-- **Resolve or escalate criteria:** Port issue → resolve. Recurring controller errors → escalate.
+<mark style="background:#affad1">- **Situation:** A user’s USB headset is not detected on their workstation but works on a colleague’s PC.</mark>
+<mark style="background:#affad1">- **Information to obtain:** Port used, cable, driver state, other USB devices working.</mark>
+<mark style="background:#affad1">- **Evidence to look for:** Device Manager entries, USB controller status, alternative port test.</mark>
+<mark style="background:#affad1">- **Appropriate initial actions:** Try another port, another cable, another machine; check Device Manager.</mark>
+<mark style="background:#affad1">- **Errors to avoid:** Assuming the device is defective; installing random drivers.</mark>
+<mark style="background:#affad1">- **Resolve or escalate criteria:** Port issue → resolve. Recurring controller errors → escalate.</mark>
 
 ### Scenario 8 — Swollen laptop battery (corrected)
 
