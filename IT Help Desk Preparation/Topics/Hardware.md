@@ -226,12 +226,12 @@ Expected criteria: check default playback device, volume mixer per application, 
 - **Resolve or escalate criteria:** If a known-good cable/outlet restores power → resolve. If not → escalate for PSU/board diagnosis.
 
 ### Scenario 2 — Laptop will not charge
-- **Situation:** A user’s laptop works on battery but does not charge.
-- **Information to obtain:** Charger type, LED status, whether it charges in another room or with another charger, battery health history.
-- **Evidence to look for:** Charger LED, DC jack condition, battery report, Windows charging indicator.
-- **Appropriate initial actions:** Test with a known-good charger of the same spec; check jack for debris or damage; generate battery report.
-- **Errors to avoid:** Using an incompatible charger; opening the laptop to reseat internal battery on a warranty unit.
-- **Resolve or escalate criteria:** Bad charger → replace. Otherwise escalate for internal diagnosis.
+<mark style="background:#affad1">- **Situation:** A user’s laptop works on battery but does not charge.</mark>
+<mark style="background:#affad1">- **Information to obtain:** Charger type, LED status, whether it charges in another room or with another charger, battery health history.</mark>
+<mark style="background:#affad1">- **Evidence to look for:** Charger LED, DC jack condition, battery report, Windows charging indicator.</mark>
+<mark style="background:#affad1">- **Appropriate initial actions:** Test with a known-good charger of the same spec; check jack for debris or damage; generate battery report.</mark>
+<mark style="background:#affad1">- **Errors to avoid:** Using an incompatible charger; opening the laptop to reseat internal battery on a warranty unit.</mark>
+<mark style="background:#affad1">- **Resolve or escalate criteria:** Bad charger → replace. Otherwise escalate for internal diagnosis.</mark>
 
 ### Scenario 3 — External monitor not detected through dock
 - **Situation:** A user’s laptop with a USB-C dock shows no image on the external monitor.
