@@ -108,8 +108,8 @@
 		{
 			"id":"643c2861b68d300a",
 			"type":"text",
-			"text":"Cysa+",
-			"styleAttributes":{},
+			"text":"CySA+",
+			"styleAttributes":{"textAlign":"center"},
 			"x":-560,
 			"y":40,
 			"width":120,
