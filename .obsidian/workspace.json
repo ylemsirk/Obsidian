@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "IT Help Desk Preparation/Topics/Hardware.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -200,7 +200,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f04d9542e9a4f8fe",
+  "active": "53d938c2ec2361c2",
   "lastOpenFiles": [
     "IT Help Desk Preparation/Topics/Active Directory.md",
     "IT Help Desk Preparation/Topics/Networking.md",

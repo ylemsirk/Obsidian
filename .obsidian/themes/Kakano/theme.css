@@ -22,6 +22,7 @@ core:
 - backlink
 - bases
 - bookmarks
+- buttons
 - command-palette
 - daily-notes
 - file-explorer
@@ -543,6 +544,11 @@ settings:
     type: class-toggle
     default: true
   -
+    id: theme-setting-overrideButtons
+    title: 'Buttons'
+    type: class-toggle
+    default: true
+  -
     id: theme-setting-overrideCalendar
     title: 'Calendar'
     type: class-toggle
@@ -651,6 +657,9 @@ body {
   --font-ui-smaller: 0.8rem;
   --header-height: calc(var(--icon-size) + 1rem);
   --heading-spacing: 0.67em;
+  --hotkey-font: var(--font-interface);
+  --hotkey-background: transparent;
+  --hotkey-radius: var(--radius-s);
   --input-border-width: 2px;
   --list-marker-color: var(--text-normal);
   --list-bullet-size: 0.25em;
@@ -710,7 +719,7 @@ body {
   --tab-text-color-focused-active-current: var(--text-normal);
   --tag-weight: 400;
   --text-on-accent: var(--theme-color-baseLightened95);
-  --text-muted: color-mix(in srgb, var(--text-normal), transparent 30%);
+  --text-muted: color-mix(in oklab, var(--text-normal), transparent 30%);
   --titlebar-background-focused: transparent;
   --titlebar-background: transparent;
   --vault-profile-color-hover: var(--theme-color-controlHover);
@@ -898,83 +907,83 @@ body.css-settings-manager.theme-setting-baseColorPreset-kiwikiwi {
 
 body {
   --theme-color-baseLightened95: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * 0.95)
   );
   --theme-color-baseLightened85: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * 0.85)
   );
   --theme-color-baseLightened80: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * 0.8)
   );
   --theme-color-baseLightened70: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * 0.7)
   );
   --theme-color-baseLightened60: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * 0.6)
   );
   --theme-color-baseLightened40: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * 0.4)
   );
   --theme-color-baseLightened25: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * 0.25)
   );
   --theme-color-baseLightened12: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * 0.125)
   );
 
   --theme-color-baseDarkened12: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     black calc(100% * 0.125)
   );
   --theme-color-baseDarkened25: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     black calc(100% * 0.25)
   );
   --theme-color-baseDarkened40: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     black calc(100% * 0.4)
   );
   --theme-color-baseDarkened60: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     black calc(100% * 0.6)
   );
   --theme-color-baseDarkened70: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     black calc(100% * 0.7)
   );
   --theme-color-baseDarkened80: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     black calc(100% * 0.8)
   );
   --theme-color-baseDarkened85: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     black calc(100% * 0.85)
   );
   --theme-color-baseDarkened90: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     black calc(100% * 0.9)
   );
@@ -1197,9 +1206,9 @@ body {
   --theme-color-contentItemBgActive: var(--theme-color-base);
   --theme-color-contentItemBgHover: var(--theme-color-lightenTransparent25);
   --theme-color-controlBg: var(--theme-color-baseLightened95);
-  --theme-color-controlLowWeightBg: var(--theme-color-lightenTransparent50);
+  --theme-color-controlLowWeightBg: var(--theme-color-baseLightened95);
   --theme-color-controlContentArea: var(--theme-color-base);
-  --theme-color-controlContentAreaHover: var(--theme-color-baseLightened80);
+  --theme-color-controlContentAreaHover: var(--theme-color-baseLightened95);
   --theme-color-controlUIHover: var(--theme-color-baseLightened60);
   --theme-color-controlUISelected: var(--theme-color-baseLightened80);
   --theme-color-controlSetBg: var(--theme-color-baseLightened80);
@@ -1313,34 +1322,34 @@ body {
   At 1, the top is white, bottom is base color
   */
   --theme-color-gradientTop: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * (0.5 + 0.5 * var(--theme-value-gradientContrast)))
   );
   --theme-color-gradientBottom: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * (0.5 - 0.5 * var(--theme-value-gradientContrast)))
   );
   --theme-color-gradientDarkenedTop: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * (0.5 - 0.25 * var(--theme-value-gradientContrast)))
   );
   --theme-color-gradientDarkenedBottom: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * (0.5 - 1.25 * var(--theme-value-gradientContrast)))
   );
 }
 body.theme-light.theme-setting-customGradient {
   --theme-color-gradientTop: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-customGradientBaseTop),
     white calc(100% * (0.5 + 0.5 * var(--theme-value-gradientContrast)))
   );
   --theme-color-gradientBottom: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-customGradientBaseBottom),
     white calc(100% * (0.5 - 0.5 * var(--theme-value-gradientContrast)))
   );
@@ -1357,7 +1366,7 @@ body.theme-light.theme-setting-customGradient {
 }
 .theme-light.theme-setting-lightModeNoteBgNearWhite {
   --background-primary: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     white calc(100% * 0.97)
   );
@@ -1425,7 +1434,7 @@ body.theme-light.theme-setting-customGradient {
   /* Background for content area */
   /* This may be overridden below by the theme-value-darkModeNoteBg style setting. */
   --background-primary: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     black calc(100% * 0.95)
   );
@@ -1441,11 +1450,11 @@ body.theme-light.theme-setting-customGradient {
   --theme-color-communityItemBgActive: var(--theme-color-base);
   --theme-color-communityItemBgHover: var(--theme-color-baseDarkened70);
   --theme-color-communityItemBgSelected: var(--theme-color-baseDarkened12);
-  --theme-color-contentItemBg: rgb(0, 0, 0, 0.2);
+  --theme-color-contentItemBg: oklab(0% 0 0 / 0.2);
   --theme-color-contentItemBgActive: var(--theme-color-base);
-  --theme-color-contentItemBgHover: rgb(0, 0, 0, 0.1);
+  --theme-color-contentItemBgHover: oklab(0% 0 0 / 0.1);
   --theme-color-controlBg: var(--theme-color-baseDarkened25);
-  --theme-color-controlLowWeightBg: var(--theme-color-darkenTransparent25);
+  --theme-color-controlLowWeightBg: var(--theme-color-baseDarkened25);
   --theme-color-controlContentArea: var(--theme-color-baseLightened60);
   --theme-color-controlContentAreaHover: var(--theme-color-baseDarkened80);
   --theme-color-controlUIHover: var(--theme-color-baseDarkened70);
@@ -1561,24 +1570,24 @@ body.theme-light.theme-setting-customGradient {
   At 1, the top is base color, bottom pure black
   */
   --theme-color-gradientTop: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     black calc(100% * (0.7 - 0.5 * var(--theme-value-gradientContrast)))
   );
   --theme-color-gradientBottom: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-base),
     black calc(100% * (0.7 + 0.5 * var(--theme-value-gradientContrast)))
   );
 }
 body.theme-dark.theme-setting-customGradient {
   --theme-color-gradientTop: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-customGradientBaseTop),
     black calc(100% * (0.7 - 0.5 * var(--theme-value-gradientContrast)))
   );
   --theme-color-gradientBottom: color-mix(
-    in srgb,
+    in oklab,
     var(--theme-color-customGradientBaseBottom),
     black calc(100% * (0.7 + 0.5 * var(--theme-value-gradientContrast)))
   );
@@ -1655,34 +1664,34 @@ body.theme-dark,
 .theme-dark .theme-light {
   --input-shadow: var(--theme-shadow-control);
   --shadow-l: 0 0 0.2rem
-      color-mix(in srgb, var(--theme-color-shadow) 2%, transparent),
+      color-mix(in oklab, var(--theme-color-shadow) 2%, transparent),
     0 0.2rem 0.4rem
-      color-mix(in srgb, var(--theme-color-shadow) 4%, transparent),
+      color-mix(in oklab, var(--theme-color-shadow) 4%, transparent),
     0 0.4rem 1.2rem
-      color-mix(in srgb, var(--theme-color-shadow) 6%, transparent),
-    0 1.2rem 2rem color-mix(in srgb, var(--theme-color-shadow) 8%, transparent),
-    0 2rem 4rem color-mix(in srgb, var(--theme-color-shadow) 10%, transparent);
+      color-mix(in oklab, var(--theme-color-shadow) 6%, transparent),
+      0 1.2rem 2rem color-mix(in oklab, var(--theme-color-shadow) 8%, transparent),
+      0 2rem 4rem color-mix(in oklab, var(--theme-color-shadow) 10%, transparent);
   --shadow-s: 0 0 0.05rem
-      color-mix(in srgb, var(--theme-color-shadow) 2%, transparent),
+      color-mix(in oklab, var(--theme-color-shadow) 2%, transparent),
     0 0.05rem 0.1rem
-      color-mix(in srgb, var(--theme-color-shadow) 4%, transparent),
+      color-mix(in oklab, var(--theme-color-shadow) 4%, transparent),
     0 0.1rem 0.3rem
-      color-mix(in srgb, var(--theme-color-shadow) 6%, transparent),
+      color-mix(in oklab, var(--theme-color-shadow) 6%, transparent),
     0 0.3rem 0.5rem
-      color-mix(in srgb, var(--theme-color-shadow) 8%, transparent),
-    0 0.5rem 1rem color-mix(in srgb, var(--theme-color-shadow) 10%, transparent);
+      color-mix(in oklab, var(--theme-color-shadow) 8%, transparent),
+      0 0.5rem 1rem color-mix(in oklab, var(--theme-color-shadow) 10%, transparent);
   --theme-shadow-indent: 0 0 0.2rem
-      color-mix(in srgb, var(--theme-color-shadow) 3%, transparent),
-    0 0 0.2rem color-mix(in srgb, var(--theme-color-shadow) 6%, transparent),
-    0 0 0.4rem color-mix(in srgb, var(--theme-color-shadow) 9%, transparent),
-    0 0 1.2rem color-mix(in srgb, var(--theme-color-shadow) 12%, transparent),
-    0 0 2rem color-mix(in srgb, var(--theme-color-shadow) 15%, transparent);
+      color-mix(in oklab, var(--theme-color-shadow) 3%, transparent),
+      0 0 0.2rem color-mix(in oklab, var(--theme-color-shadow) 6%, transparent),
+      0 0 0.4rem color-mix(in oklab, var(--theme-color-shadow) 9%, transparent),
+      0 0 1.2rem color-mix(in oklab, var(--theme-color-shadow) 12%, transparent),
+      0 0 2rem color-mix(in oklab, var(--theme-color-shadow) 15%, transparent);
   --theme-shadow-indent-small: 0 0 0.05rem
-      color-mix(in srgb, var(--theme-color-shadow) 4%, transparent),
-    0 0 0.2rem color-mix(in srgb, var(--theme-color-shadow) 8%, transparent),
-    0 0 0.6rem color-mix(in srgb, var(--theme-color-shadow) 12%, transparent),
-    0 0 1rem color-mix(in srgb, var(--theme-color-shadow) 16%, transparent),
-    0 0 2rem color-mix(in srgb, var(--theme-color-shadow) 20%, transparent);}
+      color-mix(in oklab, var(--theme-color-shadow) 4%, transparent),
+      0 0 0.2rem color-mix(in oklab, var(--theme-color-shadow) 8%, transparent),
+      0 0 0.6rem color-mix(in oklab, var(--theme-color-shadow) 12%, transparent),
+      0 0 1rem color-mix(in oklab, var(--theme-color-shadow) 16%, transparent),
+      0 0 2rem color-mix(in oklab, var(--theme-color-shadow) 20%, transparent);}
 /* #endregion */
 /* #endregion */
 /* #endregion */
@@ -2273,7 +2282,7 @@ body.theme-dark,
     /* #endregion */
   /* #region Invalid frontmatter */
     .cm-line:has(.cm-hmd-frontmatter .is-invalid) {
-      background-color: rgba(var(--callout-error), 0.1);
+      background-color: rgb(from var(--callout-error) r g b / 0.1);
     }
     .metadata-error-container {
       background: none;
@@ -2551,11 +2560,6 @@ body.theme-dark,
         top: 0.5rem;
         left: 1rem;
       }
-    }
-    .markdown-embed .markdown-embed-content {
-      height: fit-content;
-      max-height: var(--embed-max-height);
-      overflow: auto;
     }
     .markdown-source-view.mod-cm6
       .cm-content
@@ -3450,7 +3454,7 @@ body.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout {
     box-shadow: var(--theme-shadow-indent);
     padding-top: 0;
 
-    z-index: 1;
+    z-index: 3;
   }
 
   .mobile-tab-group-container {
@@ -3506,10 +3510,10 @@ body.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout {
   --view-bottom-fade-mask: none;
 }
 
-.is-mobile.is-floating-nav.is-phone .view-header {
-  margin: 0;
+.is-mobile.is-floating-nav.is-phone .view-header,
+.is-mobile.is-floating-nav.is-phone .sidebar-toggle-button.mod-left {
+  margin: 0.5rem 0 0 0;
 }
-
 
 .is-phone {
   --view-header-top-offset: var(--safe-area-inset-top);
@@ -3531,6 +3535,10 @@ body.is-phone.theme-setting-mobileCardsUI .modal.mod-sidebar-layout {
 }
 .is-phone .view-header .view-actions {
   border-radius: var(--radius-m) 0 0 var(--radius-m);
+}
+
+.mobile-toolbar-options-list-container {
+  border-radius: var(--radius-m);
 }
 
 /* #region Workspace */
@@ -4463,11 +4471,6 @@ body.mod-macos.is-frameless.is-hidden-frameless {
       }
     }
   }
-  .mod-community-modal {
-    .community-modal-controls {
-      padding-left: 2.5rem;
-    }
-  }
 }
 /* #endregion */
 /* #endregion */
@@ -4701,7 +4704,7 @@ body.mod-windows {
       width: 100%;
 
       &.mod-error {
-        background-color: rgba(var(--callout-error), 0.1);
+        background-color: rgb(from var(--callout-error) r g b / 0.1);
       }
     }
     body:not(.is-mobile) .mod-root .markdown-reading-view .metadata-container {
@@ -5023,14 +5026,16 @@ p.mod-warning:has(+ p.mod-warning, .setting-message),
 
 .suggestion-hotkey,
 .setting-hotkey,
-.prompt-instruction-command {
-  background: transparent;
+.prompt-instruction-command,
+.empty-state-hotkey {
   border: solid 1px var(--theme-color-hotkey);
   color: var(--theme-color-hotkey);
   font-size: var(--font-ui-smaller);
-  font-family: var(--font-interface);
   padding: 2px 6px;
   border-radius: var(--radius-s);
+  white-space: nowrap;
+  background-color: var(--hotkey-background);
+  border-radius: var(--hotkey-radius);
 }
 .suggestion-item.is-selected .suggestion-hotkey {
   border-color: var(--theme-color-textSelected);
@@ -5167,7 +5172,7 @@ textarea::placeholder {
 input.document-search-input.mod-no-match,
 input.document-replace-input.mod-no-match {
   background-color: color-mix(
-    in srgb,
+    in oklab,
     var(--background-input),
     var(--background-modifier-error) 50%
   );
@@ -5984,10 +5989,15 @@ button.search-result-file-match-replace-button {
 }
 /* #endregion */
 /* #region     Lightweight buttons */
+
+/* Note that I override .text-icon-button.mod-pill, as it's not a semantic class. There's no explanation why some buttons are pills, so I consider it an inconsistency to remove. */
 .search-result-file-match-destination-file,
 .text-icon-button,
+.text-icon-button.mod-pill,
+.empty-state-action-list>.text-icon-button.mod-pill,
 .query-toolbar .query-toolbar-item.mod-views .text-icon-button {
   border: none;
+  border-radius: var(--button-radius);
   box-shadow: var(--theme-shadow-control);
   background-color: var(--theme-color-controlLowWeightBg);
   color: var(--theme-color-controlText);
@@ -5996,8 +6006,11 @@ button.search-result-file-match-replace-button {
   min-height: 1.5rem;
   padding: 0.25em 0.5em;
 }
+
 .search-result-file-match-destination-file:focus,
 .text-icon-button:focus,
+.text-icon-button.mod-pill:focus,
+.empty-state-action-list>.text-icon-button.mod-pill:focus,
 .query-toolbar .query-toolbar-item.mod-views .text-icon-button:focus {
   box-shadow: 0 0 0 3px var(--background-modifier-border-focus);
   outline: none;
@@ -6022,6 +6035,8 @@ button.search-result-file-match-replace-button {
   .search-result-file-match:hover
     .search-result-file-match-destination-file:hover,
   .text-icon-button:hover,
+  .text-icon-button.mod-pill:hover,
+  .empty-state-action-list>.text-icon-button.mod-pill:hover,
   .query-toolbar .query-toolbar-item.mod-views .text-icon-button:hover {
     border: none;
     background-color: var(--theme-color-controlBgHover);
@@ -6360,12 +6375,26 @@ button.search-result-file-match-replace-button {
 .mod-community-modal {
   .modal-sidebar {
     padding: 0;
+    .community-modal-search {
+      padding: 0;
+      flex-grow: 1;
+      max-width: none;
+    }
   }
   .community-modal-controls {
     background: var(--theme-color-settingsBg);
-    padding: 1em 1.5em 1em 1.5em;
+    padding: 1em 1.5em 0.5em 1.5em;
     box-shadow: var(--shadow-s);
     z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0 1rem;
+    align-items: center;
+
+    .setting-item {
+      align-items: center;
+    }
   }
   .modal-close-button {
     z-index: 2;
@@ -6396,9 +6425,11 @@ button.search-result-file-match-replace-button {
   padding-inline-start: 2em;
   float: inline-end;
 }
+
 .community-modal-search-summary {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .community-modal-details {
   border: none;
@@ -7875,41 +7906,6 @@ body.theme-setting-overrideAdvancedTables {
   }
 }
 /* #endregion */
-/* #region   Community Plugin: Buttons */
-/*TODO: style setting */
-/*TODO: hover colors*/
-button.button-default:not(.clickable-icon):not(.dropdown-menu-item) {
-  padding: 0.125em 0.5em;
-  min-height: 0;
-  border: none;
-  box-shadow: var(--theme-shadow-control);
-  background-color: var(--theme-color-controlLowWeightBg);
-  color: var(--theme-color-controlText);
-  line-height: var(--line-height-tight);
-  min-height: 1.5rem;
-
-  &.red {
-    background-color: light-dark(var(--theme-color-redLightened), var(--theme-color-redDarkened)) !important;
-    color: light-dark(var(--theme-color-redDarkened), var(--theme-color-redLightened)) !important;
-  }
-  &.yellow {
-    background-color: light-dark(var(--theme-color-yellowLightened), var(--theme-color-yellowDarkened)) !important;
-    color: light-dark(var(--theme-color-yellowDarkened), var(--theme-color-yellowLightened)) !important;
-  }
-  &.green {
-    background-color: light-dark(var(--theme-color-greenLightened), var(--theme-color-greenDarkened)) !important;
-    color: light-dark(var(--theme-color-greenDarkened), var(--theme-color-greenLightened)) !important;
-  }
-  &.blue {
-    background-color: light-dark(var(--theme-color-blueLightened), var(--theme-color-blueDarkened)) !important;
-    color: light-dark(var(--theme-color-blueDarkened), var(--theme-color-blueLightened)) !important;
-  }
-  &.purple {
-    background-color: light-dark(var(--theme-color-purpleLightened), var(--theme-color-purpleDarkened)) !important;
-    color: light-dark(var(--theme-color-purpleDarkened), var(--theme-color-purpleLightened)) !important;
-  }
-}
-/* #endregion */
 /* #region   Community Plugin: Calendar */
 body.theme-setting-overrideCalendar {
   .workspace-leaf-content[data-type="calendar"] {
@@ -8406,333 +8402,6 @@ body.theme-setting-overrideDataview {
   }
   .cards .callout:has(.dataview.table-view-table) .callout-content {
     margin: 0 -1.5em;
-  }
-}
-/*   #endregion */
-/* #region   Community Plugin: Excalidraw */
-body.theme-setting-overrideExcalidraw {
-  .workspace-leaf-content[data-type="excalidraw"] {
-    & .view-header {
-      padding-bottom: 0;
-    }
-    & .excalidraw-view {
-      /* I don't know why the default styles have 1px padding left and right. */
-      padding: 0;
-    }
-  }
-
-  .excalidraw-view {
-    .excalidraw {
-      .FixedSideContainer_side_top {
-        top: var(--theme-length-controlSetSpacing) !important;
-        right: var(--theme-length-controlSetSpacing) !important;
-        bottom: var(--theme-length-controlSetSpacing) !important;
-        left: var(--theme-length-controlSetSpacing) !important;
-      }
-      .App-bottom-bar {
-        gap: 0.5rem;
-        margin: var(--theme-length-controlSetSpacing) !important;
-      }
-
-      /* Control sets */
-      & .Island,
-      & .mobile-misc-tools-container {
-        background: var(--theme-color-controlSetBg);
-        border: none;
-        padding: 0.25rem;
-        gap: 0;
-        box-shadow: var(--theme-shadow-input);
-        border-radius: var(--radius-m);
-      }
-      & .mobile-misc-tools-container {
-        gap: 0.5rem;
-        right: 0;
-        top: 0;
-      }
-
-      /* Layout structures inside control sets */
-      .Stack,
-      .App-toolbar-content {
-        gap: 0.5em;
-        padding: 0;
-      }
-      .App-toolbar-content {
-        /* I think these are supposed to be spacers, but I don't think we need them. */
-        > .ToolIcon__icon:empty {
-          display: none;
-        }
-
-        /* Container div for undeo/redo, which for somer eason has no class */
-        > div:last-child {
-          display: flex;
-        }
-      }
-
-      /* Menus */
-      & .dropdown-menu--mobile {
-        width: auto;
-      }
-      & .dropdown-menu .dropdown-menu-container {
-        background-color: var(--theme-color-menuBg);
-        border: 0;
-        box-shadow: var(--shadow-l);
-        border-radius: var(--radius-l);
-        margin: 0 1rem;
-        padding: 0.5em;
-
-        & > button {
-          border: none;
-          border-color: var(--nav-item-color);
-          color: var(--nav-item-color);
-          background-color: var(--nav-item-background);
-          box-shadow: none;
-        }
-
-        /* Match other hotkeys */
-        & .dropdown-menu-item__shortcut {
-          background: transparent;
-          border: solid 1px var(--theme-color-hotkey);
-          color: var(--theme-color-hotkey);
-          font-size: var(--font-ui-smaller);
-          font-family: var(--font-interface);
-          padding: 2px 6px;
-          border-radius: var(--radius-s);
-        }
-      }
-
-      .popover {
-        margin: 0 1rem;
-      }
-      .context-menu {
-        background-color: var(--theme-color-menuBg);
-        border: 0;
-        box-shadow: var(--shadow-l);
-        border-radius: var(--radius-l);
-        padding: 0.5em;
-        margin: 0;
-        display: flex;
-        gap: 0;
-        flex-direction: column;
-
-        & button {
-          border: none;
-          border-color: var(--nav-item-color);
-          color: var(--nav-item-color);
-          background-color: var(--nav-item-background);
-          box-shadow: none;
-        }
-
-        @media (hover: hover) {
-          & button:hover {
-            border-color: var(--nav-item-color-hover);
-            color: var(--nav-item-color-hover);
-            background-color: var(--nav-item-background-hover) !important;
-            font-weight: var(--nav-item-weight-hover);
-            --icon-fill-color: var(--nav-item-color-hover);
-          }
-        }
-
-        hr {
-          margin: 0.5em 0;
-          border-top: var(--border-width) solid var(--background-modifier-border);
-        }
-      }
-    }
-  }
-  @media (hover: hover) {
-    .excalidraw-view {
-      & .excalidraw {
-        & .dropdown-menu .dropdown-menu-container {
-          & > button:hover {
-            border-color: var(--nav-item-color-hover);
-            color: var(--nav-item-color-hover);
-            background-color: var(--nav-item-background-hover) !important;
-            font-weight: var(--nav-item-weight-hover);
-            --icon-fill-color: var(--nav-item-color-hover);
-          }
-
-          & .dropdown-menu-item__shortcut {
-            color: inherit;
-            border-color: inherit;
-          }
-        }
-      }
-    }
-  }
-
-  /* Patch weird use of .is-mobile that clashes with Obsidian's use */
-  body:not(.is-mobile) .mobile-misc-tools-container .ToolIcon.is-mobile {
-    --input-height: 30px;
-  }
-
-  /* Buttons – duplicated from lightweight buttons above */
-  .excalidraw-view .excalidraw .ToolIcon,
-  .excalidraw-view .excalidraw .dropdown-menu-button,
-  .excalidraw-view .excalidraw .sidebar-trigger__label-element {
-    align-items: center;
-    background-color: transparent;
-    border-radius: var(--clickable-icon-radius);
-    border: none;
-    box-shadow: none;
-    color: var(--theme-color-control);
-    cursor: var(--cursor);
-    display: flex;
-    height: 2em;
-    justify-content: center;
-    min-height: var(--input-height);
-    opacity: var(--icon-opacity);
-    padding: 0.25rem;
-    text-decoration: none;
-    transition: opacity 0.15s ease-in-out;
-    width: 2em;
-    --icon-fill-color: var(--theme-color-control);
-  }
-  .is-mobile .excalidraw-view .excalidraw .ToolIcon,
-  .is-mobile .excalidraw-view .excalidraw .dropdown-menu-button {
-    min-height: 44px;
-    min-width: 44px;
-  }
-  .excalidraw-view .excalidraw .dropdown-menu-button:focus {
-    box-shadow: none;
-  }
-  @media (hover: hover) {
-    .excalidraw-view .excalidraw .Island .ToolIcon:hover,
-    .excalidraw-view .excalidraw .dropdown-menu-button:hover,
-    .excalidraw-view .excalidraw .sidebar-trigger__label-element:hover,
-    .excalidraw-view .excalidraw .mobile-misc-tools-container .ToolIcon:hover,
-    .excalidraw-view .excalidraw .reset-zoom-button:hover {
-      color: var(--theme-color-controlHover);
-      --icon-fill-color: var(--theme-color-controlHover);
-      background-color: var(--background-modifier-hover);
-    }
-  }
-  /* Active state */
-  .excalidraw-view .excalidraw .ToolIcon:has(.ToolIcon_type_radio:checked),
-  .excalidraw-view .excalidraw .dropdown-menu-button:has(~ .dropdown-menu) {
-    opacity: var(--icon-opacity-hover);
-    color: var(--theme-color-controlLightweightActive);
-    background-color: var(--theme-color-interactiveActive);
-    --icon-fill-color: var(--theme-color-controlLightweightActive);
-  }
-  .excalidraw-view
-    .excalidraw
-    .ToolIcon.fillable:has(.ToolIcon_type_radio:checked)
-    .ToolIcon__icon,
-  .excalidraw-view
-    .excalidraw
-    .ToolIcon.fillable:has(.ToolIcon_type_radio:checked)
-    .ToolIcon__keybinding,
-  .excalidraw .ToolIcon .ToolIcon_type_checkbox:checked + .ToolIcon__icon,
-  .excalidraw .ToolIcon .ToolIcon_type_radio:checked + .ToolIcon__icon {
-    color: inherit;
-    --icon-fill-color: inherit;
-  }
-
-  @media (hover: hover) {
-    .excalidraw-view .excalidraw .ToolIcon:hover,
-    .excalidraw-view .excalidraw .dropdown-menu-button:hover {
-      color: var(--theme-color-controlHover);
-      background-color: var(--background-modifier-hover);
-    }
-    .excalidraw-view
-      .excalidraw
-      .ToolIcon:has(.ToolIcon_type_radio:checked):hover,
-    .excalidraw-view .excalidraw .dropdown-menu-button:focus:hover {
-      background-color: var(--background-modifier-hover);
-      color: var(--theme-color-controlHover);
-    }
-  }
-  .excalidraw-view
-    .excalidraw
-    .ToolIcon
-    .ToolIcon_type_checkbox:checked
-    + .ToolIcon__icon,
-  .excalidraw-view
-    .excalidraw
-    .ToolIcon
-    .ToolIcon_type_radio:checked
-    + .ToolIcon__icon {
-    background-color: transparent;
-  }
-
-  /* Icons inside buttons */
-  .excalidraw-view .excalidraw .Island .ToolIcon__icon,
-  .excalidraw-view .excalidraw .Island .ToolIcon__keybinding,
-  .excalidraw-view .excalidraw .mobile-misc-tools-container .ToolIcon__icon {
-    --icon-size: var(--icon-s);
-    --icon-stroke: var(--icon-s-stroke-width);
-    border-radius: var(--clickable-icon-radius);
-    color: inherit;
-    opacity: var(--icon-opacity);
-    background-color: transparent;
-    border: none;
-  }
-  .excalidraw-view .excalidraw .sidebar-trigger {
-    box-shadow: none;
-    background: transparent;
-  }
-
-  .excalidraw-view .excalidraw .App-toolbar__divider {
-    width: 1rem;
-    height: 1.5rem;
-    align-self: center;
-    background-color: transparent;
-    margin: 0 0.25rem;
-  }
-  .excalidraw-view .excalidraw .ToolIcon {
-    cursor: default;
-  }
-
-  .excalidraw-view .excalidraw .zoom-actions,
-  .excalidraw-view .excalidraw .zoom-actions .Stack {
-    background-color: transparent;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
-  }
-  .excalidraw-view .excalidraw .zoom-button {
-    background: transparent !important; /* Ugh. */
-    border-radius: var(--clickable-icon-radius) !important;
-    font-size: inherit !important;
-  }
-  @media (hover: hover) {
-    .excalidraw-view .excalidraw .zoom-button:hover {
-      background-color: var(--background-modifier-hover) !important; /* Ugh. */
-    }
-  }
-
-  .excalidraw .color-picker__button {
-    border-radius: var(--clickable-icon-radius);
-    border: none;
-    box-shadow: none;
-    cursor: var(--cursor);
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    text-decoration: none;
-    transition: opacity 0.15s ease-in-out;
-  }
-
-  .excalidraw .color-picker__top-picks {
-    gap: 0.25rem;
-  }
-
-  /* Match style of small notice */
-  .excalidraw .HintViewer {
-    border-radius: var(--radius-xl);
-    background-color: var(--background-modifier-message);
-    color: var(--theme-color-notice);
-    box-shadow: var(--shadow-s);
-    padding: 0.5em 0.75em;
-    width: auto;
-
-    & span {
-      padding: 0;
-    }
-  }
-
-  .excalidraw-setting-hr {
-    border: none;
   }
 }
 /*   #endregion */
@@ -9886,11 +9555,413 @@ body.theme-setting-overridePluginUpdateTracker {
   }
 }
 /* #endregion */
+body.theme-setting-overrideButtons {
+  .cm-contentContainer, .markdown-reading-view {
+    button.button-default:not(.clickable-icon):not(.dropdown-menu-item) {
+      padding: 0.125em 0.5em;
+      border: none;
+      box-shadow: var(--theme-shadow-control);
+      background-color: var(--theme-color-controlLowWeightBg);
+      color: var(--theme-color-controlText);
+      line-height: var(--line-height-tight);
+      min-height: 1.5rem;
+
+      &.red {
+        background-color: light-dark(var(--theme-color-redLightened), var(--theme-color-redDarkened)) !important;
+        color: light-dark(var(--theme-color-redDarkened), var(--theme-color-redLightened)) !important;
+      }
+      &.yellow {
+        background-color: light-dark(var(--theme-color-yellowLightened), var(--theme-color-yellowDarkened)) !important;
+        color: light-dark(var(--theme-color-yellowDarkened), var(--theme-color-yellowLightened)) !important;
+      }
+      &.green {
+        background-color: light-dark(var(--theme-color-greenLightened), var(--theme-color-greenDarkened)) !important;
+        color: light-dark(var(--theme-color-greenDarkened), var(--theme-color-greenLightened)) !important;
+      }
+      &.blue {
+        background-color: light-dark(var(--theme-color-blueLightened), var(--theme-color-blueDarkened)) !important;
+        color: light-dark(var(--theme-color-blueDarkened), var(--theme-color-blueLightened)) !important;
+      }
+      &.purple {
+        background-color: light-dark(var(--theme-color-purpleLightened), var(--theme-color-purpleDarkened)) !important;
+        color: light-dark(var(--theme-color-purpleDarkened), var(--theme-color-purpleLightened)) !important;
+      }
+    }
+
+    @media (hover: hover) {
+      button.button-default:not(.clickable-icon):not(.dropdown-menu-item):hover {
+        background-color: var(--theme-color-controlBgHover);
+        color: var(--theme-color-controlTextHover);
+
+        &.red {
+          background-color: light-dark(var(--theme-color-redDarkened), var(--theme-color-redLightened)) !important;
+          color: light-dark(var(--theme-color-redLightened), var(--theme-color-redDarkened)) !important;
+        }
+        &.yellow {
+          background-color: light-dark(var(--theme-color-yellowDarkened), var(--theme-color-yellowLightened)) !important;
+          color: light-dark(var(--theme-color-yellowLightened), var(--theme-color-yellowDarkened)) !important;
+        }
+        &.green {
+          background-color: light-dark(var(--theme-color-greenDarkened), var(--theme-color-greenLightened)) !important;
+          color: light-dark(var(--theme-color-greenLightened), var(--theme-color-greenDarkened)) !important;
+        }
+        &.blue {
+          background-color: light-dark(var(--theme-color-blueDarkened), var(--theme-color-blueLightened)) !important;
+          color: light-dark(var(--theme-color-blueLightened), var(--theme-color-blueDarkened)) !important;
+        }
+        &.purple {
+          background-color: light-dark(var(--theme-color-purpleDarkened), var(--theme-color-purpleLightened)) !important;
+          color: light-dark(var(--theme-color-purpleLightened), var(--theme-color-purpleDarkened)) !important;
+        }
+      }
+    }
+  }
+}
+
+body.theme-setting-overrideExcalidraw {
+.excalidraw {
+  --editor-container-padding: 0.5rem;
+}
+
+  .workspace-leaf-content[data-type="excalidraw"] {
+    & .view-header {
+      padding-bottom: 0;
+    }
+    & .excalidraw-view {
+      /* I don't know why the default styles have 1px padding left and right. */
+      padding: 0;
+    }
+  }
+
+  .excalidraw-view {
+    .excalidraw {
+      .FixedSideContainer_side_top {
+        top: var(--editor-container-padding) !important;
+        right: var(--editor-container-padding) !important;
+        bottom: var(--editor-container-padding) !important;
+        left: var(--editor-container-padding) !important;
+      }
+      .App-bottom-bar {
+        gap: 0.5rem;
+        margin: var(--editor-container-padding) !important;
+      }
+
+      /* Control sets */
+      .Island,
+      .mobile-misc-tools-container,
+      .tray-misc-tools-container {
+        background: var(--theme-color-controlSetBg);
+        border: none;
+        padding: 0;
+        gap: 0;
+        box-shadow: var(--theme-shadow-input);
+        border-radius: var(--radius-s);
+        overflow: hidden;
+      }
+      .mobile-misc-tools-container {
+        gap: 0.5rem;
+        right: 0;
+        top: 0;
+      }
+      .tray-misc-tools-container {
+        right: var(--editor-container-padding);
+      }
+
+      /* Layout structures inside control sets */
+      .Stack,
+      .App-toolbar-content {
+        gap: 0.5em;
+        padding: 0;
+      }
+      .App-toolbar-content {
+        /* I think these are supposed to be spacers, but I don't think we need them. */
+        > .ToolIcon__icon:empty {
+          display: none;
+        }
+
+        /* Container div for undeo/redo, which for somer eason has no class */
+        > div:last-child {
+          display: flex;
+        }
+      }
+
+      /* Menus */
+      & .dropdown-menu--mobile {
+        width: auto;
+      }
+      & .dropdown-menu .dropdown-menu-container {
+        background-color: var(--theme-color-menuBg);
+        border: 0;
+        box-shadow: var(--shadow-l);
+        border-radius: var(--radius-l);
+        margin: 0 1rem;
+        padding: 0.5em;
+
+        & > button {
+          border: none;
+          border-color: var(--nav-item-color);
+          color: var(--nav-item-color);
+          background-color: var(--nav-item-background);
+          box-shadow: none;
+        }
+
+        /* Match other hotkeys */
+        & .dropdown-menu-item__shortcut {
+          background: transparent;
+          border: solid 1px var(--theme-color-hotkey);
+          color: var(--theme-color-hotkey);
+          font-size: var(--font-ui-smaller);
+          font-family: var(--font-interface);
+          padding: 2px 6px;
+          border-radius: var(--radius-s);
+        }
+      }
+
+      .popover {
+        margin: 0 1rem;
+      }
+      .context-menu {
+        background-color: var(--theme-color-menuBg);
+        border: 0;
+        box-shadow: var(--shadow-l);
+        border-radius: var(--radius-l);
+        padding: 0.5em;
+        margin: 0;
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+
+        & button {
+          border: none;
+          border-color: var(--nav-item-color);
+          color: var(--nav-item-color);
+          background-color: var(--nav-item-background);
+          box-shadow: none;
+        }
+
+        @media (hover: hover) {
+          & button:hover {
+            border-color: var(--nav-item-color-hover);
+            color: var(--nav-item-color-hover);
+            background-color: var(--nav-item-background-hover) !important;
+            font-weight: var(--nav-item-weight-hover);
+            --icon-fill-color: var(--nav-item-color-hover);
+          }
+        }
+
+        hr {
+          margin: 0.5em 0;
+          border-top: var(--border-width) solid var(--background-modifier-border);
+        }
+      }
+    }
+  }
+  @media (hover: hover) {
+    .excalidraw-view {
+      & .excalidraw {
+        & .dropdown-menu .dropdown-menu-container {
+          & > button:hover {
+            border-color: var(--nav-item-color-hover);
+            color: var(--nav-item-color-hover);
+            background-color: var(--nav-item-background-hover) !important;
+            font-weight: var(--nav-item-weight-hover);
+            --icon-fill-color: var(--nav-item-color-hover);
+          }
+
+          & .dropdown-menu-item__shortcut {
+            color: inherit;
+            border-color: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  /* Patch weird use of .is-mobile that clashes with Obsidian's use */
+  body:not(.is-mobile) .mobile-misc-tools-container .ToolIcon.is-mobile {
+    --input-height: 30px;
+  }
+
+  /* Buttons – duplicated from lightweight buttons above */
+  .excalidraw-view .excalidraw .ToolIcon,
+  .excalidraw-view .excalidraw .dropdown-menu-button,
+  .excalidraw-view .excalidraw .sidebar-trigger__label-element {
+    align-items: center;
+    background-color: transparent;
+    border-radius: var(--clickable-icon-radius);
+    border: none;
+    box-shadow: none;
+    color: var(--theme-color-control);
+    cursor: var(--cursor);
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    min-height: var(--input-height);
+    opacity: var(--icon-opacity);
+    padding: 0.25rem;
+    text-decoration: none;
+    transition: opacity 0.15s ease-in-out;
+    width: 2em;
+    --icon-fill-color: var(--theme-color-control);
+  }
+  .is-mobile .excalidraw-view .excalidraw .ToolIcon,
+  .is-mobile .excalidraw-view .excalidraw .dropdown-menu-button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  .excalidraw-view .excalidraw .dropdown-menu-button:focus {
+    box-shadow: none;
+  }
+  @media (hover: hover) {
+    .excalidraw-view .excalidraw .Island .ToolIcon:hover,
+    .excalidraw-view .excalidraw .dropdown-menu-button:hover,
+    .excalidraw-view .excalidraw .sidebar-trigger__label-element:hover,
+    .excalidraw-view .excalidraw .mobile-misc-tools-container .ToolIcon:hover,
+    .excalidraw-view .excalidraw .reset-zoom-button:hover {
+      color: var(--theme-color-controlHover);
+      --icon-fill-color: var(--theme-color-controlHover);
+      background-color: var(--background-modifier-hover);
+
+
+    }
+  }
+  /* Active state */
+  .excalidraw-view .excalidraw .ToolIcon:has(.ToolIcon_type_radio:checked),
+  .excalidraw-view .excalidraw .dropdown-menu-button:has(~ .dropdown-menu) {
+    opacity: var(--icon-opacity-hover);
+    color: var(--theme-color-controlLightweightActive);
+    background-color: var(--theme-color-interactiveActive);
+    --icon-fill-color: var(--theme-color-controlLightweightActive);
+  }
+  .excalidraw-view
+    .excalidraw
+    .ToolIcon.fillable:has(.ToolIcon_type_radio:checked)
+    .ToolIcon__icon,
+  .excalidraw-view
+    .excalidraw
+    .ToolIcon.fillable:has(.ToolIcon_type_radio:checked)
+    .ToolIcon__keybinding,
+  .excalidraw .ToolIcon .ToolIcon_type_checkbox:checked + .ToolIcon__icon,
+  .excalidraw .ToolIcon .ToolIcon_type_radio:checked + .ToolIcon__icon {
+    color: inherit;
+    --icon-fill-color: inherit;
+  }
+
+  @media (hover: hover) {
+    .excalidraw-view .excalidraw .ToolIcon:hover,
+    .excalidraw-view .excalidraw .dropdown-menu-button:hover {
+      color: var(--theme-color-controlHover);
+      background-color: var(--background-modifier-hover);
+    }
+    .excalidraw-view
+      .excalidraw
+      .ToolIcon:has(.ToolIcon_type_radio:checked):hover,
+    .excalidraw-view .excalidraw .dropdown-menu-button:focus:hover {
+      background-color: var(--background-modifier-hover);
+      color: var(--theme-color-controlHover);
+    }
+    .excalidraw .ToolIcon .ToolIcon__icon:hover {
+      background: transparent;
+    }
+  }
+  .excalidraw-view
+    .excalidraw
+    .ToolIcon
+    .ToolIcon_type_checkbox:checked
+    + .ToolIcon__icon,
+  .excalidraw-view
+    .excalidraw
+    .ToolIcon
+    .ToolIcon_type_radio:checked
+    + .ToolIcon__icon {
+    background-color: transparent;
+  }
+
+  /* Icons inside buttons */
+  .excalidraw-view .excalidraw .Island .ToolIcon__icon,
+  .excalidraw-view .excalidraw .Island .ToolIcon__keybinding,
+  .excalidraw-view .excalidraw .mobile-misc-tools-container .ToolIcon__icon {
+    --icon-size: var(--icon-s);
+    --icon-stroke: var(--icon-s-stroke-width);
+    border-radius: var(--clickable-icon-radius);
+    color: inherit;
+    opacity: var(--icon-opacity);
+    background-color: transparent;
+    border: none;
+  }
+  .excalidraw-view .excalidraw .sidebar-trigger {
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .excalidraw-view .excalidraw .App-toolbar__divider {
+    width: 1rem;
+    height: 1.5rem;
+    align-self: center;
+    background-color: transparent;
+    margin: 0 0.25rem;
+  }
+  .excalidraw-view .excalidraw .ToolIcon {
+    cursor: default;
+  }
+
+  .excalidraw-view .excalidraw .zoom-actions,
+  .excalidraw-view .excalidraw .zoom-actions .Stack {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  .excalidraw-view .excalidraw .zoom-button {
+    background: transparent !important; /* Ugh. */
+    border-radius: var(--clickable-icon-radius) !important;
+    font-size: inherit !important;
+  }
+  @media (hover: hover) {
+    .excalidraw-view .excalidraw .zoom-button:hover {
+      background-color: var(--background-modifier-hover) !important; /* Ugh. */
+    }
+  }
+
+  .excalidraw .color-picker__button {
+    border-radius: var(--clickable-icon-radius);
+    border: none;
+    box-shadow: none;
+    cursor: var(--cursor);
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    text-decoration: none;
+    transition: opacity 0.15s ease-in-out;
+  }
+
+  .excalidraw .color-picker__top-picks {
+    gap: 0.25rem;
+  }
+
+  /* Match style of small notice */
+  .excalidraw .HintViewer {
+    border-radius: var(--radius-xl);
+    background-color: var(--background-modifier-message);
+    color: var(--theme-color-notice);
+    box-shadow: var(--shadow-s);
+    padding: 0.5em 0.75em;
+    width: auto;
+
+    & span {
+      padding: 0;
+    }
+  }
+
+  .excalidraw-setting-hr {
+    border: none;
+  }
+}
 /* #region Dev stuff */
 
 /* Show border of content area clearly */
 /* .cm-contentContainer > .cm-content {
-  background-color: rgba(255, 0, 0, 0.1);
+  background-color: oklab(62.8% 0.225 0.126 / 0.1);
 } */
 
 /* #endregion */
