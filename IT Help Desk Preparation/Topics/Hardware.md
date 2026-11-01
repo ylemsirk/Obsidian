@@ -22,19 +22,19 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 **7.** Explain the purpose of cooling systems (heatsinks, fans, thermal paste) and symptoms of overheating. What safe on-site actions can a Tier 1 technician take versus what must be escalated? **(L1)**
 *Expected criteria:* cleaning vents with approved tools, ensuring airflow, verifying fan spin, updating manufacturer-approved power/thermal settings via sanctioned tools; opening a laptop to repaste is Tier 2/vendor.
 
-**8.** Differentiate NIC, Wi-Fi adapter, and Bluetooth adapter. If Ethernet drops intermittently but Wi-Fi works, outline your checks without assuming the NIC is faulty. **(L2 — networking overlap)**
-*Expected criteria:* cable, port on wall, switch port, driver status; recognizes that intermittent drop can be infrastructure-side.
+<mark style="background:#affad1">**8.** Differentiate NIC, Wi-Fi adapter, and Bluetooth adapter. If Ethernet drops intermittently but Wi-Fi works, outline your checks without assuming the NIC is faulty. **(L2 — networking overlap)**</mark>
+<mark style="background:#affad1">*Expected criteria:* cable, port on wall, switch port, driver status; recognizes that intermittent drop can be infrastructure-side.</mark>
 
-**9.** Distinguish internal components, peripherals, and accessories with examples. Why does this distinction matter for ticket routing and warranty? **(L1)**
-*Expected criteria:* internal = CPU, RAM, SSD; peripheral = monitor, keyboard, printer; accessory = dock, cable, adapter. Warranty and authorization depend on the category.
+<mark style="background:#affad1">**9.** Distinguish internal components, peripherals, and accessories with examples. Why does this distinction matter for ticket routing and warranty? **(L1)**</mark>
+<mark style="background:#affad1">*Expected criteria:* internal = CPU, RAM, SSD; peripheral = monitor, keyboard, printer; accessory = dock, cable, adapter. Warranty and authorization depend on the category.</mark>
 
 **10.** Describe practical differences between desktops, laptops, and workstations (upgradability, power, portability, typical use). **(L1)**
 *Expected criteria:* desktops are more upgradable; laptops limited by form factor; workstations prioritize reliability and sustained performance.
 
 ### Section B — Compatibility, Installation & Replacement
 
-**11.** How do you verify RAM compatibility before upgrading? Cover DDR generation, form factor (DIMM vs SODIMM), capacity, speed, and how to look up the model’s specifications. **(L1)**
-*Expected criteria:* DDR3/4/5, DIMM vs SODIMM, max supported capacity per slot and total, speed compatibility (may downclock); verifies via manufacturer’s manual/model lookup.
+<mark style="background:#affad1">**11.** How do you verify RAM compatibility before upgrading? Cover DDR generation, form factor (DIMM vs SODIMM), capacity, speed, and how to look up the model’s specifications. **(L1)**</mark>
+<mark style="background:#affad1">*Expected criteria:* DDR3/4/5, DIMM vs SODIMM, max supported capacity per slot and total, speed compatibility (may downclock); verifies via manufacturer’s manual/model lookup.</mark>
 
 **12.** How do you determine whether a machine supports a SATA SSD, an NVMe SSD, or both? What physical and firmware-level checks apply? **(L1)**
 *Expected criteria:* physical slot type (M.2 SATA vs M.2 NVMe keying), M.2 slot spec (PCIe lanes), BIOS/UEFI recognition, official model documentation.
