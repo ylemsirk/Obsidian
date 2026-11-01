@@ -292,17 +292,17 @@ Expected criteria: check default playback device, volume mixer per application, 
 
 ### Scenario 8 — Swollen laptop battery (corrected)
 
-- **Situation:** A user shows a laptop with a bulging chassis and a hard-to-click trackpad.
+<mark style="background:#affad1">- **Situation:** A user shows a laptop with a bulging chassis and a hard-to-click trackpad.</mark>
     
-- **Information to obtain:** when it was noticed, warranty status, whether the laptop is still in use.
+<mark style="background:#affad1">- **Information to obtain:** when it was noticed, warranty status, whether the laptop is still in use.</mark>
     
-- **Evidence to look for:** physical bulge, heat, odor.
+<mark style="background:#affad1">- **Evidence to look for:** physical bulge, heat, odor.</mark>
     
-- **Appropriate initial actions:** **stop use and stop charging immediately**; isolate from flammables and heat; follow the company's battery-hazard disposal procedure.
+<mark style="background:#affad1">- **Appropriate initial actions:** **stop use and stop charging immediately**; isolate from flammables and heat; follow the company's battery-hazard disposal procedure.</mark>
     
-- **Errors to avoid:** pressing, bending, puncturing, or attempting to remove the battery; continuing to troubleshoot on-site.
+<mark style="background:#affad1">- **Errors to avoid:** pressing, bending, puncturing, or attempting to remove the battery; continuing to troubleshoot on-site.</mark>
     
-- **Resolve or escalate criteria:** always escalate to the authorized battery-replacement path. Tier 1 does not replace swollen batteries.
+<mark style="background:#affad1">- **Resolve or escalate criteria:** always escalate to the authorized battery-replacement path. Tier 1 does not replace swollen batteries.</mark>
 
 ### Scenario 9 — Clicking hard drive with slow file access (corrected)
 
