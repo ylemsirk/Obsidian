@@ -59,7 +59,7 @@ Priority key: **L1 = must master before applying**, **L2 = important but seconda
 **18.** Describe a structured diagnostic method (identify, hypothesize, test one variable, verify, document). Apply it to a PC that "won’t turn on." **(L1)**
 *Expected criteria:* clarify symptoms, check power source and LED/fan behavior, isolate one variable at a time, document each test, verify before closing.
 
-**19.** A PC powers on (fans spin, LEDs on) but shows no image. List your checks in order and explain what each rules out. **(L1)**
+**19.** 34 **(L1)**
 *Expected criteria:* monitor input, cable, alternate monitor, GPU output vs motherboard output, reseat only with authorization; each step rules out a variable.
 
 **20.** A PC fails before Windows loads (POST error, beep codes, error message). What information do you record, and what does it tell you? **(L1)**
