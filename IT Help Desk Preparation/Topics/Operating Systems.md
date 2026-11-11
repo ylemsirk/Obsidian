@@ -1,12 +1,12 @@
-1. What is an operating system, and what are its core responsibilities (process management, memory management, file systems, device drivers, user interface)? Explain each in simple terms as if you were describing it to a non‑technical user.
+1. <mark style="background:#affad1">What is an operating system, and what are its core responsibilities (process management, memory management, file systems, device drivers, user interface)? Explain each in simple terms as if you were describing it to a non‑technical user.</mark>
     
-2. Differentiate between a desktop OS, a server OS, a mobile OS, and an embedded OS. Give one example of each and explain why a Help Desk technician might support all of them in a remote environment.
+2. <mark style="background:#affad1">Differentiate between a desktop OS, a server OS, a mobile OS, and an embedded OS. Give one example of each and explain why a Help Desk technician might support all of them in a remote environment.</mark>
     
-3. What is the kernel, and how does it differ from user space? Why is this distinction important when troubleshooting an application that crashes but does not bring down the entire system?
+3. <mark style="background:#affad1">What is the kernel, and how does it differ from user space? Why is this distinction important when troubleshooting an application that crashes but does not bring down the entire system?</mark>
     
-4. Explain how a Help Desk technician can identify processes consuming excessive CPU, memory, disk, or network resources. What evidence would you collect before deciding that a process is actually responsible for the user's performance problem?
+4. <mark style="background:#affad1">Explain how a Help Desk technician can identify processes consuming excessive CPU, memory, disk, or network resources. What evidence would you collect before deciding that a process is actually responsible for the user's performance problem?</mark>
     
-5. What is a file system? Why do different operating systems use different file systems (e.g., NTFS, APFS, ext4), and how does this affect cross‑platform file sharing or external drive compatibility?
+5. <mark style="background:#affad1">What is a file system? Why do different operating systems use different file systems (e.g., NTFS, APFS, ext4), and how does this affect cross‑platform file sharing or external drive compatibility?</mark>
     
 6. Describe the difference between a local user account and a domain/centralized account. Why is this distinction critical when a remote user cannot log in to their computer or access shared resources?
     
