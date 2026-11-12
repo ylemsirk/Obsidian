@@ -33,7 +33,7 @@
     
 16. <mark style="background:#affad1">What is encryption at rest (e.g., full disk encryption)? Why is it important for laptops, and what are the implications for Help Desk if a user forgets their encryption password or recovery key?</mark>
     
-17. Describe the purpose of an OS firewall and antivirus/anti‑malware software. A user complains their computer is slow and they see many pop‑ups. What general security checks would you perform remotely?
+17. <mark style="background:#affad1">Describe the purpose of an OS firewall and antivirus/anti‑malware software. A user complains their computer is slow and they see many pop‑ups. What general security checks would you perform remotely?</mark>
     
 18. What is a safe mode or recovery mode? How would you guide a user to boot into it if their OS is not starting normally, and what types of problems can you diagnose once there?
 
