@@ -18,7 +18,7 @@
     
 10. <mark style="background:#affad1">What is a driver, and why can an OS update sometimes break a device? Describe a general troubleshooting approach for a driver‑related problem that works on any OS.</mark>
     
-11. Compare GUI (graphical user interface) and CLI (command‑line interface) from a Help Desk perspective. When would you choose one over the other during a remote session, and what are the risks of guiding a user through CLI commands?
+11. <mark style="background:#affad1">Compare GUI (graphical user interface) and CLI (command‑line interface) from a Help Desk perspective. When would you choose one over the other during a remote session, and what are the risks of guiding a user through CLI commands?</mark>
 
 12. What is the difference between a process and a thread? Why might a single application show multiple processes or consume CPU across multiple threads?
 
@@ -31,7 +31,7 @@
     
 15. Explain the concept of file and folder permissions in general terms (read, write, execute). A user cannot open a shared folder on a colleague’s computer. What general permission‑related issues would you investigate before escalating?
     
-16. What is encryption at rest (e.g., full disk encryption)? Why is it important for laptops, and what are the implications for Help Desk if a user forgets their encryption password or recovery key?
+16. <mark style="background:#affad1">What is encryption at rest (e.g., full disk encryption)? Why is it important for laptops, and what are the implications for Help Desk if a user forgets their encryption password or recovery key?</mark>
     
 17. Describe the purpose of an OS firewall and antivirus/anti‑malware software. A user complains their computer is slow and they see many pop‑ups. What general security checks would you perform remotely?
     
