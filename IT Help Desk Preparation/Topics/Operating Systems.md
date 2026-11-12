@@ -20,9 +20,9 @@
     
 11. <mark style="background:#affad1">Compare GUI (graphical user interface) and CLI (command‑line interface) from a Help Desk perspective. When would you choose one over the other during a remote session, and what are the risks of guiding a user through CLI commands?</mark>
 
-12. What is the difference between a process and a thread? Why might a single application show multiple processes or consume CPU across multiple threads?
+12. <mark style="background:#affad1">What is the difference between a process and a thread? Why might a single application show multiple processes or consume CPU across multiple threads?</mark>
 
-13. What is the difference between an incorrect system clock, incorrect time zone, and failed time synchronization? Why can each cause different symptoms?
+13. <mark style="background:#affad1">What is the difference between an incorrect system clock, incorrect time zone, and failed time synchronization? Why can each cause different symptoms?</mark>
     
 
 ### User Management & Security
