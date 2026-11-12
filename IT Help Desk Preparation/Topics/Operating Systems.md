@@ -35,15 +35,15 @@
     
 17. <mark style="background:#affad1">Describe the purpose of an OS firewall and antivirus/anti‑malware software. A user complains their computer is slow and they see many pop‑ups. What general security checks would you perform remotely?</mark>
     
-18. What is a safe mode or recovery mode? How would you guide a user to boot into it if their OS is not starting normally, and what types of problems can you diagnose once there?
+18. <mark style="background:#affad1">What is a safe mode or recovery mode? How would you guide a user to boot into it if their OS is not starting normally, and what types of problems can you diagnose once there?</mark>
 
-19. What is the difference between authentication and authorization? Give a Help Desk example where a user successfully authenticates but is not authorized to access a resource.
+19. <mark style="background:#affad1">What is the difference between authentication and authorization? Give a Help Desk example where a user successfully authenticates but is not authorized to access a resource.</mark>
 
 20. What is User Account Control (UAC), and why can a user who is a member of the local Administrators group still be prompted for elevation?
 
 21. What is permission inheritance? How can inherited permissions cause a user to have access or restrictions that are not immediately visible on the folder itself?
 
-22. What is the difference between encrypting a disk and protecting an account with a password? Why does disk encryption still protect data if an attacker removes the drive and connects it to another computer?
+22. <mark style="background:#affad1">What is the difference between encrypting a disk and protecting an account with a password? Why does disk encryption still protect data if an attacker removes the drive and connects it to another computer?</mark>
     
 
 ### Software Management & Updates
