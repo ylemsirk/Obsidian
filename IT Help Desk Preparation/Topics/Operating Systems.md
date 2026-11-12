@@ -29,7 +29,7 @@
 
 14. <mark style="background:#affad1">What is multi‑factor authentication (MFA) at the OS level? How would you remotely assist a user who lost their phone and cannot receive MFA codes to log in?</mark>
     
-15. Explain the concept of file and folder permissions in general terms (read, write, execute). A user cannot open a shared folder on a colleague’s computer. What general permission‑related issues would you investigate before escalating?
+15. <mark style="background:#affad1">Explain the concept of file and folder permissions in general terms (read, write, execute). A user cannot open a shared folder on a colleague’s computer. What general permission‑related issues would you investigate before escalating?</mark>
     
 16. <mark style="background:#affad1">What is encryption at rest (e.g., full disk encryption)? Why is it important for laptops, and what are the implications for Help Desk if a user forgets their encryption password or recovery key?</mark>
     
