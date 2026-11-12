@@ -10,13 +10,13 @@
     
 6. Describe the difference between a local user account and a domain/centralized account. Why is this distinction critical when a remote user cannot log in to their computer or access shared resources?
     
-7. What is the principle of least privilege, and how does it apply to standard user accounts versus administrator/root accounts? How would you explain to a user why they should not browse the internet as an administrator?
+7. <mark style="background:#affad1">What is the principle of least privilege, and how does it apply to standard user accounts versus administrator/root accounts? How would you explain to a user why they should not browse the internet as an administrator?</mark>
     
-8. Explain what a user profile is and what data it typically contains (documents, desktop, application settings). A remote user gets a new laptop and says “all my files are gone.” How would you determine if the files are missing or simply in a different profile?
+8. <mark style="background:#affad1">Explain what a user profile is and what data it typically contains (documents, desktop, application settings). A remote user gets a new laptop and says “all my files are gone.” How would you determine if the files are missing or simply in a different profile?</mark>
 
-9. What is a temporary user profile? What symptoms might indicate that Windows has logged a user into a temporary profile, and why should you avoid treating the temporary profile as the user's permanent storage location?
+9. <mark style="background:#affad1">What is a temporary user profile? What symptoms might indicate that Windows has logged a user into a temporary profile, and why should you avoid treating the temporary profile as the user's permanent storage location?</mark>
     
-10. What is a driver, and why can an OS update sometimes break a device? Describe a general troubleshooting approach for a driver‑related problem that works on any OS.
+10. <mark style="background:#affad1">What is a driver, and why can an OS update sometimes break a device? Describe a general troubleshooting approach for a driver‑related problem that works on any OS.</mark>
     
 11. Compare GUI (graphical user interface) and CLI (command‑line interface) from a Help Desk perspective. When would you choose one over the other during a remote session, and what are the risks of guiding a user through CLI commands?
 
