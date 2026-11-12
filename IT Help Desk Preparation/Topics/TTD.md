@@ -15,9 +15,9 @@
 
 ### FULL TOPICS
 
-- [ ] [Networking](Networking)
+- [x] [Networking](Networking) ✅ 2026-11-11
 
-- [ ] [Hardware](Hardware)
+- [x] [Hardware](Hardware) ✅ 2026-11-11
 
 - [ ] [Operating Systems](Operating%20Systems)
 
