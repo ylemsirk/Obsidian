@@ -67,7 +67,7 @@
     
 30. What is a system restore point or snapshot? How would you guide a user to use it after a bad driver installation or a malware infection?
 
-31. What is the difference between a partition, a volume, a filesystem, and a drive letter/mount point?
+31. <mark style="background:#affad1">What is the difference between a partition, a volume, a filesystem, and a drive letter/mount point?</mark>
 
 32. <mark style="background:#affad1">A user’s hard drive is full. What general strategies would you suggest to free up space, and how would you help them identify large files or folders without accidentally deleting important system data?</mark>
     
