@@ -69,7 +69,7 @@
 
 31. What is the difference between a partition, a volume, a filesystem, and a drive letter/mount point?
 
-32. A user’s hard drive is full. What general strategies would you suggest to free up space, and how would you help them identify large files or folders without accidentally deleting important system data?
+32. <mark style="background:#affad1">A user’s hard drive is full. What general strategies would you suggest to free up space, and how would you help them identify large files or folders without accidentally deleting important system data?</mark>
     
 33. Explain the difference between an SSD and an HDD from an OS perspective (how the OS sees them, not the physical hardware). How does this affect disk defragmentation or TRIM?
     
