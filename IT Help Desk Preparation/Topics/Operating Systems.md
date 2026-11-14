@@ -39,7 +39,7 @@
 
 19. <mark style="background:#affad1">What is the difference between authentication and authorization? Give a Help Desk example where a user successfully authenticates but is not authorized to access a resource.</mark>
 
-20. What is User Account Control (UAC), and why can a user who is a member of the local Administrators group still be prompted for elevation?
+20. <mark style="background:#affad1">What is User Account Control (UAC), and why can a user who is a member of the local Administrators group still be prompted for elevation?</mark>
 
 21. What is permission inheritance? How can inherited permissions cause a user to have access or restrictions that are not immediately visible on the folder itself?
 
@@ -61,9 +61,9 @@
 
 ### Storage, Backups & Recovery
 
-28. Differentiate between a full backup, an incremental backup, and a differential backup. Why should a Help Desk agent care about backup types when supporting remote users?
+28. <mark style="background:#affad1">Differentiate between a full backup, an incremental backup, and a differential backup. Why should a Help Desk agent care about backup types when supporting remote users?</mark>
 
-29. What is the difference between an update, an upgrade, a security patch, and a driver update? Why does the distinction matter when documenting or troubleshooting a problem?
+29. <mark style="background:#affad1">What is the difference between an update, an upgrade, a security patch, and a driver update? Why does the distinction matter when documenting or troubleshooting a problem?</mark>
     
 30. What is a system restore point or snapshot? How would you guide a user to use it after a bad driver installation or a malware infection?
 
