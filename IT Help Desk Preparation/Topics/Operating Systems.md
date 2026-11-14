@@ -8,7 +8,7 @@
     
 5. <mark style="background:#affad1">What is a file system? Why do different operating systems use different file systems (e.g., NTFS, APFS, ext4), and how does this affect cross‑platform file sharing or external drive compatibility?</mark>
     
-6. Describe the difference between a local user account and a domain/centralized account. Why is this distinction critical when a remote user cannot log in to their computer or access shared resources?
+6. <mark style="background:#affad1">Describe the difference between a local user account and a domain/centralized account. Why is this distinction critical when a remote user cannot log in to their computer or access shared resources?</mark>
     
 7. <mark style="background:#affad1">What is the principle of least privilege, and how does it apply to standard user accounts versus administrator/root accounts? How would you explain to a user why they should not browse the internet as an administrator?</mark>
     
@@ -65,7 +65,7 @@
 
 29. <mark style="background:#affad1">What is the difference between an update, an upgrade, a security patch, and a driver update? Why does the distinction matter when documenting or troubleshooting a problem?</mark>
     
-30. What is a system restore point or snapshot? How would you guide a user to use it after a bad driver installation or a malware infection?
+30. <mark style="background:#affad1">What is a system restore point or snapshot? How would you guide a user to use it after a bad driver installation or a malware infection?</mark>
 
 31. <mark style="background:#affad1">What is the difference between a partition, a volume, a filesystem, and a drive letter/mount point?</mark>
 
