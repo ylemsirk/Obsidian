@@ -41,7 +41,7 @@
 
 20. <mark style="background:#affad1">What is User Account Control (UAC), and why can a user who is a member of the local Administrators group still be prompted for elevation?</mark>
 
-21. What is permission inheritance? How can inherited permissions cause a user to have access or restrictions that are not immediately visible on the folder itself?
+21. <mark style="background:#affad1">What is permission inheritance? How can inherited permissions cause a user to have access or restrictions that are not immediately visible on the folder itself?</mark>
 
 22. <mark style="background:#affad1">What is the difference between encrypting a disk and protecting an account with a password? Why does disk encryption still protect data if an attacker removes the drive and connects it to another computer?</mark>
     
@@ -52,7 +52,7 @@
     
 24. Why are operating system updates important? Describe the risks of delaying updates and the potential issues that can arise immediately after an update. How would you remotely help a user who cannot boot after an update?
     
-25. What is a package manager, and how does it differ from downloading an installer from a website? What are the security advantages of using official repositories?
+25. <mark style="background:#affad1">What is a package manager, and how does it differ from downloading an installer from a website? What are the security advantages of using official repositories?</mark>
     
 26. A user wants to uninstall an application but it does not appear in the normal “Add/Remove Programs” list. What general troubleshooting steps would you take to remove stubborn software?
     
