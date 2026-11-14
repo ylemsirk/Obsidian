@@ -83,7 +83,7 @@
     
 36. A user says their computer will not boot. What are the first five questions you would ask remotely to determine if the problem is hardware, OS corruption, or a recent change?
     
-37. Explain the difference between a hard reboot and a soft reboot. When is each appropriate during a remote support session, and what are the risks of a hard reboot?
+37. <mark style="background:#affad1">Explain the difference between a hard reboot and a soft reboot. When is each appropriate during a remote support session, and what are the risks of a hard reboot?</mark>
     
 38. A user reports that an application freezes frequently. How would you determine if the issue is specific to that application, the OS, or the hardware? What general remote diagnostic steps would you take?
     
