@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IT Help Desk Preparation/Topics/Operating Systems.md",
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/GENERAL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Operating Systems"
+              "title": "GENERAL"
             }
           }
         ]
@@ -202,9 +202,11 @@
   },
   "active": "53d938c2ec2361c2",
   "lastOpenFiles": [
+    "IT Help Desk Preparation/Topics/Operating Systems.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/GENERAL.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO",
     "IT Help Desk Preparation/Topics/Networking.md",
     "IT Help Desk Preparation/Topics/Windows.md",
-    "IT Help Desk Preparation/Topics/Operating Systems.md",
     "IT Help Desk Preparation/Topics/Remote Support + Ticketing-ITSM.md",
     "IT Help Desk Preparation/Topics/Security.md",
     "IT Help Desk Preparation/Topics/Troubleshooting.md",
@@ -243,7 +245,6 @@
     "Sin nombre 1",
     "PROYECTO FINAL/EX20/EX20.canvas",
     "PROYECTO FINAL/EX19/EX19.canvas",
-    "PROYECTO FINAL/EX20",
     "PExcelint/Diagrama.canvas"
   ]
 }
