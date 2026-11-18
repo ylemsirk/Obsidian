@@ -85,6 +85,7 @@
 - Gestión de parches y actualizaciones deficiente.
 - Falta de inventario de versiones y firmware
 - Red plana (Un solo dominio de broadcast [Segmentación nula]), presenta congestión continua y cuellos de botella 0 segmentación. 
+- Toda la red utiliza la VLAN 1.
 - Redundancia nula, depende sustancialmente del switch central. Contiene un único router de borde.
 - Stateless Firewall dentro del router borde y reglas permisivas que no contienen políticas restrictivas de conexiones de entrada o salida.
 - Protocolos de acceso remoto abiertos en sus puertos por default.
@@ -94,3 +95,4 @@
 - Cuarto de servidores con pobre sistema de ventilación y enfriamiento y puerta de madera con candado desgastado.
 - El único guardia de seguridad se encuentra en la entrada del edificio.
 - Ausencia de QoS para teléfonos IP que ocasiona jitters, altos niveles de latencia y bajo throughput.
+- 
