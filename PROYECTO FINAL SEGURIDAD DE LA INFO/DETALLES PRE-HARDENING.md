@@ -4,11 +4,15 @@
 **Ofrece:**
 - Servicios de telefonía móvil (voz, SMS y datos móviles en 4G/5G).
 - Servicios de telefonía fija (voz tradicional e IP).
-- Acceso a Internet fijo (fibra óptica, DSL, cable o Internet inalámbrico).
+- Acceso a Internet fijo (FTTH e Internet inalámbrico).
 - Almacenamiento en la nube.
 
 **Modelo de negocio:** 
-- B2C (Business-to-Customer)
+- Orientación a B2C (Business-to-Customer)
+- Dependencias y relaciones B2B (Business-to-Business)
+
+**Modelo de seguridad:**
+- DAC
 
 **Genera ingresos mediante:**
 - Tarifas y planes de suscripción
@@ -18,8 +22,11 @@
 
 **Réd Móvil (4G/5G):** 
 - RAN: Antenas, torres de transmisión y estaciones base.
-- Mobile Core: Servidores que gestionan la autenticación, movilidad y enrutamiento de datos.
 
+**Red Fija (Fibra Óptica):**
+- OLT
+- ODN
+- IMS
 
 **Infraestructura para Almacenamiento en la Nube:**
 - Servidores de Almacenamiento.
@@ -27,7 +34,9 @@
 - Aplicaciones web, iOS y Android.
 
 **Aplicaciones B2C:**
-- App Móvil (Mi Dina) y Portal Web (Página: www.dina.com.do)
+- App Móvil (Mi Dina) y Portal Web (Página: www.dina.com.do).
+- Pasarelas de pago.
+- Canales de Atención Omnicanal: Chatbots con IA (Peldet) y Zendesk.
 
 ##### Ciclos de provisión
 
@@ -40,14 +49,37 @@
 **Para almacenamiento en la Nube:**
 - La provisión es instantánea y automatizada (segundos). Al solicitar el servicio o ampliar la capacidad, los sistemas de gestión asignan virtualmente una cuota de espacio en los servidores, configuran los permisos de acceso y crean los contenedores o directorios listos para su uso inmediato sin intervención humana.
 
+##### Proveedores Mayoristas y Regulatorios
 
-qué datos circulan entre los sistemas, quién los utiliza y dónde se almacenan.
+**Tránsito IP:**
+- Lumen
 
-qué empleados tienen acceso a cada recurso.
+**Interconexión Local:**
+- Acuerdos entre Claro, Altice y Viva.
 
-qué ocurre si falla el sistema de facturación, la autenticación o la infraestructura de conectividad.
+**Licencias y concesiones de espectro radioeléctrico y numeración:**
+- INDOTEL
 
-qué puede salir mal y cuáles serían sus consecuencias.
+##### Manejo de datos
 
-cómo reducir los riesgos identificados.
+**Datos que circulan entre los sistemas:**
+- Tráfico de usuario
+- Datos de señalización y control
+- Datos transaccionales y de gestión
+- Datos regulatorios e interconexión
+
+**Quiénes los utilizan:**
+- Núcleo de red
+- Sistemas de facturación
+- Sistemas de atención al cliente
+- Usuarios a través de "Mi Dina" y el Portal Web
+
+**Dónde se almacenan:**
+- Data Centers
+- Registros de Red
+- Pasarelas de Pago
+
+
+
+
 
