@@ -91,8 +91,12 @@
 - Protocolos de acceso remoto abiertos en sus puertos por default.
 - WPA-TKIP en todas las redes inalámbricas de la compañía.
 - Servidor web alojado en la LAN interna.
-- No existen controles de seguridad de capa 2.
+- Ausencia de Port Security.
+- DHCP Snooping deshabilitado
+- Ausencia de Dynamic ARP Inspection.
 - Cuarto de servidores con pobre sistema de ventilación y enfriamiento y puerta de madera con candado desgastado.
 - El único guardia de seguridad se encuentra en la entrada del edificio.
 - Ausencia de QoS para teléfonos IP que ocasiona jitters, altos niveles de latencia y bajo throughput.
+- Puertos de switch sin usar habilitados
+- Ausencia de 802.1X
 - 
