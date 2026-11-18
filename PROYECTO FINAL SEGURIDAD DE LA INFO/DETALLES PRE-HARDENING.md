@@ -5,7 +5,7 @@
 - Servicios de telefonía móvil (voz, SMS y datos móviles en 4G/5G).
 - Servicios de telefonía fija (voz tradicional e IP).
 - Acceso a Internet fijo (FTTH e Internet inalámbrico).
-- Almacenamiento en la nube (Aún en proceso).
+- Almacenamiento en la nube (Se encuentra en fase piloto).
 
 **Modelo de negocio:** 
 - Orientación a B2C
@@ -22,12 +22,14 @@
 
 **Réd Móvil (4G/5G):** 
 - RAN: Antenas, torres de transmisión y estaciones base.
+- EPC (4G LTE): Núcleo responsable de la tecnología 4G.
+- 5GC: Núcleo responsable de la tecnología 45.
+- IMS
 
 **Red Fija (Fibra Óptica):**
-- OLT
+- ONT/ONU
 - ODN
-- 5GC
-- EPC
+- OLT
 - BNG
 
 **Infraestructura para Almacenamiento en la Nube:**
@@ -70,26 +72,24 @@
 - Registros de Red
 - Pasarelas de Pago
 
-## Topología Lógica
-
-- 1 VLAN por piso, presenta congestión continua. 
-- Stateless Firewalls con reglas flojas.
-- Protocolos de acceso remoto abiertos en sus puertos por default.
-- WPA-TKIP en todas las redes inalámbricas de la compañía
-
-
-
-## Topología Física
-
-
-
 ## Observaciones importantes
-- Monitoreo de red pobre o nulo
-- Documentación inexistente sobre el proceso de diseño de los servidores web
-- Falta de HSTS
-- Certificado caducado hace 2 meses
-- TLS 1.1
-- Base de datos y datos en reposo en texto plano
-- IRP, BCP, RPO, RTO y DRP inexistentes
-- Gestión de parches y actualizaciones deficiente
-- 
+- Monitoreo de red pobre o nulo. Cantidad considerable de puntos ciegos.
+- Los únicos logs generados se encuentran en el servidor del área de facturación y finanzas.
+- Carencia de sistemas de seguridad integrada como SIEMs, SOARs, EDRs, etc.
+- Documentación inexistente sobre el proceso de diseño de los servidores web.
+- Falta de HSTS.
+- Certificado web caducado hace 2 meses.
+- El servidor web utiliza TLS 1.1.
+- Base de datos y datos en reposo en texto plano en cada dispositivo de la empresa.
+- Carencia de planes de respuesta y continuidad, RPO, RTO y sin pruebas de recuperación.
+- Gestión de parches y actualizaciones deficiente.
+- Falta de inventario de versiones y firmware
+- Red plana (Un solo dominio de broadcast [Segmentación nula]), presenta congestión continua y cuellos de botella 0 segmentación. 
+- Redundancia nula, depende sustancialmente del switch central. Contiene un único router de borde.
+- Stateless Firewall dentro del router borde y reglas permisivas que no contienen políticas restrictivas conexiones de entrada o salida.
+- Protocolos de acceso remoto abiertos en sus puertos por default.
+- WPA-TKIP en todas las redes inalámbricas de la compañía.
+- Servidor web alojado en la LAN interna.
+- No existen controles de seguridad de capa 2.
+- Cuarto de servidores con pobre sistema de ventilación y enfriamiento y puerta de madera con candado desgastado.
+- El único guardia de seguridad se encuentra en la entrada del edificio.
