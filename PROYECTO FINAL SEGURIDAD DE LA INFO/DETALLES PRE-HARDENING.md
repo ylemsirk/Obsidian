@@ -39,10 +39,10 @@
 
 **Aplicaciones B2C:**
 - App Móvil (Mi Dina) y Portal Web (Página: www.dina.com.do).
-- Pasarelas de pago.
+- Pasarelas de pago. (servicios externos)
 - Canales de Atención Omnicanal: Chatbots con IA (Peldet) y Zendesk.
 
-##### Proveedores Mayoristas y Regulatorios
+##### Relaciones empresariales
 
 **Tránsito IP:**
 - Lumen
