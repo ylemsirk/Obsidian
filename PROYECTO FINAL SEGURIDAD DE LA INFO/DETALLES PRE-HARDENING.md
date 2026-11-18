@@ -99,4 +99,5 @@
 - Ausencia de QoS para teléfonos IP que ocasiona jitters, altos niveles de latencia y bajo throughput.
 - Puertos de switch sin usar habilitados
 - Ausencia de 802.1X
+- Telnet habilitado.
 - 
