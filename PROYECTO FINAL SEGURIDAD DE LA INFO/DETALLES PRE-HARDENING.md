@@ -5,11 +5,11 @@
 - Servicios de telefonía móvil (voz, SMS y datos móviles en 4G/5G).
 - Servicios de telefonía fija (voz tradicional e IP).
 - Acceso a Internet fijo (FTTH e Internet inalámbrico).
-- Almacenamiento en la nube.
+- Almacenamiento en la nube (Aún en proceso).
 
 **Modelo de negocio:** 
-- Orientación a B2C (Business-to-Customer)
-- Dependencias y relaciones B2B (Business-to-Business)
+- Orientación a B2C
+- Dependencias y relaciones B2B 
 
 **Modelo de seguridad:**
 - DAC
@@ -26,7 +26,9 @@
 **Red Fija (Fibra Óptica):**
 - OLT
 - ODN
-- IMS
+- 5GC
+- EPC
+- BNG
 
 **Infraestructura para Almacenamiento en la Nube:**
 - Servidores de Almacenamiento.
@@ -37,17 +39,6 @@
 - App Móvil (Mi Dina) y Portal Web (Página: www.dina.com.do).
 - Pasarelas de pago.
 - Canales de Atención Omnicanal: Chatbots con IA (Peldet) y Zendesk.
-
-##### Ciclos de provisión
-
-**Para telefonía móvil:**
-- Casi inmediato. Primero registra el número en la red, asocia el identificador único de la tarjeta SIM al perfil del cliente y habilita el acceso a voz, datos y mensajería en las centrales del operador.
-
-**Para Internet en el Hogar y Telefonía Fija:**
-- Puede tomar de 24 horas a varios días hábiles. Involucra una fase lógica (asignación de puertos en la central, configuración de velocidad y parámetros de red) y una fase física (verificación de disponibilidad de fibra óptica o cobre en la zona, despacho de un técnico al domicilio e instalación y prueba del módem o router).
-
-**Para almacenamiento en la Nube:**
-- La provisión es instantánea y automatizada (segundos). Al solicitar el servicio o ampliar la capacidad, los sistemas de gestión asignan virtualmente una cuota de espacio en los servidores, configuran los permisos de acceso y crean los contenedores o directorios listos para su uso inmediato sin intervención humana.
 
 ##### Proveedores Mayoristas y Regulatorios
 
@@ -79,7 +70,26 @@
 - Registros de Red
 - Pasarelas de Pago
 
+## Topología Lógica
+
+- 1 VLAN por piso, presenta congestión continua. 
+- Stateless Firewalls con reglas flojas.
+- Protocolos de acceso remoto abiertos en sus puertos por default.
+- WPA-TKIP en todas las redes inalámbricas de la compañía
 
 
 
+## Topología Física
 
+
+
+## Observaciones importantes
+- Monitoreo de red pobre o nulo
+- Documentación inexistente sobre el proceso de diseño de los servidores web
+- Falta de HSTS
+- Certificado caducado hace 2 meses
+- TLS 1.1
+- Base de datos y datos en reposo en texto plano
+- IRP, BCP, RPO, RTO y DRP inexistentes
+- Gestión de parches y actualizaciones deficiente
+- 
