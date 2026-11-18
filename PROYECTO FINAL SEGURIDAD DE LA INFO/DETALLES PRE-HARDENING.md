@@ -72,7 +72,8 @@
 - Registros de Red
 - Pasarelas de Pago
 
-## Observaciones importantes
+#### Vulnerabilidades encontradas
+
 - Monitoreo de red pobre o nulo. Cantidad considerable de puntos ciegos.
 - Los únicos logs generados se encuentran en el servidor del área de facturación y finanzas.
 - Carencia de sistemas de seguridad integrada como SIEMs, SOARs, EDRs, etc.
@@ -84,7 +85,7 @@
 - Carencia de planes de respuesta y continuidad, RPO, RTO y sin pruebas de recuperación.
 - Gestión de parches y actualizaciones deficiente.
 - Falta de inventario de versiones y firmware
-- Red plana (Un solo dominio de broadcast [Segmentación nula]), presenta congestión continua y cuellos de botella 0 segmentación. 
+- Red plana 192.168.0.0/16 (Un solo dominio de broadcast [Segmentación nula]), presenta congestión continua y cuellos de botella 0 segmentación. 
 - Toda la red utiliza la VLAN 1.
 - Redundancia nula, depende sustancialmente del switch central. Contiene un único router de borde.
 - Stateless Firewall dentro del router borde y reglas permisivas que no contienen políticas restrictivas de conexiones de entrada o salida.
@@ -97,7 +98,10 @@
 - Cuarto de servidores con pobre sistema de ventilación y enfriamiento y puerta de madera con candado desgastado.
 - El único guardia de seguridad se encuentra en la entrada del edificio.
 - Ausencia de QoS para teléfonos IP que ocasiona jitters, altos niveles de latencia y bajo throughput.
-- Puertos de switch sin usar habilitados
-- Ausencia de 802.1X
+- Puertos de switch sin usar habilitados.
+- Ausencia de 802.1X.
 - Telnet habilitado.
-- 
+- El último backup de las configuraciones de red y la base de datos se realizó hace 4 meses.
+- Contraseñas débiles o predeterminadas en los dispositivos de la infraestructura.
+
+**Página web:**
