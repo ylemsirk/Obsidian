@@ -1,12 +1,12 @@
 # **DINA** (**D**ina **I**s **N**ot **A**ltice).
-### Empresa mediana de telecomunicaciones dominicana.
+### Empresa mediana de telecomunicaciones Full MVNO dominicana.
 
 <hr>
 
 **Ofrece:**
 - Servicios de telefonía móvil (voz, SMS y datos móviles en 4G/5G).
 - Servicios de telefonía fija (voz tradicional e IP).
-- Acceso a Internet fijo (FTTH e Internet inalámbrico).
+- Acceso a Internet fijo (FTTH).
 - Almacenamiento en la nube (Se encuentra en fase piloto).
 
 **Modelo de negocio:** 
@@ -23,7 +23,6 @@
 #### Componentes principales de la infraestructura de Red:
 
 **Réd Móvil (4G/5G):** 
-- RAN: Antenas, torres de transmisión y estaciones base.
 - EPC (4G LTE): Núcleo responsable de la tecnología 4G.
 - 5GC: Núcleo responsable de la tecnología 45.
 - IMS
@@ -50,7 +49,7 @@
 - Lumen
 
 **Interconexión Local:**
-- Acuerdos entre Claro, Altice y Viva.
+- MNO Anfitrión.
 
 **Licencias y concesiones de espectro radioeléctrico y numeración:**
 - INDOTEL
@@ -67,8 +66,8 @@
 - Núcleo de red
 - Sistemas de facturación
 - Sistemas de atención al cliente
-- Usuarios a través de "Mi Dina" y el Portal Web
-													
+- Usuarios a través del Portal Web
+
 **Dónde se almacenan:**
 - Data Centers
 - Registros de Red
