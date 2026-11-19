@@ -25,10 +25,11 @@
 - [ ] Identificar y aplicar controles correspondientes + Documentación sobre cada una
 
 ## Active Directory
-- [ ] Vulnerabilidades
-- [ ] Descubrimiento de Vulnerabilidades
-- [ ] Identificar y aplicar controles correspondientes + Documentación sobre cada una
+- [ ] Vulnerabilidades.
+- [ ] Descubrimiento de Vulnerabilidades.
+- [ ] Identificar y aplicar controles correspondientes + Documentación sobre cada una.
 
-
-
+## Formato
+- [ ] Reunir toda la documentación y ponerle órden.
+- [ ] Estructurar, normalizar y aplicar el formato correspondiente al PDF entregable.
 
