@@ -171,7 +171,7 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 - Las cuentas administradoras poseen los nombres y contraseñas por defecto.
 
 **[A03:2025] Software Supply Chain Failures:** 
-- Peldet
+- Peldet.
 
 **[A04:2025] Cryptographic Failures:** 
 - Certificado web caducado hace 2 meses. 
