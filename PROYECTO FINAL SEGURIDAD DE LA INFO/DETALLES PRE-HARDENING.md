@@ -1,5 +1,5 @@
-## **DINA** (**D**ina **I**s **N**ot **A**ltice).
-#### Empresa mediana de telecomunicaciones dominicana.
+# **DINA** (**D**ina **I**s **N**ot **A**ltice).
+### Empresa mediana de telecomunicaciones dominicana.
 
 <hr>
 
@@ -76,7 +76,7 @@
 
 <hr>
 
-## Infraestructura de red
+### Infraestructura de red
 
 #### Topología Lógica
 (PROX. detalles de conexiones, dispositivos y simulación en Packet Tracer)
@@ -111,7 +111,7 @@
 
 ### Vulnerabilidades encontradas
 
-**Red:**
+### Red
 - Monitoreo de red pobre o nulo. Cantidad considerable de puntos ciegos.
 - Red plana 192.168.0.0/16 (Un solo dominio de broadcast.[Segmentación nula]), presenta congestión continua y cuellos de botella 0 segmentación. 
 - Stateless Firewall dentro del router borde y reglas permisivas que no contienen políticas restrictivas de conexiones de entrada o salida.
@@ -128,7 +128,7 @@
 - Ausencia de 802.1X.
 - Telnet habilitado.
 
-**Técnicas:**
+### Técnicas
 - Base de datos y datos en reposo en texto plano en cada dispositivo de la empresa.
 - Carencia de planes de respuesta y continuidad, RPO, RTO y sin pruebas de recuperación.
 - Gestión de parches y actualizaciones deficiente.
@@ -136,7 +136,7 @@
 - Los únicos logs generados se encuentran en el servidor del área de facturación y finanzas.
 - Carencia de sistemas de seguridad integrada como SIEMs, SOARs, EDRs, etc.
 
-**Físicas:**
+### Físicas
 - Cuarto de servidores con pobre sistema de ventilación y enfriamiento y puerta de madera con candado desgastado.
 - El único guardia de seguridad se encuentra en la entrada del edificio.
 - Cámaras con puntos ciegos.
@@ -146,14 +146,14 @@
 - Personal de limpieza y visitantes con acceso libre.
 - Cableados sin protección.
 
-**Operacionales:**
+### Operacionales
 - Contraseñas débiles o predeterminadas en los dispositivos de la infraestructura.
 - No existe algún inventario actualizado de activos tecnológicos.
 - No hay políticas de gestión de configuraciones.
 - Los backups se almacenan en la misma infraestructura productiva.
 - No existe una matriz formal de responsabilidades de seguridad.
 
-**Página web:**
+### Página web
 Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro de la página web se encontraban cada una de las 10 vulnerabilidades más comunes en páginas web según la lista OWASP Top 10 del 2025.
 
 - [A01:2025] ==Broken Access Control==: Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial. Además, no bloquea curls de dichas páginas confidenciales.
