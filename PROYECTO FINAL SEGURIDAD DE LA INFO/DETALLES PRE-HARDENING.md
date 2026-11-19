@@ -76,6 +76,37 @@
 
 <hr>
 
+## Infraestructura de red
+
+#### Topología Lógica
+(PROX. detalles de conexiones, dispositivos y simulación en Packet Tracer)
+
+#### Topología Física
+**Piso 3: IT y Administración:**
+- Puestos de trabajo
+- Impresoras
+- Teléfonos IP
+- Armario de telecomunicaciones IDF-03
+- Switch de acceso
+
+**Piso 2: Data Center:**
+- Racks de servidores
+- Core Switch
+- Router de borde
+- Paneles de parcheo
+- UPS
+- Sistema de vigilancia    
+
+**Piso 1: Atención al Cliente y Finanzas:**
+- Estaciones de trabajo
+- Teléfonos IP
+- Impresoras
+- Access Points
+- Armario de telecomunicaciones IDF-01
+- Switch de acceso
+
+<hr>
+
 ### Vulnerabilidades encontradas
 
 **Red:**
@@ -106,18 +137,23 @@
 **Físicas:**
 - Cuarto de servidores con pobre sistema de ventilación y enfriamiento y puerta de madera con candado desgastado.
 - El único guardia de seguridad se encuentra en la entrada del edificio.
-- CCTV incompleto.
-
+- Cámaras con puntos ciegos.
+- Racks sin cerraduras.
+- Ausencia de sensores de temperatura en el Data Center y cuartos de telecomunicaciones por piso.
+- UPS insuficiente, la energía proveída solo dura 30 minutos. 
+- Personal de limpieza y visitantes con acceso libre.
+- Cableados sin protección.
 
 **Operacionales:**
 - Contraseñas débiles o predeterminadas en los dispositivos de la infraestructura.
-- No existe algún inventario actualizado de activos tecnológicos
-- No hay políticas de gestión de configuraciones
+- No existe algún inventario actualizado de activos tecnológicos.
+- No hay políticas de gestión de configuraciones.
 - Los backups se almacenan en la misma infraestructura productiva.
-- No existe una matriz formal de responsabilidades de seguridad
+- No existe una matriz formal de responsabilidades de seguridad.
 
 **Página web:**
 Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro de la página web se encontraban cada una de las 10 vulnerabilidades más comunes en páginas web según la lista OWASP Top 10 del 2025.
+
 - [A01:2025] ==Broken Access Control==: Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial. Además, no bloquea curls de dichas páginas confidenciales.
 - [A02:2025] ==Security Misconfiguration==: Se omite la cabecera HSTS. El istado de directorios se mantiene activo.
 - [A03:2025] ==Software Supply Chain Failures==: Contiene librerías instaladas y descargadas de la compañía Peldet, la cual es conocida por vender información sin consentimiento.
