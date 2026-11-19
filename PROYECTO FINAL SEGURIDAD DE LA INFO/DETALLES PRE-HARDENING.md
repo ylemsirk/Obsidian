@@ -163,25 +163,32 @@
 Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro de la página web se encontraban cada una de las 10 vulnerabilidades más comunes en páginas web según la lista OWASP Top 10 del 2025.
 
 **[A01:2025] Broken Access Control:** 
-- Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial. Además, no bloquea curls de dichas páginas confidenciales.
+- Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial.
+- No bloquea curls de dichas páginas confidenciales.
 
 **[A02:2025] Security Misconfiguration:** 
-Se omite la cabecera HSTS, el listado de directorios se mantiene activo. Las cuentas administradoras poseen los nombres y contraseñas por defecto.
+- Se omite la cabecera HSTS, el listado de directorios se mantiene activo. 
+- Las cuentas administradoras poseen los nombres y contraseñas por defecto.
 
 **[A03:2025] Software Supply Chain Failures:** 
-Contiene librerías instaladas y descargadas de la compañía Peldet, la cual es conocida por vender información sin consentimiento.
+- Contiene librerías instaladas y descargadas de la compañía Peldet, la cual es conocida por vender información sin consentimiento.
 
 **[A04:2025] Cryptographic Failures:** 
-Certificado web caducado hace 2 meses. El servidor web utiliza TLS 1.1. Las contraseñas se guardan en texto plano.
+- Certificado web caducado hace 2 meses. El servidor web utiliza TLS 1.1. 
+- Las contraseñas se guardan en texto plano.
 
 **[A05:2025] Injection:** 
-No sanitiza los campos de texto, como consecuencia, la base de datos interpreta algunos inputs como consultas SQL. Además, se pueden hacer XSS en comentarios públicos.
+- No sanitiza los campos de texto, como consecuencia, la base de datos interpreta algunos inputs como consultas SQL. 
+- Se pueden hacer XSS en comentarios públicos.
 
 **[A06:2025] Insecure Design:** 
-Documentación inexistente sobre el proceso de diseño de los servidores web. No se contemplaron los límites de peticiones, permitiendo ataques automatizados, fuerza bruta o agotamiento de recursos. Posee ausencia de alta disponibilidad y distribución de tráfico, dejando expuesto al servidor a ataques de dengación de servicio (DoS/DDoS).
+- Documentación inexistente sobre el proceso de diseño de los servidores web. 
+- No se contemplaron los límites de peticiones.
+- Posee ausencia de alta disponibilidad y distribución de tráfico.
 
 **[A07:2025] Authentication Failures:** 
-Permite intentos ilimitados de contraseña sin bloqueo ni MFA. También, mantiene el mismo ID de sesión activo después de un inicio de sesión.
+- Permite intentos ilimitados de contraseña sin bloqueo ni MFA. 
+- Mantiene el mismo ID de sesión activo después de un inicio de sesión.
 
 **[A08:2025] Software or Data Integrity Failures:** 
 
