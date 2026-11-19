@@ -13,7 +13,7 @@
 - Orientación a B2C
 - Dependencias y relaciones B2B 
 
-**Modelo de seguridad:**
+**Modelo de control de acceso:**
 - DAC
 
 **Genera ingresos mediante:**
