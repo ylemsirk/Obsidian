@@ -105,3 +105,5 @@
 - Contraseñas débiles o predeterminadas en los dispositivos de la infraestructura.
 
 **Página web:**
+- [A01:2025] Broken Access Control: Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial. Además, no bloquea curls.
+- [A02:2025]
