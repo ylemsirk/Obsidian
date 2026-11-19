@@ -82,20 +82,6 @@
 (PROX. detalles de conexiones, dispositivos y simulación en Packet Tracer)
 
 #### Topología Física
-**Piso 3: IT y Administración:**
-- Puestos de trabajo
-- Impresoras
-- Teléfonos IP
-- Armario de telecomunicaciones IDF-03
-- Switch de acceso
-
-**Piso 2: Data Center:**
-- Racks de servidores
-- Core Switch
-- Router de borde
-- Paneles de parcheo
-- UPS
-- Sistema de vigilancia    
 
 **Piso 1: Atención al Cliente y Finanzas:**
 - Estaciones de trabajo
@@ -104,6 +90,22 @@
 - Access Points
 - Armario de telecomunicaciones IDF-01
 - Switch de acceso
+
+**Piso 2: Data Center:**
+- Racks de servidores
+- Core Switch
+- Router de borde
+- Paneles de parcheo
+- UPS
+- Sistema de vigilancia 
+
+**Piso 3: IT y Administración:**
+- Puestos de trabajo
+- Impresoras
+- Teléfonos IP
+- Armario de telecomunicaciones IDF-03
+- Switch de acceso
+
 
 <hr>
 
