@@ -1,6 +1,8 @@
 ## **DINA** (**D**ina **I**s **N**ot **A**ltice).
 ##### Empresa mediana de telecomunicaciones dominicana.
 
+<hr>
+
 **Ofrece:**
 - Servicios de telefonía móvil (voz, SMS y datos móviles en 4G/5G).
 - Servicios de telefonía fija (voz tradicional e IP).
