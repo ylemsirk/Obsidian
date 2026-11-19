@@ -6,7 +6,7 @@
 - [ ] Red
 - [ ] Identificar y aplicar controles correspondientes + Documentación sobre cada una
 
-## Descubrimiento de Vulnerabilidades
+## Descubrimiento de Vulnerabilidades [Pentesting]
 - [ ] Página web
 - [ ] Operacionales
 - [ ] Físicas
