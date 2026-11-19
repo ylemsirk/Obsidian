@@ -171,7 +171,7 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 - Las cuentas administradoras poseen los nombres y contraseñas por defecto.
 
 **[A03:2025] Software Supply Chain Failures:** 
-- ==Contiene librerías instaladas y descargadas de la compañía Peldet, la cual es conocida por vender información sin consentimiento.==
+- Peldet
 
 **[A04:2025] Cryptographic Failures:** 
 - Certificado web caducado hace 2 meses. 
@@ -195,7 +195,6 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 
 **[A08:2025] Software or Data Integrity Failures:** 
 - Permite deserealización insegura
-- 
 
 **[A09:2025] Security Logging and Alerting Failures:**
 - Logs de cualquier índole sin guardar.
