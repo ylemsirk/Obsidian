@@ -2,6 +2,8 @@
 - [ ] Acabar de definir los procesos financieros y empresariales de DINA
 - [ ] Identificar y realizar triaje de vulnerabilidades, riesgos, amenazas y posibles ataques.
 - [ ] Realizar gestión de riesgos.
+- [ ] Definir la historia con Peldet
+- [ ] Definir los CWE
 
 ## Departamento de Redes
 - [ ] Diseñar la topología lógica.
