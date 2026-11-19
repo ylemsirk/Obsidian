@@ -85,35 +85,33 @@
 - Ausencia de Port Security.
 - DHCP Snooping deshabilitado.
 - Ausencia de Dynamic ARP Inspection.
-- ==Base de datos y datos en reposo en texto plano en cada dispositivo de la empresa.==
-- ==Carencia de planes de respuesta y continuidad, RPO, RTO y sin pruebas de recuperación.==
-- ==Gestión de parches y actualizaciones deficiente.==
-- ==Falta de inventario de versiones y firmware.==
-- Cuarto de servidores con pobre sistema de ventilación y enfriamiento y puerta de madera con candado desgastado.
-- El único guardia de seguridad se encuentra en la entrada del edificio.
 - Ausencia de QoS para teléfonos IP que ocasiona jitters, altos niveles de latencia y bajo throughput.
 - Puertos de switch sin usar habilitados.
 - Ausencia de 802.1X.
 - Telnet habilitado.
+**Técnicas:**
+- Base de datos y datos en reposo en texto plano en cada dispositivo de la empresa.
+- Carencia de planes de respuesta y continuidad, RPO, RTO y sin pruebas de recuperación.
+- Gestión de parches y actualizaciones deficiente.
+- Falta de inventario de versiones y firmware.
 - El último backup de las configuraciones de red y la base de datos se realizó hace 4 meses.
-- Contraseñas débiles o predeterminadas en los dispositivos de la infraestructura.
 - Los únicos logs generados se encuentran en el servidor del área de facturación y finanzas.
 - Carencia de sistemas de seguridad integrada como SIEMs, SOARs, EDRs, etc.
-- Documentación inexistente sobre el proceso de diseño de los servidores web.
-
+**Físicas:**
+- Cuarto de servidores con pobre sistema de ventilación y enfriamiento y puerta de madera con candado desgastado.
+- El único guardia de seguridad se encuentra en la entrada del edificio.
+- CCTV incompleto.
 **Página web:**
 Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro de la página web se encontraban cada una de las 10 vulnerabilidades más comunes en páginas web según la lista OWASP Top 10 del 2025.
-
 - [A01:2025] ==Broken Access Control==: Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial. Además, no bloquea curls de dichas páginas confidenciales.
 - [A02:2025] ==Security Misconfiguration==: 
 - [A03:2025] ==Software Supply Chain Failures==:
 - [A04:2025] ==Cryptographic Failures==: Certificado web caducado hace 2 meses. El servidor web utiliza TLS 1.1.
 - [A05:2025] ==Injection==:
-- [A06:2025] ==Insecure Design==:
+- [A06:2025] ==Insecure Design==: Documentación inexistente sobre el proceso de diseño de los servidores web.
 - [A07:2025] ==Authentication Failures==:
 - [A08:2025] ==Software or Data Integrity Failures==:
 - [A09:2025] ==Security Logging and Alerting Failures==:
 - [A10:2025] ==Mishandling of Exceptional Conditions==:
-
 **Operacionales:**
-
+- Contraseñas débiles o predeterminadas en los dispositivos de la infraestructura.
