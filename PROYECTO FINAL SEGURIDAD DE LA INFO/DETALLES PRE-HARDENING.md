@@ -155,7 +155,7 @@
 Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro de la página web se encontraban cada una de las 10 vulnerabilidades más comunes en páginas web según la lista OWASP Top 10 del 2025.
 
 - [A01:2025] ==Broken Access Control==: Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial. Además, no bloquea curls de dichas páginas confidenciales.
-- [A02:2025] ==Security Misconfiguration==: Se omite la cabecera HSTS. El istado de directorios se mantiene activo.
+- [A02:2025] ==Security Misconfiguration==: Se omite la cabecera HSTS. El listado de directorios se mantiene activo.
 - [A03:2025] ==Software Supply Chain Failures==: Contiene librerías instaladas y descargadas de la compañía Peldet, la cual es conocida por vender información sin consentimiento.
 - [A04:2025] ==Cryptographic Failures==: Certificado web caducado hace 2 meses. El servidor web utiliza TLS 1.1. Las contraseñas se guardan en texto plano.
 - [A05:2025] ==Injection==: No sanitiza los campos de texto, como consecuencia, la base de datos interpreta algunos inputs como consultas SQL. Además, se pueden hacer XSS en comentarios públicos.
