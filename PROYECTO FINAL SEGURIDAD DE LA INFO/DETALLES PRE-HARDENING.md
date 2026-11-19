@@ -157,6 +157,7 @@
 - No hay políticas de gestión de configuraciones.
 - Los backups se almacenan en la misma infraestructura productiva.
 - No existe una matriz formal de responsabilidades de seguridad.
+- Ausencia de Active Directory
 
 ### Página web
 Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro de la página web se encontraban cada una de las 10 vulnerabilidades más comunes en páginas web según la lista OWASP Top 10 del 2025.
