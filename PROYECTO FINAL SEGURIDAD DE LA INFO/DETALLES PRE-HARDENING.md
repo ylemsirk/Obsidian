@@ -194,6 +194,7 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 - Mantiene el mismo ID de sesión activo después de un inicio de sesión.
 
 **[A08:2025] Software or Data Integrity Failures:** 
+- Permite deserealización insegura
 - 
 
 **[A09:2025] Security Logging and Alerting Failures:**
