@@ -75,6 +75,7 @@
 - Pasarelas de Pago
 
 <hr>
+
 ### Vulnerabilidades encontradas
 
 **Red:**
