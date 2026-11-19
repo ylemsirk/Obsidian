@@ -1,5 +1,5 @@
 ## **DINA** (**D**ina **I**s **N**ot **A**ltice).
-##### Empresa mediana de telecomunicaciones dominicana.
+#### Empresa mediana de telecomunicaciones dominicana.
 
 <hr>
 
@@ -20,7 +20,7 @@
 - Tarifas y planes de suscripción
 - Cobros por consumo
 
-##### Componentes principales de la infraestructura de Red:
+#### Componentes principales de la infraestructura de Red:
 
 **Réd Móvil (4G/5G):** 
 - RAN: Antenas, torres de transmisión y estaciones base.
@@ -44,7 +44,7 @@
 - Pasarelas de pago. (servicios externos)
 - Canales de Atención Omnicanal: Chatbots con IA (Peldet) y Zendesk.
 
-##### Relaciones empresariales
+#### Relaciones empresariales
 
 **Tránsito IP:**
 - Lumen
@@ -55,7 +55,7 @@
 **Licencias y concesiones de espectro radioeléctrico y numeración:**
 - INDOTEL
 
-##### Manejo de datos
+#### Manejo de datos
 
 **Datos que circulan entre los sistemas:**
 - Tráfico de usuario
@@ -74,7 +74,9 @@
 - Registros de Red
 - Pasarelas de Pago
 
-#### Vulnerabilidades encontradas
+<hr>
+### Vulnerabilidades encontradas
+
 **Red:**
 - Monitoreo de red pobre o nulo. Cantidad considerable de puntos ciegos.
 - Red plana 192.168.0.0/16 (Un solo dominio de broadcast.[Segmentación nula]), presenta congestión continua y cuellos de botella 0 segmentación. 
@@ -91,6 +93,7 @@
 - Puertos de switch sin usar habilitados.
 - Ausencia de 802.1X.
 - Telnet habilitado.
+
 **Técnicas:**
 - Base de datos y datos en reposo en texto plano en cada dispositivo de la empresa.
 - Carencia de planes de respuesta y continuidad, RPO, RTO y sin pruebas de recuperación.
@@ -98,16 +101,20 @@
 - El último backup de las configuraciones de red y la base de datos se realizó hace 4 meses.
 - Los únicos logs generados se encuentran en el servidor del área de facturación y finanzas.
 - Carencia de sistemas de seguridad integrada como SIEMs, SOARs, EDRs, etc.
+
 **Físicas:**
 - Cuarto de servidores con pobre sistema de ventilación y enfriamiento y puerta de madera con candado desgastado.
 - El único guardia de seguridad se encuentra en la entrada del edificio.
 - CCTV incompleto.
+
+
 **Operacionales:**
 - Contraseñas débiles o predeterminadas en los dispositivos de la infraestructura.
 - No existe algún inventario actualizado de activos tecnológicos
 - No hay políticas de gestión de configuraciones
 - Los backups se almacenan en la misma infraestructura productiva.
 - No existe una matriz formal de responsabilidades de seguridad
+
 **Página web:**
 Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro de la página web se encontraban cada una de las 10 vulnerabilidades más comunes en páginas web según la lista OWASP Top 10 del 2025.
 - [A01:2025] ==Broken Access Control==: Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial. Además, no bloquea curls de dichas páginas confidenciales.
