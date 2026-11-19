@@ -55,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "[\"aliases\"]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d1bb780c403057d7",
@@ -100,11 +99,11 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "IT Help Desk Preparation/Topics/Windows.md",
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -119,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "IT Help Desk Preparation/Topics/Windows.md",
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -134,8 +133,8 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
+                "useHierarchy": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
@@ -149,7 +148,7 @@
               "type": "all-properties",
               "state": {
                 "sortOrder": "frequency",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-archive",
@@ -162,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "IT Help Desk Preparation/Topics/Windows.md",
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -201,10 +200,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b827f5f987dbe01",
+  "active": "53d938c2ec2361c2",
   "lastOpenFiles": [
-    "IT Help Desk Preparation/Topics/Operating Systems.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Sin título.canvas",
+    "IT Help Desk Preparation/Topics/Operating Systems.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO",
     "IT Help Desk Preparation/Topics/Networking.md",
     "IT Help Desk Preparation/Topics/Windows.md",
@@ -239,7 +240,6 @@
     "Remote Support + Ticketing/ITSM.md",
     "Remote Support + Ticketing",
     "Linux.md",
-    "Active.md",
     "IT Help Desk Preparation/Topics",
     "IT Help Desk Preparation",
     "Sin título 1.canvas",

@@ -38,7 +38,7 @@
 - Aplicaciones web, iOS y Android.
 
 **Aplicaciones B2C:**
-- App Móvil (Mi Dina) y Portal Web (Página: www.dina.com.do).
+- Portal Web (Página: www.dina.com.do).
 - Pasarelas de pago. (servicios externos)
 - Canales de Atención Omnicanal: Chatbots con IA (Peldet) y Zendesk.
 
@@ -73,28 +73,22 @@
 - Pasarelas de Pago
 
 #### Vulnerabilidades encontradas
-
+**Red:**
 - Monitoreo de red pobre o nulo. Cantidad considerable de puntos ciegos.
-- Los únicos logs generados se encuentran en el servidor del área de facturación y finanzas.
-- Carencia de sistemas de seguridad integrada como SIEMs, SOARs, EDRs, etc.
-- Documentación inexistente sobre el proceso de diseño de los servidores web.
-- Falta de HSTS.
-- Certificado web caducado hace 2 meses.
-- El servidor web utiliza TLS 1.1.
-- Base de datos y datos en reposo en texto plano en cada dispositivo de la empresa.
-- Carencia de planes de respuesta y continuidad, RPO, RTO y sin pruebas de recuperación.
-- Gestión de parches y actualizaciones deficiente.
-- Falta de inventario de versiones y firmware
-- Red plana 192.168.0.0/16 (Un solo dominio de broadcast [Segmentación nula]), presenta congestión continua y cuellos de botella 0 segmentación. 
+- Red plana 192.168.0.0/16 (Un solo dominio de broadcast.[Segmentación nula]), presenta congestión continua y cuellos de botella 0 segmentación. 
+- Stateless Firewall dentro del router borde y reglas permisivas que no contienen políticas restrictivas de conexiones de entrada o salida.
 - Toda la red utiliza la VLAN 1.
 - Redundancia nula, depende sustancialmente del switch central. Contiene un único router de borde.
-- Stateless Firewall dentro del router borde y reglas permisivas que no contienen políticas restrictivas de conexiones de entrada o salida.
 - Protocolos de acceso remoto abiertos en sus puertos por default.
 - WPA-TKIP en todas las redes inalámbricas de la compañía.
 - Servidor web alojado en la LAN interna.
 - Ausencia de Port Security.
-- DHCP Snooping deshabilitado
+- DHCP Snooping deshabilitado.
 - Ausencia de Dynamic ARP Inspection.
+- ==Base de datos y datos en reposo en texto plano en cada dispositivo de la empresa.==
+- ==Carencia de planes de respuesta y continuidad, RPO, RTO y sin pruebas de recuperación.==
+- ==Gestión de parches y actualizaciones deficiente.==
+- ==Falta de inventario de versiones y firmware.==
 - Cuarto de servidores con pobre sistema de ventilación y enfriamiento y puerta de madera con candado desgastado.
 - El único guardia de seguridad se encuentra en la entrada del edificio.
 - Ausencia de QoS para teléfonos IP que ocasiona jitters, altos niveles de latencia y bajo throughput.
@@ -103,7 +97,23 @@
 - Telnet habilitado.
 - El último backup de las configuraciones de red y la base de datos se realizó hace 4 meses.
 - Contraseñas débiles o predeterminadas en los dispositivos de la infraestructura.
+- Los únicos logs generados se encuentran en el servidor del área de facturación y finanzas.
+- Carencia de sistemas de seguridad integrada como SIEMs, SOARs, EDRs, etc.
+- Documentación inexistente sobre el proceso de diseño de los servidores web.
 
 **Página web:**
-- [A01:2025] Broken Access Control: Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial. Además, no bloquea curls.
-- [A02:2025]
+Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro de la página web se encontraban cada una de las 10 vulnerabilidades más comunes en páginas web según la lista OWASP Top 10 del 2025.
+
+- [A01:2025] ==Broken Access Control==: Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial. Además, no bloquea curls de dichas páginas confidenciales.
+- [A02:2025] ==Security Misconfiguration==: 
+- [A03:2025] ==Software Supply Chain Failures==:
+- [A04:2025] ==Cryptographic Failures==: Certificado web caducado hace 2 meses. El servidor web utiliza TLS 1.1.
+- [A05:2025] ==Injection==:
+- [A06:2025] ==Insecure Design==:
+- [A07:2025] ==Authentication Failures==:
+- [A08:2025] ==Software or Data Integrity Failures==:
+- [A09:2025] ==Security Logging and Alerting Failures==:
+- [A10:2025] ==Mishandling of Exceptional Conditions==:
+
+**Operacionales:**
+
