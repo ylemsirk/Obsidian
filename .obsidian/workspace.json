@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d1bb780c403057d7",
@@ -203,6 +202,7 @@
   },
   "active": "53d938c2ec2361c2",
   "lastOpenFiles": [
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pasted image 20261119221334.png",
     "Pasted image 20261119221334.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",

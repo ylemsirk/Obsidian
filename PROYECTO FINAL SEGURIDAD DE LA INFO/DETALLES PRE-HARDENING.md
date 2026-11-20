@@ -106,9 +106,7 @@
 | 6 | Access Point-PT | `AP-P1-GUEST` (SSID `DINA-GUEST`) | sin IP |
 | 6 | Laptop-PT | `LAP-CORP-01` | DHCP |
 | 6 | Smartphone-PT | `CEL-GUEST-01` | DHCP |
-
-![[Pasted image 20261119221334.png|700]]
-
+![[PROYECTO FINAL SEGURIDAD DE LA INFO/Pasted image 20261119221334.png]]
 #### Topología Física
 
 **Piso 1: Atención al Cliente y Finanzas:**
