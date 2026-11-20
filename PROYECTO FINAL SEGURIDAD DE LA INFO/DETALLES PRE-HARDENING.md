@@ -71,7 +71,8 @@
 **Dónde se almacenan:**
 - Data Centers
 - Registros de Red
-- Pasarelas de Pago
+- Sistemas de logs.
+- Proveedores externos.
 
 <hr>
 
