@@ -79,7 +79,6 @@
 ### Infraestructura de red
 
 #### Topología Lógica
-(PROX. detalles de conexiones, dispositivos y simulación en Packet Tracer)
 
 | Fase | Modelo en PT | Nombre exacto | IP / máscara / gateway |
 |---|---|---|---|
