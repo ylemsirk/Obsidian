@@ -199,7 +199,7 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 - CWE-1392: Las cuentas administradoras poseen los nombres y contraseñas por defecto.
 
 **[A03:2025] Software Supply Chain Failures:** 
-- Peldet.
+- CWE-1395: Dependencia de terceros vulnerables.
 
 **[A04:2025] Cryptographic Failures:** 
 - CWE-327: El servidor web utiliza TLS 1.1. 
