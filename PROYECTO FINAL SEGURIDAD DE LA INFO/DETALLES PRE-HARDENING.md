@@ -217,8 +217,8 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 
 **[A07:2025] Authentication Failures:** 
 - Permite intentos ilimitados de contraseña.
-- Ausencia de MFA.
-- Mantiene el mismo ID de sesión activo después de un inicio de sesión.
+- CWE-308: Ausencia de MFA.
+- CWE-384: Mantiene el mismo ID de sesión activo después de un inicio de sesión.
 
 **[A08:2025] Software or Data Integrity Failures:** 
 - CWE-502: Permite deserealización insegura
