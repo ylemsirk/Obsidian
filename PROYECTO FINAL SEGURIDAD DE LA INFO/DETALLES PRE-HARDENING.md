@@ -206,9 +206,9 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 - CWE-256: Las contraseñas se guardan en texto plano.
 
 **[A05:2025] Injection:** 
-- La base de datos interpreta algunos inputs como consultas SQL. 
-- Permite XSS mediante la barra de búsqueda.
-- OS Command Injection.
+- CWE-89: La base de datos interpreta algunos inputs como consultas SQL. 
+- CWE-79: Permite XSS mediante la barra de búsqueda.
+- CWE-78: OS Command Injection.
 
 **[A06:2025] Insecure Design:** 
 - Documentación inexistente sobre el proceso de diseño de los servidores web. 
