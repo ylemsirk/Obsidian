@@ -211,12 +211,11 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 - CWE-78: OS Command Injection.
 
 **[A06:2025] Insecure Design:** 
-- Documentación inexistente sobre el proceso de diseño de los servidores web. 
-- No se contemplaron los límites de peticiones.
-- Posee ausencia de alta disponibilidad y distribución de tráfico.
+- CWE-1053: Documentación inexistente sobre el proceso de diseño de los servidores web. 
+- CWE-770: No se contemplaron los límites de peticiones.
 
 **[A07:2025] Authentication Failures:** 
-- Permite intentos ilimitados de contraseña.
+- CWE-307: Permite intentos ilimitados de contraseña.
 - CWE-308: Ausencia de MFA.
 - CWE-384: Mantiene el mismo ID de sesión activo después de un inicio de sesión.
 
