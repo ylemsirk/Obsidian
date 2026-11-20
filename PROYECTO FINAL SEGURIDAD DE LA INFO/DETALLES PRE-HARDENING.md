@@ -202,9 +202,8 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 - Peldet.
 
 **[A04:2025] Cryptographic Failures:** 
-- Certificado web caducado hace 2 meses. 
-- El servidor web utiliza TLS 1.1. 
-- Las contraseñas se guardan en texto plano.
+- CWE-327: El servidor web utiliza TLS 1.1. 
+- CWE-256: Las contraseñas se guardan en texto plano.
 
 **[A05:2025] Injection:** 
 - La base de datos interpreta algunos inputs como consultas SQL. 
