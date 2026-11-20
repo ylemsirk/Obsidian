@@ -147,22 +147,22 @@
 #### Red
 - Monitoreo de red pobre o nulo. Cantidad considerable de puntos ciegos.
 - Red plana 192.168.0.0/16 (Un solo dominio de broadcast.[Segmentación nula]), presenta congestión continua y cuellos de botella 0 segmentación. 
-- Stateless Firewall dentro del router borde y reglas permisivas que no contienen políticas restrictivas de conexiones de entrada o salida.
 - Toda la red utiliza la VLAN 1.
 - Redundancia nula, depende sustancialmente del switch central. Contiene un único router de borde.
-- Protocolos de acceso remoto abiertos en sus puertos por default.
+- Protocolos (SSH, Telnet y RDP) de acceso remoto abiertos en sus puertos por default.
 - WPA-TKIP en todas las redes inalámbricas de la compañía.
 - Servidor web alojado en la LAN interna.
 - Ausencia de Port Security.
 - DHCP Snooping deshabilitado.
 - Ausencia de Dynamic ARP Inspection.
-- Ausencia de QoS para teléfonos IP que ocasiona jitters, altos niveles de latencia y bajo throughput.
+- Ausencia de QoS para teléfonos IP.
 - Puertos de switch sin usar habilitados.
 - Ausencia de 802.1X.
 - Telnet habilitado.
 
 #### Técnicas
-- Base de datos y datos en reposo en texto plano en cada dispositivo de la empresa.
+- La base de datos guarda todos los datos en texto plano
+- Datos en reposo en texto plano en cada dispositivo de la empresa.
 - Carencia de planes de respuesta y continuidad, RPO, RTO y sin pruebas de recuperación.
 - Gestión de parches y actualizaciones deficiente.
 - El último backup de las configuraciones de red y la base de datos se realizó hace 4 meses.
@@ -188,7 +188,7 @@
 - Ausencia de Active Directory.
 
 #### Página web
-Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro de la página web se encontraban cada una de las 10 vulnerabilidades más comunes en páginas web según la lista OWASP Top 10:2025.
+Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro de la página web se encontraban cada una de las 10 categorías más comunes de vulnerabilidades en páginas web según la lista OWASP Top 10:2025.
 
 **[A01:2025] Broken Access Control:** 
 - Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial.
