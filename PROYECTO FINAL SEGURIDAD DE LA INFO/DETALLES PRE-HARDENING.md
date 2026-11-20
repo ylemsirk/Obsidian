@@ -241,14 +241,7 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 **6. Almacenamiento cloud**
 
 1. El cliente solicita espacio.
-    
 2. Se crea una cuenta o espacio de almacenamiento.
-    
 3. Se asigna una cuota.
-    
 4. Se configuran permisos de acceso.
-    
 5. Se registran operaciones y eventos de almacenamiento.
-    
-
-Activos: plataforma cloud, identidades, almacenamiento y registros.
