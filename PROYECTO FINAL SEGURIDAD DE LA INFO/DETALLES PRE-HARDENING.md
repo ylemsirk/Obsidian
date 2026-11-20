@@ -39,7 +39,7 @@
 - Aplicaciones web, iOS y Android.
 
 **Aplicaciones B2C:**
-- Portal Web (Página: www.dina.com.do).
+- Portal Web (Página: www.dina.test).
 - Pasarelas de pago. (servicios externos)
 - Canales de Atención Omnicanal: Chatbots con IA (Peldet) y Zendesk.
 
