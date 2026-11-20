@@ -191,12 +191,12 @@
 Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro de la página web se encontraban cada una de las 10 categorías más comunes de vulnerabilidades en páginas web según la lista OWASP Top 10:2025.
 
 **[A01:2025] Broken Access Control:** 
-- Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial.
-- No bloquea curls de dichas páginas confidenciales.
+- CWE-639: Permite a usuarios no autorizados modificar parámetros en peticiones HTTP, URLs y cookies para obtener acceso a información confidencial.
 
 **[A02:2025] Security Misconfiguration:** 
-- Se omite la cabecera HSTS, el listado de directorios se mantiene activo. 
-- Las cuentas administradoras poseen los nombres y contraseñas por defecto.
+- Se omite la cabecera HSTS.
+- CWE-548: El listado de directorios se mantiene activo. 
+- CWE-1392: Las cuentas administradoras poseen los nombres y contraseñas por defecto.
 
 **[A03:2025] Software Supply Chain Failures:** 
 - Peldet.
@@ -222,11 +222,10 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 - Mantiene el mismo ID de sesión activo después de un inicio de sesión.
 
 **[A08:2025] Software or Data Integrity Failures:** 
-- Permite deserealización insegura
+- CWE-502: Permite deserealización insegura
 
 **[A09:2025] Security Logging and Alerting Failures:**
-- Logs de cualquier índole sin guardar.
-- Inexistencia de alertas.
+- CWE-778: Logs de cualquier índole sin guardar.
 
 **[A10:2025] Mishandling of Exceptional Conditions:**
 - CWE-209: Mensajes de error demasiado detallados.
