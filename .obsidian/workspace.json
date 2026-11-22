@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DETALLES PRE-HARDENING"
+              "title": "WEB"
             }
           }
         ]
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d1bb780c403057d7",
@@ -203,10 +202,12 @@
   },
   "active": "53d938c2ec2361c2",
   "lastOpenFiles": [
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pasted image 20261119221334.png",
-    "Pasted image 20261119221334.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pasted image 20261119221334.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting",
+    "Pasted image 20261119221334.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Sin título.canvas",
     "IT Help Desk Preparation/Topics/Operating Systems.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO",
@@ -240,12 +241,10 @@
     "Remote Support + Ticketing-FITSM.md",
     "Remote Support + Ticketing%2fITSM.md",
     "Remote Support + Ticketing0ITSM.md",
-    "Remote Support + Ticketing/ITSM.md",
     "Remote Support + Ticketing",
     "IT Help Desk Preparation/Topics",
     "IT Help Desk Preparation",
     "Sin título 1.canvas",
-    "Sin nombre 1",
     "PROYECTO FINAL/EX20/EX20.canvas",
     "PROYECTO FINAL/EX19/EX19.canvas",
     "PExcelint/Diagrama.canvas"

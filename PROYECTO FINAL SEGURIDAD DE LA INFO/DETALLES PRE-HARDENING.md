@@ -24,7 +24,7 @@
 
 **Réd Móvil (4G/5G):** 
 - EPC (4G LTE): Núcleo responsable de la tecnología 4G.
-- 5GC: Núcleo responsable de la tecnología 45.
+- 5GC: Núcleo responsable de la tecnología 5G.
 - IMS
 
 **Red Fija (Fibra Óptica):**
