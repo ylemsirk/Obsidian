@@ -108,7 +108,7 @@
 | 6 | Smartphone-PT | `CEL-GUEST-01` | DHCP |
 
 
-![[PROYECTO FINAL SEGURIDAD DE LA INFO/Pasted image 20261119221334.png]]
+![[PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/Pasted image 20261119221334.png]]
 #### Topología Física
 
 **Piso 1: Atención al Cliente y Finanzas:**
