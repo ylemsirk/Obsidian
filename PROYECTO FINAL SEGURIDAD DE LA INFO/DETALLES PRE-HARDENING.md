@@ -108,7 +108,7 @@
 | 6 | Smartphone-PT | `CEL-GUEST-01` | DHCP |
 
 
-![[PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/Pasted image 20261119221334.png]]
+![[Topología PRE-HARDENING.png]]
 #### Topología Física
 
 **Piso 1: Atención al Cliente y Finanzas:**
@@ -227,5 +227,4 @@ Tras distintas pruebas de penetración, se llegó a la conclusión de que dentro
 
 **[A10:2025] Mishandling of Exceptional Conditions:**
 - CWE-209: Mensajes de error demasiado detallados.
-
 
