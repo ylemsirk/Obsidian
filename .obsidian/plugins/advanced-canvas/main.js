@@ -4677,6 +4677,7 @@ var PresentationCanvasExtension = class extends CanvasExtension {
     this.isPresentationMode = false;
     this.visitedNodeIds = [];
     this.traveledEdges = [];
+    this.fullscreenListener = null;
     this.fullscreenModalObserver = null;
     this.presentationUsesFullscreen = false;
   }
@@ -4924,10 +4925,11 @@ var PresentationCanvasExtension = class extends CanvasExtension {
         if (inputField) inputField.focus();
       });
       this.fullscreenModalObserver.observe(activeDocument.body, { childList: true });
-      canvas.wrapperEl.onfullscreenchange = (_e) => {
+      this.fullscreenListener = (_e) => {
         if (activeDocument.fullscreenElement) return;
         this.endPresentation(canvas);
       };
+      activeDocument.addEventListener("fullscreenchange", this.fullscreenListener);
     }
     this.isPresentationMode = true;
     if (this.presentationUsesFullscreen)
@@ -4944,7 +4946,8 @@ var PresentationCanvasExtension = class extends CanvasExtension {
     if (this.presentationUsesFullscreen) {
       (_a = this.fullscreenModalObserver) == null ? void 0 : _a.disconnect();
       this.fullscreenModalObserver = null;
-      canvas.wrapperEl.onfullscreenchange = null;
+      if (this.fullscreenListener) activeDocument.removeEventListener("fullscreenchange", this.fullscreenListener);
+      this.fullscreenListener = null;
       if (activeDocument.fullscreenElement) void activeDocument.exitFullscreen();
     }
     canvas.wrapperEl.onkeydown = null;
@@ -5895,6 +5898,10 @@ var PortalsCanvasExtension = class _PortalsCanvasExtension extends CanvasExtensi
       (canvas, data) => this.onGetData(canvas, data)
     ));
     this.plugin.registerEvent(this.plugin.app.workspace.on(
+      "advanced-canvas:copy",
+      (canvas, selectionData) => this.onCopy(canvas, selectionData)
+    ));
+    this.plugin.registerEvent(this.plugin.app.workspace.on(
       "advanced-canvas:data-loaded:before",
       (canvas, data, setData) => {
         this.onSetData(canvas, data).then((newData) => {
@@ -6122,6 +6129,17 @@ var PortalsCanvasExtension = class _PortalsCanvasExtension extends CanvasExtensi
     portalNodeData.width = targetSize.width;
     portalNodeData.height = targetSize.height;
     return addedData;
+  }
+  onCopy(canvas, data) {
+    for (const nodeData of data.nodes) {
+      if (nodeData.type !== "file") continue;
+      const fileNodeData = nodeData;
+      if (!fileNodeData.portal) continue;
+      fileNodeData.portal = false;
+      fileNodeData.isPortalLoaded = false;
+      if (fileNodeData.interdimensionalEdges)
+        fileNodeData.interdimensionalEdges = [];
+    }
   }
   // Helper functions
   getPortalSize(sourceBBox) {
@@ -7993,20 +8011,31 @@ var EdgeHighlightCanvasExtension = class extends CanvasExtension {
     ));
   }
   onSelectionChanged(canvas, oldSelection) {
-    var _a, _b, _c, _d, _e;
-    const connectedEdgesToBeHighlighted = new Set(canvas.getSelectionData().nodes.flatMap((nodeData) => {
-      var _a2, _b2;
-      return [
-        ...(_a2 = canvas.edgeFrom.get(canvas.nodes.get(nodeData.id))) != null ? _a2 : [],
-        ...this.plugin.settings.getSetting("highlightIncomingEdges") ? (_b2 = canvas.edgeTo.get(canvas.nodes.get(nodeData.id))) != null ? _b2 : [] : []
-      ];
-    }));
+    const selectedNodesData = canvas.getSelectionData().nodes;
+    const outgoingEdges = new Set(selectedNodesData.flatMap(
+      (nodeData) => {
+        var _a;
+        return Array.from((_a = canvas.edgeFrom.get(canvas.nodes.get(nodeData.id))) != null ? _a : []);
+      }
+    ));
+    const incomingEdges = this.plugin.settings.getSetting("highlightIncomingEdges") ? new Set(selectedNodesData.flatMap(
+      (nodeData) => {
+        var _a;
+        return Array.from((_a = canvas.edgeTo.get(canvas.nodes.get(nodeData.id))) != null ? _a : []);
+      }
+    )) : /* @__PURE__ */ new Set();
     for (const edge of canvas.edges.values()) {
-      const isFocused = canvas.selection.has(edge) || connectedEdgesToBeHighlighted.has(edge);
-      edge.lineGroupEl.classList.toggle("is-focused", isFocused);
-      (_b = (_a = edge.lineEndGroupEl) == null ? void 0 : _a.classList) == null ? void 0 : _b.toggle("is-focused", isFocused);
-      (_e = (_d = (_c = edge.labelElement) == null ? void 0 : _c.textareaEl) == null ? void 0 : _d.classList) == null ? void 0 : _e.toggle("is-focused", isFocused);
+      const isFocused = canvas.selection.has(edge) || outgoingEdges.has(edge) || incomingEdges.has(edge);
+      this.toggleEdgeClass(edge, "is-focused", isFocused);
+      this.toggleEdgeClass(edge, "outgoing", outgoingEdges.has(edge));
+      this.toggleEdgeClass(edge, "incoming", incomingEdges.has(edge));
     }
+  }
+  toggleEdgeClass(edge, classname, value) {
+    var _a, _b, _c, _d, _e;
+    edge.lineGroupEl.classList.toggle(classname, value);
+    (_b = (_a = edge.lineEndGroupEl) == null ? void 0 : _a.classList) == null ? void 0 : _b.toggle(classname, value);
+    (_e = (_d = (_c = edge.labelElement) == null ? void 0 : _c.textareaEl) == null ? void 0 : _d.classList) == null ? void 0 : _e.toggle(classname, value);
   }
 };
 
