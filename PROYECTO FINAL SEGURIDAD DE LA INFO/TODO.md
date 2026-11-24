@@ -20,7 +20,7 @@
 
 ## Descubrimiento de Vulnerabilidades [Pentesting]
 - [ ] Página web
-- [ ] A01
+- [x] A01 ✅ 2026-11-24
 - [x] A02 ✅ 2026-11-24
 - [x] A03 ✅ 2026-11-24
 - [ ] A04
