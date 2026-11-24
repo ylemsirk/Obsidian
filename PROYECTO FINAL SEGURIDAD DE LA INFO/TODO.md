@@ -20,6 +20,16 @@
 
 ## Descubrimiento de Vulnerabilidades [Pentesting]
 - [ ] Página web
+- [ ] A01
+- [x] A02 ✅ 2026-11-24
+- [ ] A03
+- [ ] A04
+- [ ] A05
+- [ ] A06
+- [ ] A07
+- [ ] A08
+- [ ] A09
+- [ ] A10
 - [ ] Operacionales
 - [ ] Físicas
 - [ ] Técnicos
