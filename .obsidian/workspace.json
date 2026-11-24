@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WEB"
+              "title": "TODO"
             }
           }
         ],
@@ -215,8 +215,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b827f5f987dbe01",
+  "active": "114571a9b5df5ec9",
   "lastOpenFiles": [
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/jhonny session fix.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/jhonny login 1.png",
@@ -225,7 +226,6 @@
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/valorfijo.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/Topología PRE-HARDENING.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/verfactura.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/SFT.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/panel administrativo.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/respaldos.png",
