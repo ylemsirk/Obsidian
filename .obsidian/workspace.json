@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "WEB"
             }
           }
         ],
@@ -215,20 +215,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "114571a9b5df5ec9",
+  "active": "3b827f5f987dbe01",
   "lastOpenFiles": [
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/normal 2.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/normal 1.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/no limiting.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/maria.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/logs.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/login 2.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/login 1.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/LISTING.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/jhonny session fix.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/jhonny login 1.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/sql 1.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/textinput.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/valorfijo.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/Topología PRE-HARDENING.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/verfactura.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/SFT.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/panel administrativo.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/respaldos.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/knowledge.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
