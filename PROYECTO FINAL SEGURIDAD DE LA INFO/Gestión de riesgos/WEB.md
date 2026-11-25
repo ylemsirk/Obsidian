@@ -88,27 +88,126 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       | Muy Crítico                                                                                                                                          |
 | Control      | Utilizar algoritmos de hashing robustos como Argon2 o bcrypt que traen salting nativamente para codificar los datos sensibles en las bases de datos. |
 
-| **Campo**    | **Contenido**                                                                                               |
-| ------------ | ----------------------------------------------------------------------------------------------------------- |
-| ID           | W-10                                                                                                        |
-| Descripción  | Ejecución XSS reflejado dentro de la barra de búsqueda del apartado `Base de conocimiento`                  |
-| Activo       | Barra de búsqueda                                                                                           |
-| Amenaza      |                                                                                                             |
-| Impacto      |                                                                                                             |
-| Probabilidad |                                                                                                             |
-| Riesgo       |                                                                                                             |
-| Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas. |
+| **Campo**    | **Contenido**                                                                                                                                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ID           | W-10, W-11                                                                                                                                                                                                   |
+| Descripción  | Ejecución XSS reflejado dentro de la barra de búsqueda del apartado `Base de conocimiento`; y ejecución XSS almacenado dentro del formulario a la descripción de problemas del apartado `Soporte y tickets`. |
+| Activo       | Barra de búsqueda y formulario                                                                                                                                                                               |
+| Amenaza      |                                                                                                                                                                                                              |
+| Impacto      |                                                                                                                                                                                                              |
+| Probabilidad |                                                                                                                                                                                                              |
+| Riesgo       |                                                                                                                                                                                                              |
+| Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas.                                                                                                  |
 
-| **Campo**    | **Contenido**                                                                                                |
-| ------------ | ------------------------------------------------------------------------------------------------------------ |
-| ID           | W-11                                                                                                         |
-| Descripción  | Ejecución XSS almacenado dentro del formulario de descripción de problemas del apartado `Soporte y tickets`. |
-| Activo       |                                                                                                              |
-| Amenaza      |                                                                                                              |
-| Impacto      |                                                                                                              |
-| Probabilidad |                                                                                                              |
-| Riesgo       |                                                                                                              |
-| Control      |                                                                                                              |
+| **Campo**    | **Contenido** |
+| ------------ | ------------- |
+| ID           | W-12          |
+| Descripción  |               |
+| Activo       |               |
+| Amenaza      |               |
+| Impacto      |               |
+| Probabilidad |               |
+| Riesgo       |               |
+| Control      |               |
+
+| **Campo**    | **Contenido** |
+| ------------ | ------------- |
+| ID           | W-01          |
+| Descripción  |               |
+| Activo       |               |
+| Amenaza      |               |
+| Impacto      |               |
+| Probabilidad |               |
+| Riesgo       |               |
+| Control      |               |
+
+| **Campo**    | **Contenido** |
+| ------------ | ------------- |
+| ID           | W-01          |
+| Descripción  |               |
+| Activo       |               |
+| Amenaza      |               |
+| Impacto      |               |
+| Probabilidad |               |
+| Riesgo       |               |
+| Control      |               |
+
+| **Campo**    | **Contenido** |
+| ------------ | ------------- |
+| ID           | W-01          |
+| Descripción  |               |
+| Activo       |               |
+| Amenaza      |               |
+| Impacto      |               |
+| Probabilidad |               |
+| Riesgo       |               |
+| Control      |               |
+
+| **Campo**    | **Contenido** |
+| ------------ | ------------- |
+| ID           | W-01          |
+| Descripción  |               |
+| Activo       |               |
+| Amenaza      |               |
+| Impacto      |               |
+| Probabilidad |               |
+| Riesgo       |               |
+| Control      |               |
+
+| **Campo**    | **Contenido** |
+| ------------ | ------------- |
+| ID           | W-01          |
+| Descripción  |               |
+| Activo       |               |
+| Amenaza      |               |
+| Impacto      |               |
+| Probabilidad |               |
+| Riesgo       |               |
+| Control      |               |
+
+| **Campo**    | **Contenido** |
+| ------------ | ------------- |
+| ID           | W-01          |
+| Descripción  |               |
+| Activo       |               |
+| Amenaza      |               |
+| Impacto      |               |
+| Probabilidad |               |
+| Riesgo       |               |
+| Control      |               |
+
+| **Campo**    | **Contenido** |
+| ------------ | ------------- |
+| ID           | W-01          |
+| Descripción  |               |
+| Activo       |               |
+| Amenaza      |               |
+| Impacto      |               |
+| Probabilidad |               |
+| Riesgo       |               |
+| Control      |               |
+
+| **Campo**    | **Contenido** |
+| ------------ | ------------- |
+| ID           | W-01          |
+| Descripción  |               |
+| Activo       |               |
+| Amenaza      |               |
+| Impacto      |               |
+| Probabilidad |               |
+| Riesgo       |               |
+| Control      |               |
+
+| **Campo**    | **Contenido** |
+| ------------ | ------------- |
+| ID           | W-01          |
+| Descripción  |               |
+| Activo       |               |
+| Amenaza      |               |
+| Impacto      |               |
+| Probabilidad |               |
+| Riesgo       |               |
+| Control      |               |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
