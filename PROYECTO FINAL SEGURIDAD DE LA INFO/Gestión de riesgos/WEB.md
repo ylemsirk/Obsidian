@@ -1,7 +1,7 @@
 
 | **Campo**    | **Contenido**                                                                                                                                        |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-01                                                                                                                                                 |
+| ID           | W-01, W-03                                                                                                                                           |
 | Descripción  | Los directorios sensibles como `/cloud`, `/console` y `/admin`, son expuestos mediante un listado de directorios.                                    |
 | Activo       | Información dentro de dichos directorios. Como: credenciales, exportaciones, información sensible de red, etc.                                       |
 | Amenaza      |                                                                                                                                                      |
@@ -20,17 +20,6 @@
 | Probabilidad | Media                                                                                                                                                          |
 | Riesgo       | Medio. No se fuerza al navegador a ingresar al sitio mediante HTTPS                                                                                            |
 | Control      | Agregar `Strict-Transport-Security: max-age=63072000; includeSubDomains` a las cabeceras para forzar HTTPS a la página y todos sus subdominios durante 2 años. |
-
-| **Campo**    | **Contenido**                                    |
-| ------------ | ------------------------------------------------ |
-| ID           | W-03                                             |
-| Descripción  | Lista contenido de carpetas dentro de `/cloud/`  |
-| Activo       |                                                  |
-| Amenaza      |                                                  |
-| Impacto      |                                                  |
-| Probabilidad |                                                  |
-| Riesgo       |                                                  |
-| Control      |                                                  |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
