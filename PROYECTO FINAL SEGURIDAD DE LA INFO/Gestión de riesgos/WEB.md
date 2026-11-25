@@ -124,8 +124,8 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | **Campo**    | **Contenido**                                                                                                                               |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-14                                                                                                                                        |
-| Descripción  | Documentación inexistente sobre el diseño y arquitectura de la página.                                                                      |
-| Activo       |                                                                                                                                             |
+| Descripción  | Documentación muy insuficiente (prácticamente inexistente) sobre el diseño y arquitectura de la página.                                     |
+| Activo       | Documentación de arquitectura de la página.                                                                                                 |
 | Amenaza      |                                                                                                                                             |
 | Impacto      |                                                                                                                                             |
 | Probabilidad |                                                                                                                                             |
