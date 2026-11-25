@@ -11,12 +11,14 @@
             "id": "114571a9b5df5ec9",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/diagnostic 2.png"
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "diagnostic 2"
+              "icon": "lucide-file",
+              "title": "WEB"
             }
           },
           {
@@ -212,23 +214,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b827f5f987dbe01",
+  "active": "114571a9b5df5ec9",
   "lastOpenFiles": [
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/diagnostic 1.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/DIAAAAA.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/dia fin.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/curl.png",
+    "Pasted image 20261124232659.png",
+    "Pasted image 20261124232501.png",
+    "Pasted image 20261124231552.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/csv.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/COOKIE COOKIE.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/cloud 2.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/arquitectura.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/admin enter.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/DIAAAAA.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/LISTING.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/logs.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/login 1.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/diagnostic 2.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/diagnostic 1.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/dia fin.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
-    "Pasted image 20261124224916.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/PREFEEEE.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos",
     "Sin título.canvas",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes",
