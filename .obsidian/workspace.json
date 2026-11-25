@@ -11,14 +11,12 @@
             "id": "114571a9b5df5ec9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
-                "mode": "source",
-                "source": false
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/diagnostic 2.png"
               },
-              "icon": "lucide-file",
-              "title": "WEB"
+              "icon": "lucide-image",
+              "title": "diagnostic 2"
             }
           },
           {
@@ -214,23 +212,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "114571a9b5df5ec9",
+  "active": "3b827f5f987dbe01",
   "lastOpenFiles": [
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/diagnostic 1.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/DIAAAAA.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/dia fin.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/curl.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/csv.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/COOKIE COOKIE.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/cloud 2.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/arquitectura.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/admin enter.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/A09 4.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/A08 3.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/A08 2.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/A08 1.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/normal 2.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/normal 1.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/no limiting.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/maria.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/logs.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/login 2.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
+    "Pasted image 20261124224916.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/PREFEEEE.png",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos",
     "Sin título.canvas",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos",
