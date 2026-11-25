@@ -32,16 +32,16 @@
 | Riesgo       | Alto-Crítico.                                                                                                                                                                                     |
 | Control      | Convertir el parámetro `debug` de  `True` a `False` cuando se esté fuera del entorno de desarrollo local, y reservar detalles técnicos para logs internos en lugar de mostrarlos ante el usuario. |
 
-| **Campo**    | **Contenido**                                                                      |
-| ------------ | ---------------------------------------------------------------------------------- |
-| ID           | W-05                                                                               |
-| Descripción  | La cuenta `admin` se creó con una contraseña (admin123) por default o súper común. |
-| Activo       |                                                                                    |
-| Amenaza      |                                                                                    |
-| Impacto      | Crítico                                                                            |
-| Probabilidad | Crítica                                                                            |
-| Riesgo       | Muy Crítico                                                                        |
-| Control      |                                                                                    |
+| **Campo**    | **Contenido**                                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------------------------- |
+| ID           | W-05                                                                                                            |
+| Descripción  | La cuenta `admin` se creó con una contraseña (admin123) por default o súper común.                              |
+| Activo       | Cuenta administrativa                                                                                           |
+| Amenaza      |                                                                                                                 |
+| Impacto      | Crítico. Permite acceder a usuarios no autorizados con permisos administrativos.                                |
+| Probabilidad | Crítica. Estas cuentas suelen ser las más atacadas debido a sus privilegios.                                    |
+| Riesgo       | Muy Crítico                                                                                                     |
+| Control      | Reemplazar inmediatamente la contraseña a una más robusta, y evitar usar contraseñas débiles o predeterminadas. |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
