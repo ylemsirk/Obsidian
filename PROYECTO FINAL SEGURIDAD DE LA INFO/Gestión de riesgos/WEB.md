@@ -132,16 +132,16 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       |                                                                                                                                             |
 | Control      | Crear y mantener documentación clara y concisa sobre el diseño, herramientas, procesos, componentes, controles y arquitectura de la página. |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-01          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                                                                                            |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-15                                                                                                                                     |
+| Descripción  | Aún cuando el servidor recibe numerosos intentos de sesión, no bloquea o limita las peticiones.                                          |
+| Activo       |                                                                                                                                          |
+| Amenaza      |                                                                                                                                          |
+| Impacto      |                                                                                                                                          |
+| Probabilidad |                                                                                                                                          |
+| Riesgo       |                                                                                                                                          |
+| Control      | Aplicar rate limiting, bloquear la cuenta después de 3 intentos fallidos, implementar métodos de autenticación multifactor y un CAPTCHA. |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
