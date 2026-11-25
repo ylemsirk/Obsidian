@@ -46,7 +46,7 @@
 | **Campo**    | **Contenido**                                                                                        |
 | ------------ | ---------------------------------------------------------------------------------------------------- |
 | ID           | W-06                                                                                                 |
-| Descripción  |                                                                                                      |
+| Descripción  | El formulario de login interpreta ciertos inputs como consultas SQL, y concatena username y password |
 | Activo       | Formulario de login.                                                                                 |
 | Amenaza      |                                                                                                      |
 | Impacto      | Crítico. Permite acceder a usuarios no autorizados a cualquier cuenta solo con el nombre de usuario. |
