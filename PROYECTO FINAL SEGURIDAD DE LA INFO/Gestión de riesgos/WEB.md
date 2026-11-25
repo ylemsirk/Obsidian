@@ -121,16 +121,16 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       |                                                                                                                |
 | Control      | Actualizar `pip`, las dependencias y cualquier herramienta siendo utilizada en el desarrollo de la página web. |
 
-| **Campo**    | **Contenido**                                                          |
-| ------------ | ---------------------------------------------------------------------- |
-| ID           | W-14                                                                   |
-| Descripción  | Documentación inexistente sobre el diseño y arquitectura de la página. |
-| Activo       |                                                                        |
-| Amenaza      |                                                                        |
-| Impacto      |                                                                        |
-| Probabilidad |                                                                        |
-| Riesgo       |                                                                        |
-| Control      | Crear y mantener documentación clara y concisa sobre cómo.             |
+| **Campo**    | **Contenido**                                                                                                                               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-14                                                                                                                                        |
+| Descripción  | Documentación inexistente sobre el diseño y arquitectura de la página.                                                                      |
+| Activo       |                                                                                                                                             |
+| Amenaza      |                                                                                                                                             |
+| Impacto      |                                                                                                                                             |
+| Probabilidad |                                                                                                                                             |
+| Riesgo       |                                                                                                                                             |
+| Control      | Crear y mantener documentación clara y concisa sobre el diseño, herramientas, procesos, componentes, controles y arquitectura de la página. |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
