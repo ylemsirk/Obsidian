@@ -64,7 +64,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Impacto      | Medio                                                         |
 | Probabilidad | Media                                                         |
 | Riesgo       | Medio                                                         |
-| Control      |                                                               |
+| Control      | Considerar implementación de Active Directory                 |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
