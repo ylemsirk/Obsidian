@@ -91,7 +91,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | **Campo**    | **Contenido**                                                                                               |
 | ------------ | ----------------------------------------------------------------------------------------------------------- |
 | ID           | W-10                                                                                                        |
-| Descripción  | XSS reflejado dentro de la barra de búsqueda del apartado `Base de conocimiento`                            |
+| Descripción  | Ejecución XSS reflejado dentro de la barra de búsqueda del apartado `Base de conocimiento`                  |
 | Activo       | Barra de búsqueda                                                                                           |
 | Amenaza      |                                                                                                             |
 | Impacto      |                                                                                                             |
@@ -99,16 +99,16 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       |                                                                                                             |
 | Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas. |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-01          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------------------------ |
+| ID           | W-11                                                                                                         |
+| Descripción  | Ejecución XSS almacenado dentro del formulario de descripción de problemas del apartado `Soporte y tickets`. |
+| Activo       |                                                                                                              |
+| Amenaza      |                                                                                                              |
+| Impacto      |                                                                                                              |
+| Probabilidad |                                                                                                              |
+| Riesgo       |                                                                                                              |
+| Control      |                                                                                                              |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
