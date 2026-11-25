@@ -154,16 +154,16 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       |                                                                                                                             |
 | Control      | Aplicar políticas Zero Trust y cambiar a un modelo de control de acceso basado en roles (RBAC).                             |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-17          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                           |
+| ------------ | ----------------------------------------------------------------------- |
+| ID           | W-17                                                                    |
+| Descripción  | No se verifica la identidad del usuario para acceder a recursos ajenos. |
+| Activo       |                                                                         |
+| Amenaza      |                                                                         |
+| Impacto      |                                                                         |
+| Probabilidad |                                                                         |
+| Riesgo       |                                                                         |
+| Control      |                                                                         |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
@@ -220,13 +220,13 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       |               |
 | Control      |               |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-23          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                                                |
+| ------------ | -------------------------------------------------------------------------------------------- |
+| ID           | W-23                                                                                         |
+| Descripción  | Hay una única fuente de logs, y esta solo presenta evidencia de visualizaciones en facturas. |
+| Activo       |                                                                                              |
+| Amenaza      |                                                                                              |
+| Impacto      |                                                                                              |
+| Probabilidad |                                                                                              |
+| Riesgo       |                                                                                              |
+| Control      |                                                                                              |
