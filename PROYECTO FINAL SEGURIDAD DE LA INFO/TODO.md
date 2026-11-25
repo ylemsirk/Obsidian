@@ -19,17 +19,7 @@
 - [ ] Identificar y aplicar controles correspondientes + Documentación sobre cada una
 
 ## Descubrimiento de Vulnerabilidades [Pentesting]
-- [ ] Página web
-- [x] A01 ✅ 2026-11-24
-- [x] A02 ✅ 2026-11-24
-- [x] A03 ✅ 2026-11-24
-- [ ] A04
-- [x] A05 ✅ 2026-11-24
-- [x] A06 ✅ 2026-11-24
-- [x] A07 ✅ 2026-11-24
-- [x] A08 ✅ 2026-11-24
-- [x] A09 ✅ 2026-11-24
-- [x] A10 ✅ 2026-11-24
+- [x] Página web ✅ 2026-11-24
 - [ ] Operacionales
 - [ ] Físicas
 - [ ] Técnicos
