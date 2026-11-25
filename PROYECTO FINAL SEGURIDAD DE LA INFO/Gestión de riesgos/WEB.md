@@ -29,19 +29,19 @@
 | Amenaza      |                                                                                                                                                                                                   |
 | Impacto      | Alto                                                                                                                                                                                              |
 | Probabilidad | Alta                                                                                                                                                                                              |
-| Riesgo       | Muy Alto.                                                                                                                                                                                         |
+| Riesgo       | Alto-Crítico.                                                                                                                                                                                     |
 | Control      | Convertir el parámetro `debug` de  `True` a `False` cuando se esté fuera del entorno de desarrollo local, y reservar detalles técnicos para logs internos en lugar de mostrarlos ante el usuario. |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-05          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                                      |
+| ------------ | ---------------------------------------------------------------------------------- |
+| ID           | W-05                                                                               |
+| Descripción  | La cuenta `admin` se creó con una contraseña (admin123) por default o súper común. |
+| Activo       |                                                                                    |
+| Amenaza      |                                                                                    |
+| Impacto      | Crítico                                                                            |
+| Probabilidad | Crítica                                                                            |
+| Riesgo       | Muy Crítico                                                                        |
+| Control      |                                                                                    |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
