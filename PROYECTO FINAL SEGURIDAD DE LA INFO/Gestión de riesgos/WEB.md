@@ -5,9 +5,9 @@
 | Descripción  | Los directorios sensibles como `/cloud`, `/console` y `/admin`, son expuestos mediante un listado de directorios.                                    |
 | Activo       | Información dentro de dichos directorios. Como: credenciales, exportaciones, información sensible de red, etc.                                       |
 | Amenaza      |                                                                                                                                                      |
-| Impacto      | Alto                                                                                                                                                 |
+| Impacto      | Alto. Se exponen credenciales y exportaciones de clientes                                                                                            |
 | Probabilidad | Alta                                                                                                                                                 |
-| Riesgo       | Alto. Se exponen credenciales y exportaciones de clientes                                                                                            |
+| Riesgo       | Muy Alto                                                                                                                                             |
 | Control      | Deshabilitar listado de directorios, exigir autenticación y únicamente proveer al usuario los archivos que pidió (dentro del marco de autorización). |
 
 | **Campo**    | **Contenido**                                                                                                                                                  |
@@ -16,9 +16,9 @@
 | Descripción  | Cabeceras HSTS ausentes.                                                                                                                                       |
 | Activo       | Portal web.                                                                                                                                                    |
 | Amenaza      |                                                                                                                                                                |
-| Impacto      | Medio                                                                                                                                                          |
-| Probabilidad | Media                                                                                                                                                          |
-| Riesgo       | Medio. No se fuerza al navegador a ingresar al sitio mediante HTTPS                                                                                            |
+| Impacto      | Medio. No se fuerza al navegador a ingresar al sitio mediante HTTPS.                                                                                           |
+| Probabilidad | Alta                                                                                                                                                           |
+| Riesgo       | Medio-Alto                                                                                                                                                     |
 | Control      | Agregar `Strict-Transport-Security: max-age=63072000; includeSubDomains` a las cabeceras para forzar HTTPS a la página y todos sus subdominios durante 2 años. |
 
 | **Campo**    | **Contenido**                                                                                                                          |
@@ -29,7 +29,7 @@
 | Amenaza      |                                                                                                                                        |
 | Impacto      | Alto                                                                                                                                   |
 | Probabilidad | Alta                                                                                                                                   |
-| Riesgo       | Alto                                                                                                                                   |
+| Riesgo       | Muy Alto.                                                                                                                              |
 | Control      |                                                                                                                                        |
 
 | **Campo**    | **Contenido** |
