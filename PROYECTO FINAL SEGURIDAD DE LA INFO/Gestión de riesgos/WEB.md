@@ -1,3 +1,4 @@
+Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor crudo.
 
 | **Campo**    | **Contenido**                                                                                                                                        |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -54,16 +55,16 @@
 | Riesgo       | Alto-Crítico                                                                                         |
 | Control      | Implementar consultas parametrizadas dentro del código y validar entradas.                           |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-07          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                 |
+| ------------ | ------------------------------------------------------------- |
+| ID           | W-07                                                          |
+| Descripción  | Ausencia de autenticación multifactor para todas las cuentas. |
+| Activo       |                                                               |
+| Amenaza      |                                                               |
+| Impacto      |                                                               |
+| Probabilidad |                                                               |
+| Riesgo       |                                                               |
+| Control      |                                                               |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
@@ -72,7 +73,7 @@
 | Activo       |               |
 | Amenaza      |               |
 | Impacto      |               |
-| Probabilidad |               |
+| Probabilidad | Media         |
 | Riesgo       |               |
 | Control      |               |
 
