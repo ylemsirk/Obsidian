@@ -66,31 +66,31 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       | Medio                                                         |
 | Control      | Considerar implementación de Active Directory                 |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-08          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad | Media         |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                                                                       |
+| ------------ | ------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-08                                                                                                                |
+| Descripción  | El parametro `q` se concatena en una clausula `LIKE` dentro del formulario perteneciente a la Base de conocimiento. |
+| Activo       | Búsqueda en la Base de conocimiento                                                                                 |
+| Amenaza      |                                                                                                                     |
+| Impacto      |                                                                                                                     |
+| Probabilidad | Media                                                                                                               |
+| Riesgo       |                                                                                                                     |
+| Control      |                                                                                                                     |
+
+| **Campo**    | **Contenido**                                                               |
+| ------------ | --------------------------------------------------------------------------- |
+| ID           | W-09                                                                        |
+| Descripción  | Los datos de la base de datos de usuarios están almacenados en texto plano. |
+| Activo       | Base de datos de usuarios                                                   |
+| Amenaza      |                                                                             |
+| Impacto      | Crítico                                                                     |
+| Probabilidad | Crítica                                                                     |
+| Riesgo       | Muy Crítico                                                                 |
+| Control      |                                                                             |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
-| ID           | W-01          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
-
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-01          |
+| ID           | W-10          |
 | Descripción  |               |
 | Activo       |               |
 | Amenaza      |               |
