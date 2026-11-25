@@ -72,7 +72,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | El parametro `q` se concatena en una clausula `LIKE` dentro del formulario perteneciente a la Base de conocimiento. |
 | Activo       | Búsqueda en la Base de conocimiento                                                                                 |
 | Amenaza      |                                                                                                                     |
-| Impacto      | Crítico                                                                                                             |
+| Impacto      | Crítico. Permite extraer datos de la bases de datos mediante `UNION`                                                |
 | Probabilidad | Media                                                                                                               |
 | Riesgo       | Alto                                                                                                                |
 | Control      | Implementar consultas parametrizadas dentro del código y validar entradas.                                          |
