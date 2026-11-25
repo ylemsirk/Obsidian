@@ -61,9 +61,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | Ausencia de autenticación multifactor para todas las cuentas. |
 | Activo       |                                                               |
 | Amenaza      |                                                               |
-| Impacto      |                                                               |
-| Probabilidad |                                                               |
-| Riesgo       |                                                               |
+| Impacto      | Medio                                                         |
+| Probabilidad | Media                                                         |
+| Riesgo       | Medio                                                         |
 | Control      |                                                               |
 
 | **Campo**    | **Contenido** |
