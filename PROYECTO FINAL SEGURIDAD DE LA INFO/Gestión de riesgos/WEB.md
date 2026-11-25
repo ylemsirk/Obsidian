@@ -99,38 +99,38 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       |                                                                                                                                                                                                              |
 | Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas.                                                                                                  |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-12          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                                                                              |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-12                                                                                                                       |
+| Descripción  | El formulario del apartado `Diagnóstico de conexión` recibe entradas del usuario, las concatena con un ping y las ejecuta. |
+| Activo       | Herramienta de diagnóstico de red                                                                                          |
+| Amenaza      |                                                                                                                            |
+| Impacto      |                                                                                                                            |
+| Probabilidad |                                                                                                                            |
+| Riesgo       |                                                                                                                            |
+| Control      |                                                                                                                            |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-01          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                                                                  |
+| ------------ | -------------------------------------------------------------------------------------------------------------- |
+| ID           | W-13                                                                                                           |
+| Descripción  | Versiones atrasadas de dependencias/herramientas como `Flask`, `Werkzeug`, `wheel`, `pip`, etc.                |
+| Activo       | Herramientas utilizadas en el desarrollo de la página web.                                                     |
+| Amenaza      |                                                                                                                |
+| Impacto      |                                                                                                                |
+| Probabilidad |                                                                                                                |
+| Riesgo       |                                                                                                                |
+| Control      | Actualizar `pip`, las dependencias y cualquier herramienta siendo utilizada en el desarrollo de la página web. |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-01          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                          |
+| ------------ | ---------------------------------------------------------------------- |
+| ID           | W-14                                                                   |
+| Descripción  | Documentación inexistente sobre el diseño y arquitectura de la página. |
+| Activo       |                                                                        |
+| Amenaza      |                                                                        |
+| Impacto      |                                                                        |
+| Probabilidad |                                                                        |
+| Riesgo       |                                                                        |
+| Control      | Crear y mantener documentación clara y concisa sobre cómo.             |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
