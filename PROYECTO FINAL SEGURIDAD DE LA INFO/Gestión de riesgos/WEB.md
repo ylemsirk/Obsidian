@@ -136,16 +136,27 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-15                                                                                                                                     |
 | Descripción  | Aún cuando el servidor recibe numerosos intentos de sesión, no bloquea o limita las peticiones.                                          |
-| Activo       |                                                                                                                                          |
+| Activo       | Formulario de login.                                                                                                                     |
 | Amenaza      |                                                                                                                                          |
 | Impacto      |                                                                                                                                          |
 | Probabilidad |                                                                                                                                          |
 | Riesgo       |                                                                                                                                          |
 | Control      | Aplicar rate limiting, bloquear la cuenta después de 3 intentos fallidos, implementar métodos de autenticación multifactor y un CAPTCHA. |
 
+| **Campo**    | **Contenido**                                                                                                               |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-16                                                                                                                        |
+| Descripción  | La ruta `/admin` únicamente verifica si un usuario ha sido autenticado aún si la cuenta no pertenece a algún administrador. |
+| Activo       |                                                                                                                             |
+| Amenaza      |                                                                                                                             |
+| Impacto      |                                                                                                                             |
+| Probabilidad |                                                                                                                             |
+| Riesgo       |                                                                                                                             |
+| Control      | Aplicar políticas Zero Trust y cambiar a un modelo de control de acceso basado en roles (RBAC).                             |
+
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
-| ID           | W-01          |
+| ID           | W-17          |
 | Descripción  |               |
 | Activo       |               |
 | Amenaza      |               |
@@ -156,7 +167,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
-| ID           | W-01          |
+| ID           | W-18          |
 | Descripción  |               |
 | Activo       |               |
 | Amenaza      |               |
@@ -167,7 +178,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
-| ID           | W-01          |
+| ID           | W-19          |
 | Descripción  |               |
 | Activo       |               |
 | Amenaza      |               |
@@ -178,7 +189,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
-| ID           | W-01          |
+| ID           | W-20          |
 | Descripción  |               |
 | Activo       |               |
 | Amenaza      |               |
@@ -189,7 +200,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
-| ID           | W-01          |
+| ID           | W-21          |
 | Descripción  |               |
 | Activo       |               |
 | Amenaza      |               |
@@ -200,7 +211,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
-| ID           | W-01          |
+| ID           | W-22          |
 | Descripción  |               |
 | Activo       |               |
 | Amenaza      |               |
@@ -211,7 +222,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
-| ID           | W-01          |
+| ID           | W-23          |
 | Descripción  |               |
 | Activo       |               |
 | Amenaza      |               |
