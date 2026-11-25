@@ -25,7 +25,7 @@
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-04                                                                                                                                                                                              |
 | Descripción  | Se muestran mensajes de error explícitos (como consultas SQL) dentro del modo debug de Flask cuando el campo recibe datos inesperados.                                                            |
-| Activo       |                                                                                                                                                                                                   |
+| Activo       | Error Handling                                                                                                                                                                                    |
 | Amenaza      |                                                                                                                                                                                                   |
 | Impacto      | Alto                                                                                                                                                                                              |
 | Probabilidad | Alta                                                                                                                                                                                              |
@@ -43,16 +43,16 @@
 | Riesgo       | Muy Crítico                                                                                                     |
 | Control      | Reemplazar inmediatamente la contraseña a una más robusta, y evitar usar contraseñas débiles o predeterminadas. |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-06          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                                                        |
+| ------------ | ---------------------------------------------------------------------------------------------------- |
+| ID           | W-06                                                                                                 |
+| Descripción  |                                                                                                      |
+| Activo       | Formulario de login.                                                                                 |
+| Amenaza      |                                                                                                      |
+| Impacto      | Crítico. Permite acceder a usuarios no autorizados a cualquier cuenta solo con el nombre de usuario. |
+| Probabilidad | Alta.                                                                                                |
+| Riesgo       | Alto-Crítico                                                                                         |
+| Control      | Implementar consultas parametrizadas dentro del código y validar entradas.                           |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
