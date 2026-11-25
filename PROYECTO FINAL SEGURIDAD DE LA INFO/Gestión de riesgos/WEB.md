@@ -55,16 +55,16 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       | Alto-Crítico                                                                                         |
 | Control      | Implementar consultas parametrizadas dentro del código y validar entradas.                           |
 
-| **Campo**    | **Contenido**                                                 |
-| ------------ | ------------------------------------------------------------- |
-| ID           | W-07                                                          |
-| Descripción  | Ausencia de autenticación multifactor para todas las cuentas. |
-| Activo       |                                                               |
-| Amenaza      |                                                               |
-| Impacto      | Medio                                                         |
-| Probabilidad | Media                                                         |
-| Riesgo       | Medio                                                         |
-| Control      | Considerar implementación de Active Directory                 |
+| **Campo**    | **Contenido**                                                       |
+| ------------ | ------------------------------------------------------------------- |
+| ID           | W-07                                                                |
+| Descripción  | Ausencia de autenticación multifactor para todas las cuentas.       |
+| Activo       |                                                                     |
+| Amenaza      |                                                                     |
+| Impacto      | Medio. Con una contraseña filtrada basta para ingresar a la cuenta. |
+| Probabilidad | Media                                                               |
+| Riesgo       | Medio                                                               |
+| Control      | Considerar implementación de Active Directory                       |
 
 | **Campo**    | **Contenido**                                                                                                       |
 | ------------ | ------------------------------------------------------------------------------------------------------------------- |
