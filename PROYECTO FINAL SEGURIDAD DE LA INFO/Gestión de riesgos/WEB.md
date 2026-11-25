@@ -154,38 +154,38 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       |                                                                                                                             |
 | Control      | Aplicar políticas Zero Trust y cambiar a un modelo de control de acceso basado en roles (RBAC).                             |
 
-| **Campo**    | **Contenido**                                                           |
-| ------------ | ----------------------------------------------------------------------- |
-| ID           | W-17                                                                    |
-| Descripción  | No se verifica la identidad del usuario para acceder a recursos ajenos. |
-| Activo       |                                                                         |
-| Amenaza      |                                                                         |
-| Impacto      |                                                                         |
-| Probabilidad |                                                                         |
-| Riesgo       |                                                                         |
-| Control      |                                                                         |
+| **Campo**    | **Contenido**                                                                                                               |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-17                                                                                                                        |
+| Descripción  | No se verifica la identidad del usuario para acceder a recursos ajenos.                                                     |
+| Activo       |                                                                                                                             |
+| Amenaza      |                                                                                                                             |
+| Impacto      |                                                                                                                             |
+| Probabilidad |                                                                                                                             |
+| Riesgo       |                                                                                                                             |
+| Control      | Definir correctamente los permisos de los usuarios mediante un modelo de acceso como RBAC y aplicar mecanismos Zero Trust.  |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-18          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                                                                     |
+| ------------ | ----------------------------------------------------------------------------------------------------------------- |
+| ID           | W-18                                                                                                              |
+| Descripción  | El `sid` puede ser declarado mediante la URL y acceder a una sesión existente desde otro navegador o dispositivo. |
+| Activo       |                                                                                                                   |
+| Amenaza      |                                                                                                                   |
+| Impacto      |                                                                                                                   |
+| Probabilidad |                                                                                                                   |
+| Riesgo       |                                                                                                                   |
+| Control      | Crear un `sid` distinto por cada inicio de sesión y bloquear el uso del mismo mediante modificación de la URL.    |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-19          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**      |
+| ------------ | ------------------ |
+| ID           | W-19               |
+| Descripción  |                    |
+| Activo       | Reporte de consumo |
+| Amenaza      |                    |
+| Impacto      |                    |
+| Probabilidad |                    |
+| Riesgo       |                    |
+| Control      |                    |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
