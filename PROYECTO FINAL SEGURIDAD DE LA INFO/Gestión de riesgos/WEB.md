@@ -176,16 +176,16 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       |                                                                                                                   |
 | Control      | Crear un `sid` distinto por cada inicio de sesión y bloquear el uso del mismo mediante modificación de la URL.    |
 
-| **Campo**    | **Contenido**      |
-| ------------ | ------------------ |
-| ID           | W-19               |
-| Descripción  |                    |
-| Activo       | Reporte de consumo |
-| Amenaza      |                    |
-| Impacto      |                    |
-| Probabilidad |                    |
-| Riesgo       |                    |
-| Control      |                    |
+| **Campo**    | **Contenido**                                                                                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ID           | W-19                                                                                                                                                         |
+| Descripción  | El servidor no limita la cantidad de peticiones que le llegan, por consecuencia, usuarios podrían abusar fácilmente                                          |
+| Activo       | Reporte de consumo                                                                                                                                           |
+| Amenaza      | Botnet                                                                                                                                                       |
+| Impacto      |                                                                                                                                                              |
+| Probabilidad |                                                                                                                                                              |
+| Riesgo       |                                                                                                                                                              |
+| Control      | Utilizar un servicio de proxy confiable como Cloudflare, implementar IP rate limiting y configurar un WAF que permite filtrar peticiones maliciosas masivas. |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
