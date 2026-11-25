@@ -10,16 +10,16 @@
 | Riesgo       | Alto. Se exponen credenciales y exportaciones de clientes                                                                                            |
 | Control      | Deshabilitar listado de directorios, exigir autenticación y únicamente proveer al usuario los archivos que pidió (dentro del marco de autorización). |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-02          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                                                                                                                  |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-02                                                                                                                                                           |
+| Descripción  | Cabeceras HSTS ausentes.                                                                                                                                       |
+| Activo       | Portal web.                                                                                                                                                    |
+| Amenaza      |                                                                                                                                                                |
+| Impacto      | Medio                                                                                                                                                          |
+| Probabilidad | Media                                                                                                                                                          |
+| Riesgo       | Medio. No se fuerza al navegador a ingresar al sitio mediante HTTPS                                                                                            |
+| Control      | Agregar `Strict-Transport-Security: max-age=63072000; includeSubDomains` a las cabeceras para forzar HTTPS a la página y todos sus subdominios durante 2 años. |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
