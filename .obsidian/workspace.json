@@ -20,6 +20,20 @@
               "icon": "lucide-file",
               "title": "WEB"
             }
+          },
+          {
+            "id": "bb309d427dd134bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WEB"
+            }
           }
         ]
       }
@@ -202,13 +216,13 @@
   },
   "active": "114571a9b5df5ec9",
   "lastOpenFiles": [
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/A09 4.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/A08 3.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/A08 2.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/A08 1.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/normal 2.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/normal 1.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/no limiting.png",
