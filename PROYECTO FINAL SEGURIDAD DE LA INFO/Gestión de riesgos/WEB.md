@@ -21,16 +21,16 @@
 | Riesgo       | Medio. No se fuerza al navegador a ingresar al sitio mediante HTTPS                                                                                            |
 | Control      | Agregar `Strict-Transport-Security: max-age=63072000; includeSubDomains` a las cabeceras para forzar HTTPS a la página y todos sus subdominios durante 2 años. |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-03          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                    |
+| ------------ | ------------------------------------------------ |
+| ID           | W-03                                             |
+| Descripción  | Lista contenido de carpetas dentro de `/cloud/`  |
+| Activo       |                                                  |
+| Amenaza      |                                                  |
+| Impacto      |                                                  |
+| Probabilidad |                                                  |
+| Riesgo       |                                                  |
+| Control      |                                                  |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
