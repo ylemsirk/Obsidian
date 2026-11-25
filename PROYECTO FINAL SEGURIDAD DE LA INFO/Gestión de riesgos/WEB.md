@@ -21,16 +21,16 @@
 | Riesgo       | Medio-Alto                                                                                                                                                     |
 | Control      | Agregar `Strict-Transport-Security: max-age=63072000; includeSubDomains` a las cabeceras para forzar HTTPS a la página y todos sus subdominios durante 2 años. |
 
-| **Campo**    | **Contenido**                                                                                                                          |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-04                                                                                                                                   |
-| Descripción  | Se muestran mensajes de error explícitos (como consultas SQL) dentro del modo debug de Flask cuando el campo recibe datos inesperados. |
-| Activo       |                                                                                                                                        |
-| Amenaza      |                                                                                                                                        |
-| Impacto      | Alto                                                                                                                                   |
-| Probabilidad | Alta                                                                                                                                   |
-| Riesgo       | Muy Alto.                                                                                                                              |
-| Control      |                                                                                                                                        |
+| **Campo**    | **Contenido**                                                                                                                                                                                     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-04                                                                                                                                                                                              |
+| Descripción  | Se muestran mensajes de error explícitos (como consultas SQL) dentro del modo debug de Flask cuando el campo recibe datos inesperados.                                                            |
+| Activo       |                                                                                                                                                                                                   |
+| Amenaza      |                                                                                                                                                                                                   |
+| Impacto      | Alto                                                                                                                                                                                              |
+| Probabilidad | Alta                                                                                                                                                                                              |
+| Riesgo       | Muy Alto.                                                                                                                                                                                         |
+| Control      | Convertir el parámetro `debug` de  `True` a `False` cuando se esté fuera del entorno de desarrollo local, y reservar detalles técnicos para logs internos en lugar de mostrarlos ante el usuario. |
 
 | **Campo**    | **Contenido** |
 | ------------ | ------------- |
