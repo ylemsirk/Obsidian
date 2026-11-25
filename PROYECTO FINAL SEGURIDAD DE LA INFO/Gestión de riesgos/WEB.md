@@ -59,7 +59,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ------------ | ------------------------------------------------------------------- |
 | ID           | W-07                                                                |
 | Descripción  | Ausencia de autenticación multifactor para todas las cuentas.       |
-| Activo       |                                                                     |
+| Activo       | Portal completo.                                                    |
 | Amenaza      |                                                                     |
 | Impacto      | Medio. Con una contraseña filtrada basta para ingresar a la cuenta. |
 | Probabilidad | Media                                                               |
@@ -72,10 +72,10 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | El parametro `q` se concatena en una clausula `LIKE` dentro del formulario perteneciente a la Base de conocimiento. |
 | Activo       | Búsqueda en la Base de conocimiento                                                                                 |
 | Amenaza      |                                                                                                                     |
-| Impacto      |                                                                                                                     |
+| Impacto      | Crítico                                                                                                             |
 | Probabilidad | Media                                                                                                               |
-| Riesgo       |                                                                                                                     |
-| Control      |                                                                                                                     |
+| Riesgo       | Alto                                                                                                                |
+| Control      | Implementar consultas parametrizadas dentro del código y validar entradas.                                          |
 
 | **Campo**    | **Contenido**                                                               |
 | ------------ | --------------------------------------------------------------------------- |
