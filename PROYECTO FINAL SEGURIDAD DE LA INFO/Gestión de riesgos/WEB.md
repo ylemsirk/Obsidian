@@ -5,7 +5,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ID           | W-01                                                                                                                                                           |
 | Descripción  | Cabecera `Strict-Transport-Secuirty` ausente en el servidor HTTPS. Evita al navegador recordar  la política HSTS.                                              |
 | Activo       | Portal web y datos que viajen entre los clientes y el servidor.                                                                                                |
-| Amenaza      |                                                                                                                                                                |
+| Amenaza      | Atacante realizando un ataque MitM.                                                                                                                            |
 | Impacto      | (3) Medio. No se fuerza al navegador a ingresar al sitio mediante HTTPS.                                                                                       |
 | Probabilidad | (2) Medio-Baja.                                                                                                                                                |
 | Riesgo       | (6) Medio.                                                                                                                                                     |
