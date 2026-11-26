@@ -107,29 +107,29 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Amenaza      |                                                                                                                                                                 |
 | Impacto      | (5) Crítica                                                                                                                                                     |
 | Probabilidad | (4) Alta                                                                                                                                                        |
-| Riesgo       |                                                                                                                                                                 |
+| Riesgo       | (20) Crítico                                                                                                                                                    |
 | Control      |                                                                                                                                                                 |
 
-| **Campo**    | **Contenido**                                                                                                  |
-| ------------ | -------------------------------------------------------------------------------------------------------------- |
-| ID           | W-11                                                                                                           |
-| Descripción  | Versiones atrasadas de dependencias/herramientas como `Flask`, `Werkzeug`, `wheel`, `pip`, etc.                |
-| Activo       | Herramientas utilizadas en el desarrollo de la página web.                                                     |
-| Amenaza      |                                                                                                                |
-| Impacto      |                                                                                                                |
-| Probabilidad |                                                                                                                |
-| Riesgo       |                                                                                                                |
-| Control      | Actualizar `pip`, las dependencias y cualquier herramienta siendo utilizada en el desarrollo de la página web. |
+| **Campo**    | **Contenido**                                                                                                                           |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-11                                                                                                                                    |
+| Descripción  | Versiones atrasadas de dependencias/herramientas como `Flask`, `Werkzeug`, `wheel`, `pip`, etc.                                         |
+| Activo       | Herramientas utilizadas en el desarrollo de la página web.                                                                              |
+| Amenaza      | Atacante investigando y aprovechando vulnerabilidades conocidas sobre las versiones desactualizadas de las dependencias y herramientas. |
+| Impacto      | (4) Alto                                                                                                                                |
+| Probabilidad | (2) Medio-Baja                                                                                                                          |
+| Riesgo       | (8) Medio                                                                                                                               |
+| Control      | Actualizar `pip`, las dependencias y cualquier herramienta siendo utilizada en el desarrollo de la página web.                          |
 
 | **Campo**    | **Contenido**                                                                                                                            |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-12                                                                                                                                     |
 | Descripción  | Aún cuando el servidor recibe numerosos intentos de sesión, no bloquea o limita las peticiones.                                          |
 | Activo       | Formulario de login.                                                                                                                     |
-| Amenaza      |                                                                                                                                          |
-| Impacto      |                                                                                                                                          |
-| Probabilidad |                                                                                                                                          |
-| Riesgo       |                                                                                                                                          |
+| Amenaza      | Atacante realizando ataques de autenticación como: ataques de fuerza bruta, ataques de diccionario, password spraying, etc.              |
+| Impacto      | (4) Alto                                                                                                                                 |
+| Probabilidad | (5) Crítica                                                                                                                              |
+| Riesgo       | (20) Crítico                                                                                                                             |
 | Control      | Aplicar rate limiting, bloquear la cuenta después de 3 intentos fallidos, implementar métodos de autenticación multifactor y un CAPTCHA. |
 
 | **Campo**    | **Contenido**                                                                                                               |
