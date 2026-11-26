@@ -20,19 +20,25 @@
               "icon": "lucide-file",
               "title": "WEB"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "ba0ac259cd18befa",
+        "type": "tabs",
+        "children": [
           {
-            "id": "50293b36719fa29d",
+            "id": "a5aec359dd68ae47",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DETALLES PRE-HARDENING"
+              "title": "WEB"
             }
           }
         ]
@@ -215,11 +221,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "114571a9b5df5ec9",
+  "active": "a5aec359dd68ae47",
   "lastOpenFiles": [
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
     "Pasted image 20261124232659.png",
     "Pasted image 20261124232501.png",

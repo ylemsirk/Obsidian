@@ -1,19 +1,8 @@
 Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor crudo.
 
-| **Campo**    | **Contenido**                                                                                                                                        |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-01, W-03                                                                                                                                           |
-| Descripción  | Los directorios sensibles como `/cloud`, `/console` y `/admin`, son expuestos mediante un listado de directorios.                                    |
-| Activo       | Información dentro de dichos directorios. Como: credenciales, exportaciones, información sensible de red, etc.                                       |
-| Amenaza      |                                                                                                                                                      |
-| Impacto      | Alto. Se exponen credenciales y exportaciones de clientes                                                                                            |
-| Probabilidad | Alta                                                                                                                                                 |
-| Riesgo       | Muy Alto                                                                                                                                             |
-| Control      | Deshabilitar listado de directorios, exigir autenticación y únicamente proveer al usuario los archivos que pidió (dentro del marco de autorización). |
-
 | **Campo**    | **Contenido**                                                                                                                                                  |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-02                                                                                                                                                           |
+| ID           | W-01                                                                                                                                                           |
 | Descripción  | Cabeceras HSTS ausentes.                                                                                                                                       |
 | Activo       | Portal web.                                                                                                                                                    |
 | Amenaza      |                                                                                                                                                                |
@@ -22,9 +11,21 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       | Medio-Alto                                                                                                                                                     |
 | Control      | Agregar `Strict-Transport-Security: max-age=63072000; includeSubDomains` a las cabeceras para forzar HTTPS a la página y todos sus subdominios durante 2 años. |
 
+| **Campo**    | **Contenido**                                                                                                                                        |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-02                                                                                                                                                 |
+| Descripción  | Los directorios sensibles como `/cloud`, `/console` y `/admin`, son expuestos mediante un listado de directorios.                                    |
+| Activo       | Información dentro de dichos directorios. Como: credenciales, exportaciones, información sensible de red, etc.                                       |
+| Amenaza      |                                                                                                                                                      |
+| Impacto      | Alto. Se exponen credenciales y exportaciones de clientes                                                                                            |
+| Probabilidad | Alta                                                                                                                                                 |
+| Riesgo       | Muy Alto                                                                                                                                             |
+| Control      | Deshabilitar listado de directorios, exigir autenticación y únicamente proveer al usuario los archivos que pidió (dentro del marco de autorización). |
+
+
 | **Campo**    | **Contenido**                                                                                                                                                                                     |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-04                                                                                                                                                                                              |
+| ID           | W-03                                                                                                                                                                                              |
 | Descripción  | Se muestran mensajes de error explícitos (como consultas SQL) dentro del modo debug de Flask cuando el campo recibe datos inesperados.                                                            |
 | Activo       | Error Handling                                                                                                                                                                                    |
 | Amenaza      |                                                                                                                                                                                                   |
@@ -35,8 +36,8 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 
 | **Campo**    | **Contenido**                                                                                                   |
 | ------------ | --------------------------------------------------------------------------------------------------------------- |
-| ID           | W-05                                                                                                            |
-| Descripción  | La cuenta `admin` se creó con una contraseña (admin123) por default o súper común.                              |
+| ID           | W-04                                                                                                            |
+| Descripción  | La cuenta `admin` se mantuvo con una contraseña (admin123) por default desde su creación.                       |
 | Activo       | Cuenta administrativa                                                                                           |
 | Amenaza      |                                                                                                                 |
 | Impacto      | Crítico. Permite acceder a usuarios no autorizados con permisos administrativos.                                |
@@ -46,7 +47,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 
 | **Campo**    | **Contenido**                                                                                        |
 | ------------ | ---------------------------------------------------------------------------------------------------- |
-| ID           | W-06                                                                                                 |
+| ID           | W-05                                                                                                 |
 | Descripción  | El formulario de login interpreta ciertos inputs como consultas SQL, y concatena username y password |
 | Activo       | Formulario de login.                                                                                 |
 | Amenaza      |                                                                                                      |
@@ -55,20 +56,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       | Alto-Crítico                                                                                         |
 | Control      | Implementar consultas parametrizadas dentro del código y validar entradas.                           |
 
-| **Campo**    | **Contenido**                                                       |
-| ------------ | ------------------------------------------------------------------- |
-| ID           | W-07                                                                |
-| Descripción  | Ausencia de autenticación multifactor para todas las cuentas.       |
-| Activo       | Portal completo.                                                    |
-| Amenaza      |                                                                     |
-| Impacto      | Medio. Con una contraseña filtrada basta para ingresar a la cuenta. |
-| Probabilidad | Media                                                               |
-| Riesgo       | Medio                                                               |
-| Control      | Considerar implementación de Active Directory                       |
-
 | **Campo**    | **Contenido**                                                                                                       |
 | ------------ | ------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-08                                                                                                                |
+| ID           | W-06                                                                                                                |
 | Descripción  | El parametro `q` se concatena en una clausula `LIKE` dentro del formulario perteneciente a la Base de conocimiento. |
 | Activo       | Búsqueda en la Base de conocimiento                                                                                 |
 | Amenaza      |                                                                                                                     |
@@ -79,7 +69,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 
 | **Campo**    | **Contenido**                                                                                                                                        |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-09                                                                                                                                                 |
+| ID           | W-07                                                                                                                                                 |
 | Descripción  | Los datos de la base de datos de usuarios están almacenados en texto plano.                                                                          |
 | Activo       | Base de datos de usuarios                                                                                                                            |
 | Amenaza      |                                                                                                                                                      |
@@ -88,27 +78,27 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       | Muy Crítico                                                                                                                                          |
 | Control      | Utilizar algoritmos de hashing robustos como Argon2 o bcrypt que traen salting nativamente para codificar los datos sensibles en las bases de datos. |
 
-| **Campo**    | **Contenido**                                                                                                                                                                                                |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ID           | W-10, W-11                                                                                                                                                                                                   |
-| Descripción  | Ejecución XSS reflejado dentro de la barra de búsqueda del apartado `Base de conocimiento`; y ejecución XSS almacenado dentro del formulario a la descripción de problemas del apartado `Soporte y tickets`. |
-| Activo       | Barra de búsqueda y formulario                                                                                                                                                                               |
-| Amenaza      |                                                                                                                                                                                                              |
-| Impacto      |                                                                                                                                                                                                              |
-| Probabilidad |                                                                                                                                                                                                              |
-| Riesgo       |                                                                                                                                                                                                              |
-| Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas.                                                                                                  |
+| **Campo**    | **Contenido**                                                                                                                                                                                                              |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-08, W-09                                                                                                                                                                                                                 |
+| Descripción  | Ejecución XSS reflejado dentro de la barra de búsqueda del apartado `Base de conocimiento` (W-08); y ejecución XSS almacenado dentro del formulario a la descripción de problemas del apartado `Soporte y tickets` (W-09). |
+| Activo       | Barra de búsqueda y formulario                                                                                                                                                                                             |
+| Amenaza      |                                                                                                                                                                                                                            |
+| Impacto      |                                                                                                                                                                                                                            |
+| Probabilidad |                                                                                                                                                                                                                            |
+| Riesgo       |                                                                                                                                                                                                                            |
+| Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas.                                                                                                                |
 
-| **Campo**    | **Contenido**                                                                                                              |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-12                                                                                                                       |
-| Descripción  | El formulario del apartado `Diagnóstico de conexión` recibe entradas del usuario, las concatena con un ping y las ejecuta. |
-| Activo       | Herramienta de diagnóstico de red                                                                                          |
-| Amenaza      |                                                                                                                            |
-| Impacto      |                                                                                                                            |
-| Probabilidad |                                                                                                                            |
-| Riesgo       |                                                                                                                            |
-| Control      |                                                                                                                            |
+| **Campo**    | **Contenido**                                                                                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-10                                                                                                                                                            |
+| Descripción  | El formulario del apartado `Diagnóstico de conexión` recibe entradas del usuario, las concatena con un ping y las ejecuta en el contexto del sistema operativo. |
+| Activo       | Herramienta de diagnóstico de red                                                                                                                               |
+| Amenaza      |                                                                                                                                                                 |
+| Impacto      |                                                                                                                                                                 |
+| Probabilidad |                                                                                                                                                                 |
+| Riesgo       |                                                                                                                                                                 |
+| Control      |                                                                                                                                                                 |
 
 | **Campo**    | **Contenido**                                                                                                  |
 | ------------ | -------------------------------------------------------------------------------------------------------------- |
@@ -131,6 +121,17 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Probabilidad |                                                                                                                                             |
 | Riesgo       |                                                                                                                                             |
 | Control      | Crear y mantener documentación clara y concisa sobre el diseño, herramientas, procesos, componentes, controles y arquitectura de la página. |
+
+| **Campo**    | **Contenido**                                                       |
+| ------------ | ------------------------------------------------------------------- |
+| ID           | W-14                                                                |
+| Descripción  | Ausencia de autenticación multifactor para todas las cuentas.       |
+| Activo       | Portal completo.                                                    |
+| Amenaza      |                                                                     |
+| Impacto      | Medio. Con una contraseña filtrada basta para ingresar a la cuenta. |
+| Probabilidad | Media                                                               |
+| Riesgo       | Medio                                                               |
+| Control      | Considerar implementación de Active Directory                       |
 
 | **Campo**    | **Contenido**                                                                                                                            |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
