@@ -105,8 +105,8 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | El formulario del apartado `Diagnóstico de conexión` recibe entradas del usuario, las concatena con un ping y las ejecuta en el contexto del sistema operativo. |
 | Activo       | Herramienta de diagnóstico de red                                                                                                                               |
 | Amenaza      |                                                                                                                                                                 |
-| Impacto      |                                                                                                                                                                 |
-| Probabilidad |                                                                                                                                                                 |
+| Impacto      | (5) Crítica                                                                                                                                                     |
+| Probabilidad | (4) Alta                                                                                                                                                        |
 | Riesgo       |                                                                                                                                                                 |
 | Control      |                                                                                                                                                                 |
 
@@ -180,9 +180,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-17                                                                                                                                        |
 | Descripción  | Las preferencias utilizan `pickle` para serializarse, posteriormente se almacenan en una cookie que el usuario puede editar de forma libre. |
-| Activo       |                                                                                                                                             |
-| Amenaza      |                                                                                                                                             |
-| Impacto      | (5) Crítico                                                                                                                                 |
+| Activo       | Configuración de `Flask` y las cookies de preferencias.                                                                                     |
+| Amenaza      | Atacante que busque ejecutar comandos al deserializar los datos dentro del servidor.                                                        |
+| Impacto      | (5) Crítico.                                                                                                                                |
 | Probabilidad | (3) Media                                                                                                                                   |
 | Riesgo       | (15) Alto                                                                                                                                   |
 | Control      | No usar pickle en casos donde los datos provengan del usuario. Validar entradas y utilizar JSON.                                            |
@@ -191,23 +191,23 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-18                                                                                                                          |
 | Descripción  | El certificado digital venció el 31 de enero del 2024.                                                                        |
-| Activo       |                                                                                                                               |
-| Amenaza      |                                                                                                                               |
+| Activo       | Certificado TLS y confianza de usuarios.                                                                                      |
+| Amenaza      | Atacante                                                                                                                      |
 | Impacto      | (4) Alta. Los navegadores pueden bloquear la conexión o mostrar una advertencia, afectando negativamente a la disponibilidad. |
-| Probabilidad | (5) Crítico                                                                                                                   |
-| Riesgo       | (25) Crítico                                                                                                                  |
+| Probabilidad | (5) Crítica                                                                                                                   |
+| Riesgo       | (20) Crítico                                                                                                                  |
 | Control      | Implementar mecanismos que alerten antes de su expiración y renovar el certificado.                                           |
 
-| **Campo**    | **Contenido**                                                          |
-| ------------ | ---------------------------------------------------------------------- |
-| ID           | W-19                                                                   |
-| Descripción  | La página permite negociar TLS 1.1 con cifrado `ECDHE-RSA-AES256-SHA`. |
-| Activo       |                                                                        |
-| Amenaza      |                                                                        |
-| Impacto      | (3) Medio                                                              |
-| Probabilidad | (3) Media                                                              |
-| Riesgo       | (9) Medio                                                              |
-| Control      | Forzar TLS 1.2/1.3 únicamente.                                         |
+| **Campo**    | **Contenido**                                                             |
+| ------------ | ------------------------------------------------------------------------- |
+| ID           | W-19                                                                      |
+| Descripción  | La página permite negociar TLS 1.1 con cifrado `ECDHE-RSA-AES256-SHA`.    |
+| Activo       | Comunicaciones entre clientes y servidor. Configuración TLS del servidor. |
+| Amenaza      | Atacante                                                                  |
+| Impacto      | (3) Medio                                                                 |
+| Probabilidad | (3) Media                                                                 |
+| Riesgo       | (9) Medio                                                                 |
+| Control      | Forzar TLS 1.2/1.3 únicamente.                                            |
 
 
 | **Campo**    | **Contenido**                                                                                |
