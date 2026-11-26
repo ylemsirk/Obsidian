@@ -6,9 +6,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | Cabecera `Strict-Transport-Secuirty` ausente en el servidor HTTPS. Evita al navegador recordar  la política HSTS.                                              |
 | Activo       | Portal web y datos que viajen entre los clientes y el servidor.                                                                                                |
 | Amenaza      |                                                                                                                                                                |
-| Impacto      | Medio. No se fuerza al navegador a ingresar al sitio mediante HTTPS.                                                                                           |
-| Probabilidad | Alta                                                                                                                                                           |
-| Riesgo       | Medio-Alto                                                                                                                                                     |
+| Impacto      | (3) Medio. No se fuerza al navegador a ingresar al sitio mediante HTTPS.                                                                                       |
+| Probabilidad | (2) Medio-Baja.                                                                                                                                                |
+| Riesgo       | (6) Medio.                                                                                                                                                     |
 | Control      | Agregar `Strict-Transport-Security: max-age=63072000; includeSubDomains` a las cabeceras para forzar HTTPS a la página y todos sus subdominios durante 2 años. |
 
 | **Campo**    | **Contenido**                                                                                                                                        |
