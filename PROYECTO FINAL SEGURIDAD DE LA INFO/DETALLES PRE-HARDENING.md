@@ -149,7 +149,7 @@
 - Red plana 192.168.0.0/16 (Un solo dominio de broadcast.[Segmentación nula]), presenta congestión continua y cuellos de botella 0 segmentación. 
 - Toda la red utiliza la VLAN 1.
 - Redundancia nula, depende sustancialmente del switch central. Contiene un único router de borde.
-- Protocolos (SSH, Telnet y RDP) de acceso remoto abiertos en sus puertos por default.
+- SSH abierto en sus puertos por default.
 - WPA-TKIP en todas las redes inalámbricas de la compañía.
 - Servidor web alojado en la LAN interna.
 - Ausencia de Port Security.
@@ -158,8 +158,6 @@
 - Ausencia de QoS para teléfonos IP.
 - Puertos de switch sin usar habilitados.
 - Ausencia de 802.1X.
-- Telnet habilitado.
-
 #### Técnicas
 - La base de datos guarda todos los datos en texto plano
 - Datos en reposo en texto plano en cada dispositivo de la empresa.
