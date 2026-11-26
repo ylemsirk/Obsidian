@@ -83,9 +83,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | Ejecución XSS reflejado dentro de la barra de búsqueda del apartado `Base de conocimiento` (W-08); y ejecución XSS almacenado dentro del formulario a la descripción de problemas del apartado `Soporte y tickets` (W-09). |
 | Activo       | Barra de búsqueda y formulario                                                                                                                                                                                             |
 | Amenaza      |                                                                                                                                                                                                                            |
-| Impacto      |                                                                                                                                                                                                                            |
-| Probabilidad |                                                                                                                                                                                                                            |
-| Riesgo       |                                                                                                                                                                                                                            |
+| Impacto      | ()                                                                                                                                                                                                                         |
+| Probabilidad | ()                                                                                                                                                                                                                         |
+| Riesgo       | ()                                                                                                                                                                                                                         |
 | Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas.                                                                                                                |
 
 | **Campo**    | **Contenido**                                                                                                                                                   |
@@ -171,9 +171,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | Las preferencias utilizan `pickle` para serializarse, posteriormente se almacenan en una cookie que el usuario puede editar de forma libre. |
 | Activo       |                                                                                                                                             |
 | Amenaza      |                                                                                                                                             |
-| Impacto      |                                                                                                                                             |
-| Probabilidad |                                                                                                                                             |
-| Riesgo       |                                                                                                                                             |
+| Impacto      | (5) Crítico                                                                                                                                 |
+| Probabilidad | (3) Media                                                                                                                                   |
+| Riesgo       | (15) Alto                                                                                                                                   |
 | Control      | No usar pickle en casos donde los datos provengan del usuario. Validar entradas y utilizar JSON.                                            |
 
 | **Campo**    | **Contenido**                                                                                                                 |
