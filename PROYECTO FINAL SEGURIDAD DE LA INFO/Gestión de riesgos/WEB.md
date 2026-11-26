@@ -117,8 +117,8 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Activo       | Herramientas utilizadas en el desarrollo de la página web.                                                                              |
 | Amenaza      | Atacante investigando y aprovechando vulnerabilidades conocidas sobre las versiones desactualizadas de las dependencias y herramientas. |
 | Impacto      | (4) Alto                                                                                                                                |
-| Probabilidad | (2) Medio-Baja                                                                                                                          |
-| Riesgo       | (8) Medio                                                                                                                               |
+| Probabilidad | (4) Alta                                                                                                                                |
+| Riesgo       | (16) Alto                                                                                                                               |
 | Control      | Actualizar `pip`, las dependencias y cualquier herramienta siendo utilizada en el desarrollo de la página web.                          |
 
 | **Campo**    | **Contenido**                                                                                                                            |
