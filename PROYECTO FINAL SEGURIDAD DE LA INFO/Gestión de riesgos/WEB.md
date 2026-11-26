@@ -22,7 +22,6 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       | Muy Alto                                                                                                                                             |
 | Control      | Deshabilitar listado de directorios, exigir autenticación y únicamente proveer al usuario los archivos que pidió (dentro del marco de autorización). |
 
-
 | **Campo**    | **Contenido**                                                                                                                                                                                     |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-03                                                                                                                                                                                              |
@@ -102,7 +101,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 
 | **Campo**    | **Contenido**                                                                                                  |
 | ------------ | -------------------------------------------------------------------------------------------------------------- |
-| ID           | W-13                                                                                                           |
+| ID           | W-11                                                                                                           |
 | Descripción  | Versiones atrasadas de dependencias/herramientas como `Flask`, `Werkzeug`, `wheel`, `pip`, etc.                |
 | Activo       | Herramientas utilizadas en el desarrollo de la página web.                                                     |
 | Amenaza      |                                                                                                                |
@@ -111,16 +110,27 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       |                                                                                                                |
 | Control      | Actualizar `pip`, las dependencias y cualquier herramienta siendo utilizada en el desarrollo de la página web. |
 
-| **Campo**    | **Contenido**                                                                                                                               |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-14                                                                                                                                        |
-| Descripción  | Documentación muy insuficiente (prácticamente inexistente) sobre el diseño y arquitectura de la página.                                     |
-| Activo       | Documentación de arquitectura de la página.                                                                                                 |
-| Amenaza      |                                                                                                                                             |
-| Impacto      |                                                                                                                                             |
-| Probabilidad |                                                                                                                                             |
-| Riesgo       |                                                                                                                                             |
-| Control      | Crear y mantener documentación clara y concisa sobre el diseño, herramientas, procesos, componentes, controles y arquitectura de la página. |
+| **Campo**    | **Contenido**                                                                                                                            |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-12                                                                                                                                     |
+| Descripción  | Aún cuando el servidor recibe numerosos intentos de sesión, no bloquea o limita las peticiones.                                          |
+| Activo       | Formulario de login.                                                                                                                     |
+| Amenaza      |                                                                                                                                          |
+| Impacto      |                                                                                                                                          |
+| Probabilidad |                                                                                                                                          |
+| Riesgo       |                                                                                                                                          |
+| Control      | Aplicar rate limiting, bloquear la cuenta después de 3 intentos fallidos, implementar métodos de autenticación multifactor y un CAPTCHA. |
+
+| **Campo**    | **Contenido**                                                                                                               |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-13                                                                                                                        |
+| Descripción  | La ruta `/admin` únicamente verifica si un usuario ha sido autenticado aún si la cuenta no pertenece a algún administrador. |
+| Activo       |                                                                                                                             |
+| Amenaza      |                                                                                                                             |
+| Impacto      |                                                                                                                             |
+| Probabilidad |                                                                                                                             |
+| Riesgo       |                                                                                                                             |
+| Control      | Aplicar políticas Zero Trust y cambiar a un modelo de control de acceso basado en roles (RBAC).                             |
 
 | **Campo**    | **Contenido**                                                       |
 | ------------ | ------------------------------------------------------------------- |
@@ -133,42 +143,20 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       | Medio                                                               |
 | Control      | Considerar implementación de Active Directory                       |
 
-| **Campo**    | **Contenido**                                                                                                                            |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-15                                                                                                                                     |
-| Descripción  | Aún cuando el servidor recibe numerosos intentos de sesión, no bloquea o limita las peticiones.                                          |
-| Activo       | Formulario de login.                                                                                                                     |
-| Amenaza      |                                                                                                                                          |
-| Impacto      |                                                                                                                                          |
-| Probabilidad |                                                                                                                                          |
-| Riesgo       |                                                                                                                                          |
-| Control      | Aplicar rate limiting, bloquear la cuenta después de 3 intentos fallidos, implementar métodos de autenticación multifactor y un CAPTCHA. |
-
-| **Campo**    | **Contenido**                                                                                                               |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-16                                                                                                                        |
-| Descripción  | La ruta `/admin` únicamente verifica si un usuario ha sido autenticado aún si la cuenta no pertenece a algún administrador. |
-| Activo       |                                                                                                                             |
-| Amenaza      |                                                                                                                             |
-| Impacto      |                                                                                                                             |
-| Probabilidad |                                                                                                                             |
-| Riesgo       |                                                                                                                             |
-| Control      | Aplicar políticas Zero Trust y cambiar a un modelo de control de acceso basado en roles (RBAC).                             |
-
-| **Campo**    | **Contenido**                                                                                                               |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-17                                                                                                                        |
-| Descripción  | No se verifica la identidad del usuario para acceder a recursos ajenos.                                                     |
-| Activo       |                                                                                                                             |
-| Amenaza      |                                                                                                                             |
-| Impacto      |                                                                                                                             |
-| Probabilidad |                                                                                                                             |
-| Riesgo       |                                                                                                                             |
-| Control      | Definir correctamente los permisos de los usuarios mediante un modelo de acceso como RBAC y aplicar mecanismos Zero Trust.  |
+| **Campo**    | **Contenido**                                                                                                                                                                             |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-15                                                                                                                                                                                      |
+| Descripción  | Cualquier usuario puede acceder a recursos que no le corresponden con solo hacer cambios en la URL ya que no se verifica la identidad del usuario para acceder a recursos ajenos (IDOR).  |
+| Activo       |                                                                                                                                                                                           |
+| Amenaza      |                                                                                                                                                                                           |
+| Impacto      |                                                                                                                                                                                           |
+| Probabilidad |                                                                                                                                                                                           |
+| Riesgo       |                                                                                                                                                                                           |
+| Control      | Definir correctamente los permisos de los usuarios mediante un modelo de acceso como RBAC y aplicar mecanismos Zero Trust.                                                                |
 
 | **Campo**    | **Contenido**                                                                                                     |
 | ------------ | ----------------------------------------------------------------------------------------------------------------- |
-| ID           | W-18                                                                                                              |
+| ID           | W-16                                                                                                              |
 | Descripción  | El `sid` puede ser declarado mediante la URL y acceder a una sesión existente desde otro navegador o dispositivo. |
 | Activo       |                                                                                                                   |
 | Amenaza      |                                                                                                                   |
@@ -177,53 +165,43 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       |                                                                                                                   |
 | Control      | Crear un `sid` distinto por cada inicio de sesión y bloquear el uso del mismo mediante modificación de la URL.    |
 
-| **Campo**    | **Contenido**                                                                                                                                                |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| ID           | W-19                                                                                                                                                         |
-| Descripción  | El servidor no limita la cantidad de peticiones que le llegan, por consecuencia, usuarios podrían abusar fácilmente                                          |
-| Activo       | Reporte de consumo                                                                                                                                           |
-| Amenaza      | Botnet                                                                                                                                                       |
-| Impacto      |                                                                                                                                                              |
-| Probabilidad |                                                                                                                                                              |
-| Riesgo       |                                                                                                                                                              |
-| Control      | Utilizar un servicio de proxy confiable como Cloudflare, implementar IP rate limiting y configurar un WAF que permite filtrar peticiones maliciosas masivas. |
+| **Campo**    | **Contenido**                                                                                                                               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-17                                                                                                                                        |
+| Descripción  | Las preferencias utilizan `pickle` para serializarse, posteriormente se almacenan en una cookie que el usuario puede editar de forma libre. |
+| Activo       |                                                                                                                                             |
+| Amenaza      |                                                                                                                                             |
+| Impacto      |                                                                                                                                             |
+| Probabilidad |                                                                                                                                             |
+| Riesgo       |                                                                                                                                             |
+| Control      | No usar pickle en casos donde los datos provengan del usuario. Validar entradas y utilizar JSON.                                            |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-20          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                                       |
+| ------------ | ----------------------------------------------------------------------------------- |
+| ID           | W-18                                                                                |
+| Descripción  | El certificado digital venció el 31 de enero del 2024.                              |
+| Activo       |                                                                                     |
+| Amenaza      |                                                                                     |
+| Impacto      |                                                                                     |
+| Probabilidad |                                                                                     |
+| Riesgo       |                                                                                     |
+| Control      | Implementar mecanismos que alerten antes de su expiración y renovar el certificado. |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-21          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
+| **Campo**    | **Contenido**                                                          |
+| ------------ | ---------------------------------------------------------------------- |
+| ID           | W-19                                                                   |
+| Descripción  | La página permite negociar TLS 1.1 con cifrado `ECDHE-RSA-AES256-SHA`. |
+| Activo       |                                                                        |
+| Amenaza      |                                                                        |
+| Impacto      |                                                                        |
+| Probabilidad |                                                                        |
+| Riesgo       |                                                                        |
+| Control      | Forzar TLS 1.2/1.3 únicamente.                                         |
 
-| **Campo**    | **Contenido** |
-| ------------ | ------------- |
-| ID           | W-22          |
-| Descripción  |               |
-| Activo       |               |
-| Amenaza      |               |
-| Impacto      |               |
-| Probabilidad |               |
-| Riesgo       |               |
-| Control      |               |
 
 | **Campo**    | **Contenido**                                                                                |
 | ------------ | -------------------------------------------------------------------------------------------- |
-| ID           | W-23                                                                                         |
+| ID           | W-20                                                                                         |
 | Descripción  | Hay una única fuente de logs, y esta solo presenta evidencia de visualizaciones en facturas. |
 | Activo       |                                                                                              |
 | Amenaza      |                                                                                              |
