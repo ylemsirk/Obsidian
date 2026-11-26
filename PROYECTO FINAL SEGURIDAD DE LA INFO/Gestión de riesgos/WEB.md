@@ -81,23 +81,23 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ------------ | ----------------------------------------------------------------------------------------------------------- |
 | ID           | W-08                                                                                                        |
 | Descripción  | Ejecución XSS reflejado dentro de la barra de búsqueda del apartado `Base de conocimiento`.                 |
-| Activo       | Barra de búsqueda y formulario.                                                                             |
-| Amenaza      |                                                                                                             |
+| Activo       | Barra de búsqueda.                                                                                          |
+| Amenaza      | Atacante que logra manipular a un usuario para que ejecute el comando JS en la barra de búsqueda.           |
 | Impacto      | (4) Alto                                                                                                    |
 | Probabilidad | (3) Media                                                                                                   |
 | Riesgo       | (12) Alta                                                                                                   |
 | Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas. |
 
-| **Campo**    | **Contenido**                                                                                                  |
-| ------------ | -------------------------------------------------------------------------------------------------------------- |
-| ID           | W-09                                                                                                           |
-| Descripción  | Ejecución XSS almacenado dentro del formulario a la descripción de problemas del apartado `Soporte y tickets`. |
-| Activo       | Formulario de `Soporte y tickets`.                                                                             |
-| Amenaza      |                                                                                                                |
-| Impacto      | (4) Alto                                                                                                       |
-| Probabilidad | (4) Alta                                                                                                       |
-| Riesgo       | (16) Alto                                                                                                      |
-| Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas.    |
+| **Campo**    | **Contenido**                                                                                                                                 |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-09                                                                                                                                          |
+| Descripción  | Ejecución XSS almacenado dentro del formulario a la descripción de problemas del apartado `Soporte y tickets`.                                |
+| Activo       | Formulario de `Soporte y tickets`.                                                                                                            |
+| Amenaza      | Usuario malioso que decida enviar un ticket con código JS para ser ejecutado en las sesiones de otros usuarios al estos ingresar al apartado. |
+| Impacto      | (4) Alto                                                                                                                                      |
+| Probabilidad | (4) Alta                                                                                                                                      |
+| Riesgo       | (16) Alto                                                                                                                                     |
+| Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas.                                   |
 
 | **Campo**    | **Contenido**                                                                                                                                                                               |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -221,4 +221,4 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       | (16) Alta                                                                                                                    |
 | Control      | Implementar sistemas de seguridad integrada como SIEMs, EDRs, etc. Centralizar los logs en un servidor dedicado y protegido. |
 
-8, 9, 10
+8, 9
