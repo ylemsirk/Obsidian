@@ -3,8 +3,8 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | **Campo**    | **Contenido**                                                                                                                                                  |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-01                                                                                                                                                           |
-| Descripción  | Cabeceras HSTS ausentes.                                                                                                                                       |
-| Activo       | Portal web.                                                                                                                                                    |
+| Descripción  | Cabecera `Strict-Transport-Secuirty` ausente en el servidor HTTPS. Evita al navegador recordar  la política HSTS.                                              |
+| Activo       | Portal web y datos que viajen entre los clientes y el servidor.                                                                                                |
 | Amenaza      |                                                                                                                                                                |
 | Impacto      | Medio. No se fuerza al navegador a ingresar al sitio mediante HTTPS.                                                                                           |
 | Probabilidad | Alta                                                                                                                                                           |
