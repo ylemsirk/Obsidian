@@ -27,7 +27,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ID           | W-03                                                                                                                                                                                              |
 | Descripción  | Se muestran mensajes de error explícitos (como consultas SQL) dentro del modo debug de Flask cuando el campo recibe datos inesperados.                                                            |
 | Activo       | Herramienta de manejo de errores de Flask.                                                                                                                                                        |
-| Amenaza      |                                                                                                                                                                                                   |
+| Amenaza      | Atacante probando distintas entradas o caracteres en busca de obtener información sobre vulnerabilidades.                                                                                         |
 | Impacto      | (3) Medio. Los mensajes de error pueden dar información extra que puede ser utilizada para ataques futuros.                                                                                       |
 | Probabilidad | (4) Alta.                                                                                                                                                                                         |
 | Riesgo       | (12) Alto.                                                                                                                                                                                        |
@@ -38,10 +38,10 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ID           | W-04                                                                                                            |
 | Descripción  | La cuenta `admin` se mantuvo con una contraseña (admin123) por default desde su creación.                       |
 | Activo       | Cuenta administrativa.                                                                                          |
-| Amenaza      |                                                                                                                 |
-| Impacto      | Crítico. Permite acceder a usuarios no autorizados con permisos administrativos.                                |
-| Probabilidad | Crítica. Estas cuentas suelen ser las más atacadas debido a sus privilegios.                                    |
-| Riesgo       | Muy Crítico                                                                                                     |
+| Amenaza      | Atacante haciendo uso de ataques de diccionario.                                                                |
+| Impacto      | (5) Crítico. Permite acceder a usuarios no autorizados con permisos administrativos.                            |
+| Probabilidad | (5) Crítica. Estas cuentas suelen ser las más atacadas debido a sus privilegios.                                |
+| Riesgo       | (25) Muy Crítico                                                                                                |
 | Control      | Reemplazar inmediatamente la contraseña a una más robusta, y evitar usar contraseñas débiles o predeterminadas. |
 
 | **Campo**    | **Contenido**                                                                                            |
@@ -49,7 +49,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ID           | W-05                                                                                                     |
 | Descripción  | El formulario de login interpreta ciertos inputs como consultas SQL, y concatena username y password     |
 | Activo       | Base de datos de usuarios y formulario de login.                                                         |
-| Amenaza      |                                                                                                          |
+| Amenaza      | Atacante buscando saltarse el proceso de autenticación para obtener acceso a las cuentas.                |
 | Impacto      | (5) Crítico. Permite acceder a usuarios no autorizados a cualquier cuenta solo con el nombre de usuario. |
 | Probabilidad | (5) Crítica.                                                                                             |
 | Riesgo       | (25) Alto-Crítico                                                                                        |
@@ -60,7 +60,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ID           | W-06                                                                                                                |
 | Descripción  | El parametro `q` se concatena en una clausula `LIKE` dentro del formulario perteneciente a la Base de conocimiento. |
 | Activo       | Búsqueda en la Base de conocimiento.                                                                                |
-| Amenaza      |                                                                                                                     |
+| Amenaza      | Atacante buscando extraer información de la base de datos.                                                          |
 | Impacto      | (5) Crítico. Permite extraer datos de la bases de datos mediante `UNION`.                                           |
 | Probabilidad | (4) Alta.                                                                                                           |
 | Riesgo       | (20) Crítico                                                                                                        |
