@@ -17,9 +17,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | El directorio `/cloud` y sus subdirectorios son expuestos mediante un listado de directorios.                                                        |
 | Activo       | Directorio `/cloud` Información dentro de dichos directorios. Como: credenciales, exportaciones, información sensible de red, etc.                   |
 | Amenaza      | Atacante no autorizado realizando pruebas de reconocimiento activo.                                                                                  |
-| Impacto      | (5) Crítico . Se exponen credenciales y exportaciones de clientes                                                                                    |
-| Probabilidad | Alta                                                                                                                                                 |
-| Riesgo       | Muy Alto                                                                                                                                             |
+| Impacto      | (5) Crítico. Se exponen credenciales y exportaciones de clientes                                                                                     |
+| Probabilidad | (5) Crítica                                                                                                                                          |
+| Riesgo       | (25) Crítico                                                                                                                                         |
 | Control      | Deshabilitar listado de directorios, exigir autenticación y únicamente proveer al usuario los archivos que pidió (dentro del marco de autorización). |
 
 | **Campo**    | **Contenido**                                                                                                                                                                                     |
