@@ -220,5 +220,3 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Probabilidad | (4) Alta                                                                                                                     |
 | Riesgo       | (16) Alta                                                                                                                    |
 | Control      | Implementar sistemas de seguridad integrada como SIEMs, EDRs, etc. Centralizar los logs en un servidor dedicado y protegido. |
-
-8, 9
