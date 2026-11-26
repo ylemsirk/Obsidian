@@ -94,9 +94,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | Ejecución XSS almacenado dentro del formulario a la descripción de problemas del apartado `Soporte y tickets`. |
 | Activo       | Formulario de `Soporte y tickets`.                                                                             |
 | Amenaza      |                                                                                                                |
-| Impacto      | (5) Crítico                                                                                                    |
-| Probabilidad | (5) Crítico                                                                                                    |
-| Riesgo       | (25) Crítico                                                                                                   |
+| Impacto      | (4) Alto                                                                                                       |
+| Probabilidad | (4) Alta                                                                                                       |
+| Riesgo       | (16) Alto                                                                                                      |
 | Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas.    |
 
 | **Campo**    | **Contenido**                                                                                                                                                   |
