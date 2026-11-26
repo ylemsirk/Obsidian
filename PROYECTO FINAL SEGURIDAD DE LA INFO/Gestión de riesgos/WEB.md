@@ -26,44 +26,44 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-03                                                                                                                                                                                              |
 | Descripción  | Se muestran mensajes de error explícitos (como consultas SQL) dentro del modo debug de Flask cuando el campo recibe datos inesperados.                                                            |
-| Activo       | Error Handling                                                                                                                                                                                    |
+| Activo       | Herramienta de manejo de errores de Flask.                                                                                                                                                        |
 | Amenaza      |                                                                                                                                                                                                   |
-| Impacto      | Alto                                                                                                                                                                                              |
-| Probabilidad | Alta                                                                                                                                                                                              |
-| Riesgo       | Alto-Crítico.                                                                                                                                                                                     |
+| Impacto      | (3) Medio. Los mensajes de error pueden dar información extra que puede ser utilizada para ataques futuros.                                                                                       |
+| Probabilidad | (4) Alta.                                                                                                                                                                                         |
+| Riesgo       | (12) Alto.                                                                                                                                                                                        |
 | Control      | Convertir el parámetro `debug` de  `True` a `False` cuando se esté fuera del entorno de desarrollo local, y reservar detalles técnicos para logs internos en lugar de mostrarlos ante el usuario. |
 
 | **Campo**    | **Contenido**                                                                                                   |
 | ------------ | --------------------------------------------------------------------------------------------------------------- |
 | ID           | W-04                                                                                                            |
 | Descripción  | La cuenta `admin` se mantuvo con una contraseña (admin123) por default desde su creación.                       |
-| Activo       | Cuenta administrativa                                                                                           |
+| Activo       | Cuenta administrativa.                                                                                          |
 | Amenaza      |                                                                                                                 |
 | Impacto      | Crítico. Permite acceder a usuarios no autorizados con permisos administrativos.                                |
 | Probabilidad | Crítica. Estas cuentas suelen ser las más atacadas debido a sus privilegios.                                    |
 | Riesgo       | Muy Crítico                                                                                                     |
 | Control      | Reemplazar inmediatamente la contraseña a una más robusta, y evitar usar contraseñas débiles o predeterminadas. |
 
-| **Campo**    | **Contenido**                                                                                        |
-| ------------ | ---------------------------------------------------------------------------------------------------- |
-| ID           | W-05                                                                                                 |
-| Descripción  | El formulario de login interpreta ciertos inputs como consultas SQL, y concatena username y password |
-| Activo       | Formulario de login.                                                                                 |
-| Amenaza      |                                                                                                      |
-| Impacto      | Crítico. Permite acceder a usuarios no autorizados a cualquier cuenta solo con el nombre de usuario. |
-| Probabilidad | Alta.                                                                                                |
-| Riesgo       | Alto-Crítico                                                                                         |
-| Control      | Implementar consultas parametrizadas dentro del código y validar entradas.                           |
+| **Campo**    | **Contenido**                                                                                            |
+| ------------ | -------------------------------------------------------------------------------------------------------- |
+| ID           | W-05                                                                                                     |
+| Descripción  | El formulario de login interpreta ciertos inputs como consultas SQL, y concatena username y password     |
+| Activo       | Base de datos de usuarios y formulario de login.                                                         |
+| Amenaza      |                                                                                                          |
+| Impacto      | (5) Crítico. Permite acceder a usuarios no autorizados a cualquier cuenta solo con el nombre de usuario. |
+| Probabilidad | (5) Crítica.                                                                                             |
+| Riesgo       | (25) Alto-Crítico                                                                                        |
+| Control      | Implementar consultas parametrizadas dentro del código y validar entradas.                               |
 
 | **Campo**    | **Contenido**                                                                                                       |
 | ------------ | ------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-06                                                                                                                |
 | Descripción  | El parametro `q` se concatena en una clausula `LIKE` dentro del formulario perteneciente a la Base de conocimiento. |
-| Activo       | Búsqueda en la Base de conocimiento                                                                                 |
+| Activo       | Búsqueda en la Base de conocimiento.                                                                                |
 | Amenaza      |                                                                                                                     |
-| Impacto      | Crítico. Permite extraer datos de la bases de datos mediante `UNION`                                                |
-| Probabilidad | Media                                                                                                               |
-| Riesgo       | Alto                                                                                                                |
+| Impacto      | (5) Crítico. Permite extraer datos de la bases de datos mediante `UNION`.                                           |
+| Probabilidad | (4) Alta.                                                                                                           |
+| Riesgo       | (20) Crítico                                                                                                        |
 | Control      | Implementar consultas parametrizadas dentro del código y validar entradas.                                          |
 
 | **Campo**    | **Contenido**                                                                                                                                        |
@@ -72,9 +72,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | Los datos de la base de datos de usuarios están almacenados en texto plano.                                                                          |
 | Activo       | Base de datos de usuarios                                                                                                                            |
 | Amenaza      |                                                                                                                                                      |
-| Impacto      | Crítico                                                                                                                                              |
-| Probabilidad | Crítica                                                                                                                                              |
-| Riesgo       | Muy Crítico                                                                                                                                          |
+| Impacto      | (5) Crítico                                                                                                                                          |
+| Probabilidad | (4) Alta                                                                                                                                             |
+| Riesgo       | (20) Crítico                                                                                                                                         |
 | Control      | Utilizar algoritmos de hashing robustos como Argon2 o bcrypt que traen salting nativamente para codificar los datos sensibles en las bases de datos. |
 
 | **Campo**    | **Contenido**                                                                                                                                                                                                              |
