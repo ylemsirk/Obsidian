@@ -71,7 +71,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ID           | W-07                                                                                                                                                 |
 | Descripción  | Los datos de la base de datos de usuarios están almacenados en texto plano.                                                                          |
 | Activo       | Base de datos de usuarios                                                                                                                            |
-| Amenaza      |                                                                                                                                                      |
+| Amenaza      | Atacante con acceso a la información de la base de datos que puede realizar exfiltración de datos.                                                   |
 | Impacto      | (5) Crítico                                                                                                                                          |
 | Probabilidad | (4) Alta                                                                                                                                             |
 | Riesgo       | (20) Crítico                                                                                                                                         |
@@ -81,12 +81,24 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-08, W-09                                                                                                                                                                                                                 |
 | Descripción  | Ejecución XSS reflejado dentro de la barra de búsqueda del apartado `Base de conocimiento` (W-08); y ejecución XSS almacenado dentro del formulario a la descripción de problemas del apartado `Soporte y tickets` (W-09). |
-| Activo       | Barra de búsqueda y formulario                                                                                                                                                                                             |
+| Activo       | Barra de búsqueda y formulario.                                                                                                                                                                                            |
 | Amenaza      |                                                                                                                                                                                                                            |
 | Impacto      | (5) Crítico                                                                                                                                                                                                                |
 | Probabilidad | (5) Crítico                                                                                                                                                                                                                |
 | Riesgo       | (25) Crítico                                                                                                                                                                                                               |
 | Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas.                                                                                                                |
+
+
+| **Campo**    | **Contenido**                                                                                                  |
+| ------------ | -------------------------------------------------------------------------------------------------------------- |
+| ID           | W-09                                                                                                           |
+| Descripción  | Ejecución XSS almacenado dentro del formulario a la descripción de problemas del apartado `Soporte y tickets`. |
+| Activo       | Formulario de `Soporte y tickets`.                                                                             |
+| Amenaza      |                                                                                                                |
+| Impacto      | (5) Crítico                                                                                                    |
+| Probabilidad | (5) Crítico                                                                                                    |
+| Riesgo       | (25) Crítico                                                                                                   |
+| Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas.    |
 
 | **Campo**    | **Contenido**                                                                                                                                                   |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
