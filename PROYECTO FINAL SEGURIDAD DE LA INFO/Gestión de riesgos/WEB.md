@@ -176,16 +176,16 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       |                                                                                                                                             |
 | Control      | No usar pickle en casos donde los datos provengan del usuario. Validar entradas y utilizar JSON.                                            |
 
-| **Campo**    | **Contenido**                                                                       |
-| ------------ | ----------------------------------------------------------------------------------- |
-| ID           | W-18                                                                                |
-| Descripción  | El certificado digital venció el 31 de enero del 2024.                              |
-| Activo       |                                                                                     |
-| Amenaza      |                                                                                     |
-| Impacto      |                                                                                     |
-| Probabilidad |                                                                                     |
-| Riesgo       |                                                                                     |
-| Control      | Implementar mecanismos que alerten antes de su expiración y renovar el certificado. |
+| **Campo**    | **Contenido**                                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-18                                                                                                                          |
+| Descripción  | El certificado digital venció el 31 de enero del 2024.                                                                        |
+| Activo       |                                                                                                                               |
+| Amenaza      |                                                                                                                               |
+| Impacto      | (4) Alta. Los navegadores pueden bloquear la conexión o mostrar una advertencia, afectando negativamente a la disponibilidad. |
+| Probabilidad | (5) Crítico                                                                                                                   |
+| Riesgo       | (25) Crítico                                                                                                                  |
+| Control      | Implementar mecanismos que alerten antes de su expiración y renovar el certificado.                                           |
 
 | **Campo**    | **Contenido**                                                          |
 | ------------ | ---------------------------------------------------------------------- |
@@ -193,9 +193,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | La página permite negociar TLS 1.1 con cifrado `ECDHE-RSA-AES256-SHA`. |
 | Activo       |                                                                        |
 | Amenaza      |                                                                        |
-| Impacto      |                                                                        |
-| Probabilidad |                                                                        |
-| Riesgo       |                                                                        |
+| Impacto      | (3) Medio                                                              |
+| Probabilidad | (3) Media                                                              |
+| Riesgo       | (9) Medio                                                              |
 | Control      | Forzar TLS 1.2/1.3 únicamente.                                         |
 
 
@@ -203,9 +203,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ------------ | -------------------------------------------------------------------------------------------- |
 | ID           | W-20                                                                                         |
 | Descripción  | Hay una única fuente de logs, y esta solo presenta evidencia de visualizaciones en facturas. |
-| Activo       |                                                                                              |
+| Activo       | Logs de los eventos ocurridos en la página.                                                  |
 | Amenaza      |                                                                                              |
-| Impacto      |                                                                                              |
-| Probabilidad |                                                                                              |
-| Riesgo       |                                                                                              |
+| Impacto      | (4) Alto                                                                                     |
+| Probabilidad | (4) Alta                                                                                     |
+| Riesgo       | (16) Alta                                                                                    |
 | Control      |                                                                                              |
