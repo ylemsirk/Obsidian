@@ -99,16 +99,16 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       | (16) Alto                                                                                                      |
 | Control      | Implementar conversión de caracteres especiales (`<, >, &, ", ')`) a entidades  seguras y validar entradas.    |
 
-| **Campo**    | **Contenido**                                                                                                                                                   |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-10                                                                                                                                                            |
-| Descripción  | El formulario del apartado `Diagnóstico de conexión` recibe entradas del usuario, las concatena con un ping y las ejecuta en el contexto del sistema operativo. |
-| Activo       | Herramienta de diagnóstico de red                                                                                                                               |
-| Amenaza      |                                                                                                                                                                 |
-| Impacto      | (5) Crítica                                                                                                                                                     |
-| Probabilidad | (4) Alta                                                                                                                                                        |
-| Riesgo       | (20) Crítico                                                                                                                                                    |
-| Control      |                                                                                                                                                                 |
+| **Campo**    | **Contenido**                                                                                                                                                                               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-10                                                                                                                                                                                        |
+| Descripción  | El formulario del apartado `Diagnóstico de conexión` recibe entradas del usuario, las concatena con un ping y las ejecuta en el contexto del sistema operativo.                             |
+| Activo       | Herramienta de diagnóstico de red                                                                                                                                                           |
+| Amenaza      |                                                                                                                                                                                             |
+| Impacto      | (5) Crítica                                                                                                                                                                                 |
+| Probabilidad | (4) Alta                                                                                                                                                                                    |
+| Riesgo       | (20) Crítico                                                                                                                                                                                |
+| Control      | Evitar la ejecución de comandos del sistema operativo y usar APIs en su lugar. Verificar la identidad y permisos del usuario antes de ingresar al apartado o al momento de enviar comandos. |
 
 | **Campo**    | **Contenido**                                                                                                                           |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
