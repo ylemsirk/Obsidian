@@ -80,32 +80,31 @@
 
 #### Topología Lógica
 
-| Fase | Modelo en PT | Nombre exacto | IP / máscara / gateway |
-|---|---|---|---|
-| 1 Internet | Router 1941 | `ISP-LUMEN` | Gi0/0 203.0.113.1/30, Gi0/1 198.51.100.1/24 |
-| 1 | Switch 2960-24TT | `SW-INTERNET` | sin IP |
-| 1 | Server-PT | `SRV-PELDET` | 198.51.100.10/24, gw .1 |
-| 1 | Server-PT | `SRV-ZENDESK` | 198.51.100.11/24, gw .1 |
-| 1 | Server-PT | `SRV-PAGOS` | 198.51.100.12/24, gw .1 |
-| 1 | PC-PT | `PC-ATACANTE` | 198.51.100.50/24, gw .1 |
-| 2 Borde y core (Piso 2) | WRT300N | `RTR-BORDE` | LAN 192.168.0.1/16, WAN 203.0.113.2/30, gw 203.0.113.1 |
-| 2 | Switch 2960-24TT | `SW-CORE` | VLAN1: 192.168.0.2/16 |
-| 3 Servidores (Piso 2) | Server-PT | `SRV-DHCP` | 192.168.0.10/16, gw 192.168.0.1 |
-| 3 | Server-PT | `SRV-DNS` | 192.168.0.11/16 |
-| 3 | Server-PT | `SRV-WEB` | 192.168.0.12/16 |
-| 3 | Server-PT | `SRV-DB` | 192.168.0.13/16 |
-| 4 Piso 1 | Switch 2960-24TT | `SW-IDF01` | VLAN1: 192.168.0.3/16 |
-| 4 | PC-PT | `PC-CS-01`, `PC-CS-02` | DHCP |
-| 4 | PC-PT | `PC-FIN-01`, `PC-FIN-02` | DHCP |
-| 4 | IP Phone 7960 | `TEL-CS-01`, `TEL-FIN-01` | DHCP |
-| 4 | Server-PT | `SRV-LOGS` | 192.168.0.14/16 |
-| 5 Piso 3 | Switch 2960-24TT | `SW-IDF03` | VLAN1: 192.168.0.4/16 |
-| 5 | PC-PT | `PC-IT-01`, `PC-IT-02`, `PC-ADM-01` | DHCP |
-| 5 | IP Phone 7960 | `TEL-ADM-01` | DHCP |
-| 6 Wi-Fi (Piso 1) | Access Point-PT | `AP-P1-CORP` (SSID `DINA-CORP`) | sin IP |
-| 6 | Access Point-PT | `AP-P1-GUEST` (SSID `DINA-GUEST`) | sin IP |
-| 6 | Laptop-PT | `LAP-CORP-01` | DHCP |
-| 6 | Smartphone-PT | `CEL-GUEST-01` | DHCP |
+| Fase                    | Modelo en PT     | Nombre exacto                       | IP / máscara / gateway                                 |
+| ----------------------- | ---------------- | ----------------------------------- | ------------------------------------------------------ |
+| 1 Internet              | Router 1941      | `ISP-LUMEN`                         | Gi0/0 203.0.113.1/30, Gi0/1 198.51.100.1/24            |
+| 1                       | Switch 2960-24TT | `SW-INTERNET`                       | sin IP                                                 |
+| 1                       | Server-PT        | `SRV-PELDET`                        | 198.51.100.10/24, gw .1                                |
+| 1                       | Server-PT        | `SRV-ZENDESK`                       | 198.51.100.11/24, gw .1                                |
+| 1                       | Server-PT        | `SRV-PAGOS`                         | 198.51.100.12/24, gw .1                                |
+| 2 Borde y core (Piso 2) | WRT300N          | `RTR-BORDE`                         | LAN 192.168.0.1/16, WAN 203.0.113.2/30, gw 203.0.113.1 |
+| 2                       | Switch 2960-24TT | `SW-CORE`                           | VLAN1: 192.168.0.2/16                                  |
+| 3 Servidores (Piso 2)   | Server-PT        | `SRV-DHCP`                          | 192.168.0.10/16, gw 192.168.0.1                        |
+| 3                       | Server-PT        | `SRV-DNS`                           | 192.168.0.11/16                                        |
+| 3                       | Server-PT        | `SRV-WEB`                           | 192.168.0.12/16                                        |
+| 3                       | Server-PT        | `SRV-DB`                            | 192.168.0.13/16                                        |
+| 4 Piso 1                | Switch 2960-24TT | `SW-IDF01`                          | VLAN1: 192.168.0.3/16                                  |
+| 4                       | PC-PT            | `PC-CS-01`, `PC-CS-02`              | DHCP                                                   |
+| 4                       | PC-PT            | `PC-FIN-01`, `PC-FIN-02`            | DHCP                                                   |
+| 4                       | IP Phone 7960    | `TEL-CS-01`, `TEL-FIN-01`           | DHCP                                                   |
+| 4                       | Server-PT        | `SRV-LOGS`                          | 192.168.0.14/16                                        |
+| 5 Piso 3                | Switch 2960-24TT | `SW-IDF03`                          | VLAN1: 192.168.0.4/16                                  |
+| 5                       | PC-PT            | `PC-IT-01`, `PC-IT-02`, `PC-ADM-01` | DHCP                                                   |
+| 5                       | IP Phone 7960    | `TEL-ADM-01`                        | DHCP                                                   |
+| 6 Wi-Fi (Piso 1)        | Access Point-PT  | `AP-P1-CORP` (SSID `DINA-CORP`)     | sin IP                                                 |
+| 6                       | Access Point-PT  | `AP-P1-GUEST` (SSID `DINA-GUEST`)   | sin IP                                                 |
+| 6                       | Laptop-PT        | `LAP-CORP-01`                       | DHCP                                                   |
+| 6                       | Smartphone-PT    | `CEL-GUEST-01`                      | DHCP                                                   |
 
 ![[Pasted image 20261126151025.png]]
 #### Topología Física
