@@ -143,27 +143,27 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Riesgo       | (25) Crítico                                                                                                                |
 | Control      | Aplicar políticas Zero Trust y cambiar a un modelo de control de acceso basado en roles (RBAC).                             |
 
-| **Campo**    | **Contenido**                                                          |
-| ------------ | ---------------------------------------------------------------------- |
-| ID           | W-14                                                                   |
-| Descripción  | Ausencia de autenticación multifactor para todas las cuentas.          |
-| Activo       | Portal completo.                                                       |
-| Amenaza      |                                                                        |
-| Impacto      | (4) Alto. Con una contraseña filtrada basta para ingresar a la cuenta. |
-| Probabilidad | (4) Alta                                                               |
-| Riesgo       | (4) Alto                                                               |
-| Control      | Considerar implementación de Active Directory                          |
+| **Campo**    | **Contenido**                                                                                                                            |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-14                                                                                                                                     |
+| Descripción  | Ausencia de autenticación multifactor para todas las cuentas.                                                                            |
+| Activo       | Portal completo.                                                                                                                         |
+| Amenaza      | Atacante que haya obtenido las credenciales de algún usuario mediante filtraciones de datos, escaneo de tráfico, uso de keyloggers, etc. |
+| Impacto      | (4) Alto. Con una contraseña filtrada basta para ingresar a la cuenta.                                                                   |
+| Probabilidad | (4) Alta                                                                                                                                 |
+| Riesgo       | (4) Alto                                                                                                                                 |
+| Control      | Considerar implementación de Active Directory                                                                                            |
 
-| **Campo**    | **Contenido**                                                                                                                                                                            |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-15                                                                                                                                                                                     |
-| Descripción  | Cualquier usuario puede acceder a recursos que no le corresponden con solo hacer cambios en la URL ya que no se verifica la identidad del usuario para acceder a recursos ajenos (IDOR). |
-| Activo       |                                                                                                                                                                                          |
-| Amenaza      |                                                                                                                                                                                          |
-| Impacto      | (4) Alto                                                                                                                                                                                 |
-| Probabilidad | (4) Alta                                                                                                                                                                                 |
-| Riesgo       | (16) Alto                                                                                                                                                                                |
-| Control      | Definir correctamente los permisos de los usuarios mediante un modelo de acceso como RBAC y aplicar mecanismos Zero Trust.                                                               |
+| **Campo**    | **Contenido**                                                                                                                                                                               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-15                                                                                                                                                                                        |
+| Descripción  | Cualquier usuario puede acceder a una factura que no le corresponden con solo hacer cambios en la URL ya que no se verifica la identidad del usuario para acceder a recursos ajenos (IDOR). |
+| Activo       | Facturas y datos sensibles de usuarios.                                                                                                                                                     |
+| Amenaza      | Cliente o empleado malicioso.                                                                                                                                                               |
+| Impacto      | (4) Alto                                                                                                                                                                                    |
+| Probabilidad | (4) Alta                                                                                                                                                                                    |
+| Riesgo       | (16) Alto                                                                                                                                                                                   |
+| Control      | Definir correctamente los permisos de los usuarios mediante un modelo de acceso como RBAC y aplicar mecanismos Zero Trust.                                                                  |
 
 | **Campo**    | **Contenido**                                                                                                     |
 | ------------ | ----------------------------------------------------------------------------------------------------------------- |
@@ -210,13 +210,13 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Control      | Forzar TLS 1.2/1.3 únicamente.                                            |
 
 
-| **Campo**    | **Contenido**                                                                                |
-| ------------ | -------------------------------------------------------------------------------------------- |
-| ID           | W-20                                                                                         |
-| Descripción  | Hay una única fuente de logs, y esta solo presenta evidencia de visualizaciones en facturas. |
-| Activo       | Logs de los eventos ocurridos en la página.                                                  |
-| Amenaza      |                                                                                              |
-| Impacto      | (4) Alto                                                                                     |
-| Probabilidad | (4) Alta                                                                                     |
-| Riesgo       | (16) Alta                                                                                    |
-| Control      |                                                                                              |
+| **Campo**    | **Contenido**                                                                                                                |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-20                                                                                                                         |
+| Descripción  | Hay una única fuente de logs, y esta solo presenta evidencia de visualizaciones en facturas.                                 |
+| Activo       | Logs de los eventos ocurridos en la página.                                                                                  |
+| Amenaza      |                                                                                                                              |
+| Impacto      | (4) Alto                                                                                                                     |
+| Probabilidad | (4) Alta                                                                                                                     |
+| Riesgo       | (16) Alta                                                                                                                    |
+| Control      | Implementar sistemas de seguridad integrada como SIEMs, EDRs, etc. Centralizar los logs en un servidor dedicado y protegido. |
