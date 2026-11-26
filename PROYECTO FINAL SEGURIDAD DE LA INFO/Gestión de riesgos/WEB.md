@@ -127,32 +127,32 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | La ruta `/admin` únicamente verifica si un usuario ha sido autenticado aún si la cuenta no pertenece a algún administrador. |
 | Activo       |                                                                                                                             |
 | Amenaza      |                                                                                                                             |
-| Impacto      |                                                                                                                             |
-| Probabilidad |                                                                                                                             |
-| Riesgo       |                                                                                                                             |
+| Impacto      | (5) Crítico                                                                                                                 |
+| Probabilidad | (5) Crítico                                                                                                                 |
+| Riesgo       | (25) Crítico                                                                                                                |
 | Control      | Aplicar políticas Zero Trust y cambiar a un modelo de control de acceso basado en roles (RBAC).                             |
 
-| **Campo**    | **Contenido**                                                       |
-| ------------ | ------------------------------------------------------------------- |
-| ID           | W-14                                                                |
-| Descripción  | Ausencia de autenticación multifactor para todas las cuentas.       |
-| Activo       | Portal completo.                                                    |
-| Amenaza      |                                                                     |
-| Impacto      | Medio. Con una contraseña filtrada basta para ingresar a la cuenta. |
-| Probabilidad | Media                                                               |
-| Riesgo       | Medio                                                               |
-| Control      | Considerar implementación de Active Directory                       |
+| **Campo**    | **Contenido**                                                          |
+| ------------ | ---------------------------------------------------------------------- |
+| ID           | W-14                                                                   |
+| Descripción  | Ausencia de autenticación multifactor para todas las cuentas.          |
+| Activo       | Portal completo.                                                       |
+| Amenaza      |                                                                        |
+| Impacto      | (4) Alto. Con una contraseña filtrada basta para ingresar a la cuenta. |
+| Probabilidad | (4) Alta                                                               |
+| Riesgo       | (4) Alto                                                               |
+| Control      | Considerar implementación de Active Directory                          |
 
-| **Campo**    | **Contenido**                                                                                                                                                                             |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ID           | W-15                                                                                                                                                                                      |
-| Descripción  | Cualquier usuario puede acceder a recursos que no le corresponden con solo hacer cambios en la URL ya que no se verifica la identidad del usuario para acceder a recursos ajenos (IDOR).  |
-| Activo       |                                                                                                                                                                                           |
-| Amenaza      |                                                                                                                                                                                           |
-| Impacto      |                                                                                                                                                                                           |
-| Probabilidad |                                                                                                                                                                                           |
-| Riesgo       |                                                                                                                                                                                           |
-| Control      | Definir correctamente los permisos de los usuarios mediante un modelo de acceso como RBAC y aplicar mecanismos Zero Trust.                                                                |
+| **Campo**    | **Contenido**                                                                                                                                                                            |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | W-15                                                                                                                                                                                     |
+| Descripción  | Cualquier usuario puede acceder a recursos que no le corresponden con solo hacer cambios en la URL ya que no se verifica la identidad del usuario para acceder a recursos ajenos (IDOR). |
+| Activo       |                                                                                                                                                                                          |
+| Amenaza      |                                                                                                                                                                                          |
+| Impacto      | (4) Alto                                                                                                                                                                                 |
+| Probabilidad | (4) Alta                                                                                                                                                                                 |
+| Riesgo       | (16) Alto                                                                                                                                                                                |
+| Control      | Definir correctamente los permisos de los usuarios mediante un modelo de acceso como RBAC y aplicar mecanismos Zero Trust.                                                               |
 
 | **Campo**    | **Contenido**                                                                                                     |
 | ------------ | ----------------------------------------------------------------------------------------------------------------- |
@@ -160,9 +160,9 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Descripción  | El `sid` puede ser declarado mediante la URL y acceder a una sesión existente desde otro navegador o dispositivo. |
 | Activo       |                                                                                                                   |
 | Amenaza      |                                                                                                                   |
-| Impacto      |                                                                                                                   |
-| Probabilidad |                                                                                                                   |
-| Riesgo       |                                                                                                                   |
+| Impacto      | (5) Crítico                                                                                                       |
+| Probabilidad | (4) Alta                                                                                                          |
+| Riesgo       | (20) Crítico                                                                                                      |
 | Control      | Crear un `sid` distinto por cada inicio de sesión y bloquear el uso del mismo mediante modificación de la URL.    |
 
 | **Campo**    | **Contenido**                                                                                                                               |
