@@ -52,7 +52,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | Amenaza      | Atacante buscando saltarse el proceso de autenticación para obtener acceso a las cuentas.                |
 | Impacto      | (5) Crítico. Permite acceder a usuarios no autorizados a cualquier cuenta solo con el nombre de usuario. |
 | Probabilidad | (5) Crítica.                                                                                             |
-| Riesgo       | (25) Alto-Crítico                                                                                        |
+| Riesgo       | (25) Crítico                                                                                             |
 | Control      | Implementar consultas parametrizadas dentro del código y validar entradas.                               |
 
 | **Campo**    | **Contenido**                                                                                                       |
@@ -104,7 +104,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ID           | W-10                                                                                                                                                                                        |
 | Descripción  | El formulario del apartado `Diagnóstico de conexión` recibe entradas del usuario, las concatena con un ping y las ejecuta en el contexto del sistema operativo.                             |
 | Activo       | Herramienta de diagnóstico de red                                                                                                                                                           |
-| Amenaza      |                                                                                                                                                                                             |
+| Amenaza      | Atacante utilizando la herramienta de diagnóstico para ejecutar comandos shell.                                                                                                             |
 | Impacto      | (5) Crítica                                                                                                                                                                                 |
 | Probabilidad | (4) Alta                                                                                                                                                                                    |
 | Riesgo       | (20) Crítico                                                                                                                                                                                |
@@ -169,8 +169,8 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ------------ | ----------------------------------------------------------------------------------------------------------------- |
 | ID           | W-16                                                                                                              |
 | Descripción  | El `sid` puede ser declarado mediante la URL y acceder a una sesión existente desde otro navegador o dispositivo. |
-| Activo       |                                                                                                                   |
-| Amenaza      |                                                                                                                   |
+| Activo       | Gestión de sesiones y cuentas autenticadas.                                                                       |
+| Amenaza      | Un atacante que conozca alguna sid para ser reutilizada con fines maliciosos.                                     |
 | Impacto      | (5) Crítico                                                                                                       |
 | Probabilidad | (4) Alta                                                                                                          |
 | Riesgo       | (20) Crítico                                                                                                      |
@@ -215,8 +215,10 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ID           | W-20                                                                                                                         |
 | Descripción  | Hay una única fuente de logs, y esta solo presenta evidencia de visualizaciones en facturas.                                 |
 | Activo       | Logs de los eventos ocurridos en la página.                                                                                  |
-| Amenaza      |                                                                                                                              |
+| Amenaza      | Atacante que realice acciones maliciosas hacia la página las cuales no serán registradas.                                    |
 | Impacto      | (4) Alto                                                                                                                     |
 | Probabilidad | (4) Alta                                                                                                                     |
 | Riesgo       | (16) Alta                                                                                                                    |
 | Control      | Implementar sistemas de seguridad integrada como SIEMs, EDRs, etc. Centralizar los logs en un servidor dedicado y protegido. |
+
+8, 9, 10
