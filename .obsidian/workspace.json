@@ -97,8 +97,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d1bb780c403057d7",
@@ -215,11 +214,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3b827f5f987dbe01",
+  "active": "114571a9b5df5ec9",
   "lastOpenFiles": [
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
     "Pasted image 20261124232659.png",
     "Pasted image 20261124232501.png",
