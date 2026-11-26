@@ -137,7 +137,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | ID           | W-13                                                                                                                        |
 | Descripción  | La ruta `/admin` únicamente verifica si un usuario ha sido autenticado aún si la cuenta no pertenece a algún administrador. |
 | Activo       | Panel administrativo y ruta `/admin`.                                                                                       |
-| Amenaza      |                                                                                                                             |
+| Amenaza      | Empleado o cliente malicioso con cuenta comprometida.                                                                       |
 | Impacto      | (5) Crítico                                                                                                                 |
 | Probabilidad | (5) Crítico                                                                                                                 |
 | Riesgo       | (25) Crítico                                                                                                                |
