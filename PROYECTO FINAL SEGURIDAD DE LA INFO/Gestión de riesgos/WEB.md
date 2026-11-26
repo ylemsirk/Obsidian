@@ -14,7 +14,7 @@ Cada vulnerabilidad será evaluada de forma aislada tomando en cuenta su valor c
 | **Campo**    | **Contenido**                                                                                                                                        |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | W-02                                                                                                                                                 |
-| Descripción  | Los directorios sensibles como `/cloud`, `/console` y `/admin`, son expuestos mediante un listado de directorios.                                    |
+| Descripción  | El directorio `/cloud` y sus subdirectorios son expuestos mediante un listado de directorios.                                                        |
 | Activo       | Información dentro de dichos directorios. Como: credenciales, exportaciones, información sensible de red, etc.                                       |
 | Amenaza      |                                                                                                                                                      |
 | Impacto      | Alto. Se exponen credenciales y exportaciones de clientes                                                                                            |
