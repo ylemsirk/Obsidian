@@ -19,8 +19,8 @@ COMPONENTES DEL PROYECTO
 3. [ ] Diseño de Red Segura (Capítulo III)
 - [x] ✓ Topología completa ✅ 2026-11-27
 - [x] ✓ Segmentación (VLANs) ✅ 2026-11-27
-- [ ] ✓ DMZ
-- [ ] ✓ Firewall
+- [x] ✓ DMZ ✅ 2026-11-27
+- [x] ✓ Firewall ✅ 2026-11-27
 - [ ] ✓ IDS/IPS
 - [ ] Entregable:
 - [x] • Simulación en Packet Tracer / GNS3 / Herramienta de Diseño Deseada ✅ 2026-11-27
