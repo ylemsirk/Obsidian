@@ -1,57 +1,58 @@
-| Campo        | Contenido                                                         |
-| ------------ | ----------------------------------------------------------------- |
-| ID           | N-01                                                              |
-| Descripción  | No se exige inicio de sesión en el puerto consola del `SW-IDF01`. |
-| Activo       |                                                                   |
-| Amenaza      |                                                                   |
-| Impacto      | (5) Crítico                                                       |
-| Probabilidad | (4) Alta                                                          |
-| Riesgo       | (20) Crítico                                                      |
-| Control      |                                                                   |
+
+| Campo        | Contenido                                                                                             |
+| ------------ | ----------------------------------------------------------------------------------------------------- |
+| ID           | N-01                                                                                                  |
+| Descripción  | No se exige inicio de sesión en el puerto consola del `SW-IDF01`.                                     |
+| Activo       | Switch `SW-IDF01` y su configuración                                                                  |
+| Amenaza      | Visitante o empleado con acceso a físico al switch.                                                   |
+| Impacto      | (5) Crítico                                                                                           |
+| Probabilidad | (4) Alta                                                                                              |
+| Riesgo       | (20) Crítico                                                                                          |
+| Control      | Configurar la interfaz de consola para que exija una contraseña robusta al momento de iniciar sesión. |
 
 | Campo        | Contenido                                                                                                                                               |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | N-02                                                                                                                                                    |
 | Descripción  | Todos los puertos de `SW-IDF0` se encuentran en la VLAN1. Hay una segmentación nula. Toda la red está bajo el mismo dominio de broadcast (máscara /16). |
-| Activo       |                                                                                                                                                         |
-| Amenaza      |                                                                                                                                                         |
-| Impacto      | (4) Alto                                                                                                                                                |
+| Activo       | Infraestructura completa de red.                                                                                                                        |
+| Amenaza      | Cualquier máquina atacante o malware que esté dentro de la red.                                                                                         |
+| Impacto      | (5) Alto                                                                                                                                                |
 | Probabilidad | (4) Alta                                                                                                                                                |
-| Riesgo       | (16) Alto                                                                                                                                               |
-| Control      |                                                                                                                                                         |
+| Riesgo       | (20) Crítico                                                                                                                                            |
+| Control      | Aplicar VLANs según su uso o departamento.                                                                                                              |
 
-| Campo        | Contenido                                                            |
-| ------------ | -------------------------------------------------------------------- |
-| ID           | N-03                                                                 |
-| Descripción  | Ausencia total de `port-security` en todos los puertos de `SW-IDF01` |
-| Activo       |                                                                      |
-| Amenaza      |                                                                      |
-| Impacto      | (3) Medio                                                            |
-| Probabilidad | (4) Alta                                                             |
-| Riesgo       | (12) Alto                                                            |
-| Control      |                                                                      |
+| Campo        | Contenido                                                                                                                                          |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | N-03                                                                                                                                               |
+| Descripción  | Ausencia total de `port-security` en todos los puertos de `SW-IDF01`.                                                                              |
+| Activo       | Puertos en `SW-IDF01`.                                                                                                                             |
+| Amenaza      |                                                                                                                                                    |
+| Impacto      | (3) Medio                                                                                                                                          |
+| Probabilidad | (4) Alta                                                                                                                                           |
+| Riesgo       | (12) Alto                                                                                                                                          |
+| Control      | Aplicar `port-security` con `violation restrict`, `mac-address sticky` y `maximum 1` en todos sus puertos y apagar los que no se están utilizando. |
 
 | Campo        | Contenido                                                                                                         |
 | ------------ | ----------------------------------------------------------------------------------------------------------------- |
 | ID           | N-04                                                                                                              |
 | Descripción  | Toda la red se queda inoperable cuando se apaga el `SW-CORE`. Hay un único punto de fallo y una nula redundancia. |
-| Activo       |                                                                                                                   |
+| Activo       | Operabilidad de la empresa.                                                                                       |
 | Amenaza      |                                                                                                                   |
 | Impacto      | (5) Crítico                                                                                                       |
 | Probabilidad | (4) Alta                                                                                                          |
 | Riesgo       | (20) Crítico                                                                                                      |
-| Control      |                                                                                                                   |
+| Control      | Añadir un stack de switches.                                                                                      |
 
-| Campo        | Contenido    |
-| ------------ | ------------ |
-| ID           | N-05         |
-| Descripción  |              |
-| Activo       |              |
-| Amenaza      |              |
-| Impacto      | (5) Crítico  |
-| Probabilidad | (5) Alta     |
-| Riesgo       | (25) Crítico |
-| Control      |              |
+| Campo        | Contenido                                                                                                              |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------- |
+| ID           | N-05                                                                                                                   |
+| Descripción  | Todo contacto con el internet se corta si se apaga el `RTR-BORDE`. Hay un único punto de fallo y una nula redundancia. |
+| Activo       | Disponibilidad de los servicios que ofrece la empresa.                                                                 |
+| Amenaza      |                                                                                                                        |
+| Impacto      | (5) Crítico                                                                                                            |
+| Probabilidad | (5) Alta                                                                                                               |
+| Riesgo       | (25) Crítico                                                                                                           |
+| Control      | Añadir un segundo router borde utilizando otro proveedor.                                                              |
 
 | Campo        | Contenido                                                                                                                                                                   |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -62,18 +63,18 @@
 | Impacto      | (5) Crítico                                                                                                                                                                 |
 | Probabilidad | (4) Alta                                                                                                                                                                    |
 | Riesgo       | (20) Crítico                                                                                                                                                                |
-| Control      |                                                                                                                                                                             |
+| Control      | Utilizar contraseñas robustas a la hora de configurar SSH. Limitar la cantidad de intentos fallidos y solo admitir el acceso a las VLANs designadas.                        |
 
-| Campo        | Contenido                    |
-| ------------ | ---------------------------- |
-| ID           | N-07                         |
-| Descripción  | El AP `AP-P1-CORP` cuenta co |
-| Activo       |                              |
-| Amenaza      |                              |
-| Impacto      | (5) Crítico                  |
-| Probabilidad | (5) Crítica                  |
-| Riesgo       | (25) Crítico                 |
-| Control      |                              |
+| Campo        | Contenido                                                                                                                  |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| ID           | N-07                                                                                                                       |
+| Descripción  | El AP `AP-P1-CORP` cuenta con una contraseña sumamente débil (`password`) y un estándar de seguridad obsoleto (`WPA-TKIP`) |
+| Activo       |                                                                                                                            |
+| Amenaza      |                                                                                                                            |
+| Impacto      | (5) Crítico                                                                                                                |
+| Probabilidad | (5) Crítica                                                                                                                |
+| Riesgo       | (25) Crítico                                                                                                               |
+| Control      |                                                                                                                            |
 
 | Campo        | Contenido                                                                              |
 | ------------ | -------------------------------------------------------------------------------------- |
@@ -85,3 +86,25 @@
 | Probabilidad | (3) Media                                                                              |
 | Riesgo       | (12) Alto                                                                              |
 | Control      |                                                                                        |
+
+| Campo        | Contenido                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------ |
+| ID           | N-09                                                                                       |
+| Descripción  | El servidor WEB se encuentra dentro de la red interna, exponiendo toda la red al internet. |
+| Activo       |                                                                                            |
+| Amenaza      |                                                                                            |
+| Impacto      | (5) Crítico                                                                                |
+| Probabilidad | (3) Media                                                                                  |
+| Riesgo       | (15) Alto                                                                                  |
+| Control      |                                                                                            |
+
+| Campo        | Contenido                                                                                                                    |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| ID           | N-10                                                                                                                         |
+| Descripción  | Un AP malicio (Evil Twin) puede conectarse al `SW-IDF01` y crear una red inalámbrica con el mismo SSID que una red legítima. |
+| Activo       | Información que pasa por el AP.                                                                                              |
+| Amenaza      | Atacante que realiza un ataque MitM en busca de obtener información sensible.                                                |
+| Impacto      | (5) Crítico                                                                                                                  |
+| Probabilidad | (3) Media                                                                                                                    |
+| Riesgo       | (15) Alto                                                                                                                    |
+| Control      |                                                                                                                              |
