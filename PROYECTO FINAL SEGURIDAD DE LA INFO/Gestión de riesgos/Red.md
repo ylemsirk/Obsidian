@@ -26,7 +26,7 @@
 | ID           | N-03                                                                                                                                               |
 | Descripción  | Ausencia total de `port-security` en todos los puertos de `SW-IDF01`.                                                                              |
 | Activo       | Puertos en `SW-IDF01`.                                                                                                                             |
-| Amenaza      |                                                                                                                                                    |
+| Amenaza      | Atacante queriendo ocasionar una denegación de servicio mediante MAC Flooding.                                                                     |
 | Impacto      | (3) Medio                                                                                                                                          |
 | Probabilidad | (4) Alta                                                                                                                                           |
 | Riesgo       | (12) Alto                                                                                                                                          |
@@ -37,7 +37,7 @@
 | ID           | N-04                                                                                                              |
 | Descripción  | Toda la red se queda inoperable cuando se apaga el `SW-CORE`. Hay un único punto de fallo y una nula redundancia. |
 | Activo       | Operabilidad de la empresa.                                                                                       |
-| Amenaza      |                                                                                                                   |
+| Amenaza      | Personal de limpieza o empleado desconectando el switch de su fuente de poder.                                    |
 | Impacto      | (5) Crítico                                                                                                       |
 | Probabilidad | (4) Alta                                                                                                          |
 | Riesgo       | (20) Crítico                                                                                                      |
