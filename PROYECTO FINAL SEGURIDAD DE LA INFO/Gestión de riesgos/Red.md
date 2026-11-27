@@ -50,7 +50,7 @@
 | Activo       | Disponibilidad de los servicios que ofrece la empresa.                                                                 |
 | Amenaza      | ISP con fallas de conectividad.                                                                                        |
 | Impacto      | (5) Crítico                                                                                                            |
-| Probabilidad | (5) Alta                                                                                                               |
+| Probabilidad | (5) Crítico                                                                                                            |
 | Riesgo       | (25) Crítico                                                                                                           |
 | Control      | Añadir un segundo router borde utilizando otro proveedor.                                                              |
 
@@ -90,9 +90,9 @@
 | Campo        | Contenido                                                                                  |
 | ------------ | ------------------------------------------------------------------------------------------ |
 | ID           | N-09                                                                                       |
-| Descripción  | El servidor WEB se encuentra dentro de la red interna, exponiendo toda la red al internet. |
-| Activo       |                                                                                            |
-| Amenaza      |                                                                                            |
+| Descripción  | El servidor web se encuentra dentro de la red interna, exponiendo toda la red al internet. |
+| Activo       | Servidor Web, portal web,                                                                  |
+| Amenaza      | Atacante que aprovechó vulnerabilidades en la página web y obtuvo acceso al servidor.      |
 | Impacto      | (5) Crítico                                                                                |
 | Probabilidad | (3) Media                                                                                  |
 | Riesgo       | (15) Alto                                                                                  |
@@ -107,4 +107,4 @@
 | Impacto      | (5) Crítico                                                                                                                  |
 | Probabilidad | (3) Media                                                                                                                    |
 | Riesgo       | (15) Alto                                                                                                                    |
-| Control      |                                                                                                                              |
+| Control      | Establecer autenticación 802.1X, IDS/IPS Inalámbricos y activar PMF para evitar ataques de desautenticación.                 |
