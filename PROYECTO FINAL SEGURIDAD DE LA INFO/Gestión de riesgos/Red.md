@@ -108,3 +108,51 @@
 | Probabilidad | (3) Media                                                                                                                    |
 | Riesgo       | (15) Alto                                                                                                                    |
 | Control      | Establecer autenticación 802.1X, IDS/IPS Inalámbricos y activar PMF para evitar ataques de desautenticación.                 |
+
+
+
+| VLAN | Nombre      | Red                 | Gateway      | Función                                                         |
+| ---- | ----------- | ------------------- | ------------ | --------------------------------------------------------------- |
+| 10   | SERVERS     | 10.10.10.0/24       | 10.10.10.1   | `SRV-DHCP`, `SRV-DNS`, `SRV-DB`, `SRV-RADIUS`                   |
+| 20   | CS          | 10.10.20.0/24       | 10.10.20.1   | PCs de Atención al Cliente (Piso 1)                             |
+| 21   | FINANZAS    | 10.10.21.0/24       | 10.10.21.1   | PCs de Finanzas + `SRV-LOGS` (Piso 1)                           |
+| 30   | VOZ         | 10.10.30.0/24       | 10.10.30.1   | Teléfonos IP de Piso 1 y Piso 3 (VLAN auxiliar de voz)          |
+| 40   | IT\_ADMIN   | 10.10.40.0/24       | 10.10.40.1   | PCs de IT y Administración (Piso 3)                             |
+| 50   | WIFI\_CORP  | 10.10.50.0/24       | 10.10.50.1   | Clientes Wi-Fi corporativos (`DINA-CORP`)                       |
+| 60   | WIFI\_GUEST | 10.10.60.0/24       | 10.10.60.1   | Clientes Wi-Fi de invitados (`DINA-GUEST`), aislada del resto   |
+| 99   | MGMT        | 10.10.99.0/29       | 10.10.99.1   | Gestión de switches y APs                                       |
+| 100  | DMZ         | 172.16.100.0/24     | 172.16.100.1 | `SRV-WEB`, colgado del NGFW, fuera de la LAN interna            |
+| 999  | PARKING     | (sin red)           | —            | Puertos sin usar, en `shutdown`                                 |
+| 1    | nativa      | (sin uso operativo) | —            | No se asigna a ningún dispositivo real; queda vacía a propósito |
+
+| Fase                  | Modelo           | Nombre exacto                       | VLAN                     | IP / máscara / gateway                                           |
+| --------------------- | ---------------- | ----------------------------------- | ------------------------ | ---------------------------------------------------------------- |
+| 1 Internet            | Router 1941      | `ISP-LUMEN`                         | —                        | Gi0/0 203.0.113.1/30, Gi0/1 198.51.100.1/24                      |
+| 1                     | Router 1941      | `ISP-ALTERNO` (nuevo)               | —                        | Gi0/0 203.0.113.5/30, Gi0/1 198.51.100.1/24                      |
+| 1                     | Switch 2960-24TT | `SW-INTERNET`                       | —                        | sin IP                                                           |
+| 1                     | Server-PT        | `SRV-PELDET`                        | —                        | 198.51.100.10/24, gw .1                                          |
+| 1                     | Server-PT        | `SRV-ZENDESK`                       | —                        | 198.51.100.11/24, gw .1                                          |
+| 1                     | Server-PT        | `SRV-PAGOS`                         | —                        | 198.51.100.12/24, gw .1                                          |
+| 2 Perímetro (Piso 2)  | ASA5505          | `NGFW-BORDE-01` (nuevo)             | —                        | Outside 203.0.113.2/30, DMZ 172.16.100.1/24, Inside 10.10.5.1/30 |
+| 2                     | ASA5505          | `NGFW-BORDE-02` (nuevo)             | —                        | Outside 203.0.113.6/30, Inside 10.10.5.5/30                      |
+| 2                     | Switch 2960-24TT | `SW-DMZ` (nuevo)                    | 100                      | 172.16.100.2/24                                                  |
+| 2                     | Server-PT        | `SRV-WEB` (reubicado)               | 100                      | 172.16.100.10/24, gw 172.16.100.1                                |
+| 3 Core (Piso 2)       | 3650-24PS        | `SW-CORE-01` (antes `SW-CORE`)      | 99                       | 10.10.99.2/29 — hace inter-VLAN routing                          |
+| 3                     | 3650-24PS        | `SW-CORE-02` (nuevo)                | 99                       | miembro del mismo stack que `SW-CORE-01`                         |
+| 4 Servidores (Piso 2) | Server-PT        | `SRV-DHCP`                          | 10                       | 10.10.10.10/24, gw 10.10.10.1                                    |
+| 4                     | Server-PT        | `SRV-DNS`                           | 10                       | 10.10.10.11/24, gw 10.10.10.1                                    |
+| 4                     | Server-PT        | `SRV-DB`                            | 10                       | 10.10.10.13/24, gw 10.10.10.1                                    |
+| 4                     | Server-PT        | `SRV-RADIUS` (nuevo)                | 10                       | 10.10.10.14/24, gw 10.10.10.1                                    |
+| 5 Piso 1              | Switch 2960-24TT | `SW-IDF01`                          | 99 (troncal 20,21,30,99) | 10.10.99.3/29                                                    |
+| 5                     | PC-PT            | `PC-CS-01`, `PC-CS-02`              | 20                       | DHCP                                                             |
+| 5                     | PC-PT            | `PC-FIN-01`, `PC-FIN-02`            | 21                       | DHCP                                                             |
+| 5                     | IP Phone 7960    | `TEL-CS-01`                         | 30                       | DHCP                                                             |
+| 5                     | IP Phone 7960    | `TEL-FIN-01`                        | 30                       | DHCP                                                             |
+| 5                     | Server-PT        | `SRV-LOGS`                          | 21                       | 10.10.21.14/24, gw 10.10.21.1                                    |
+| 6 Piso 3              | Switch 2960-24TT | `SW-IDF03`                          | 99 (troncal 40,30,99)    | 10.10.99.4/29                                                    |
+| 6                     | PC-PT            | `PC-IT-01`, `PC-IT-02`, `PC-ADM-01` | 40                       | DHCP                                                             |
+| 6                     | IP Phone 7960    | `TEL-ADM-01`                        | 30                       | DHCP                                                             |
+| 7 Wi-Fi (Piso 1)      | Access Point-PT  | `AP-P1-CORP` (SSID `DINA-CORP`)     | 50                       | sin IP — WPA2/3-Enterprise contra `SRV-RADIUS`                   |
+| 7                     | Access Point-PT  | `AP-P1-GUEST` (SSID `DINA-GUEST`)   | 60                       | sin IP                                                           |
+| 7                     | Laptop-PT        | `LAP-CORP-01`                       | 50                       | DHCP                                                             |
+| 7                     | Smartphone-PT    | `CEL-GUEST-01`                      | 60                       | DHCP                                                             |

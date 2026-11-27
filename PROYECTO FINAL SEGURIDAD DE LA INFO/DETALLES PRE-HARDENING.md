@@ -106,7 +106,7 @@
 | 6                       | Laptop-PT        | `LAP-CORP-01`                       | DHCP                                                   |
 | 6                       | Smartphone-PT    | `CEL-GUEST-01`                      | DHCP                                                   |
 
-![[Pasted image 20261126151025.png]]
+![[Topología PRE-HARDENING.png]]
 #### Topología Física
 
 **Piso 1: Atención al Cliente y Finanzas:**
