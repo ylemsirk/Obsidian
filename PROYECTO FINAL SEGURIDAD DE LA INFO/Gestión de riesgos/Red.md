@@ -48,7 +48,7 @@
 | ID           | N-05                                                                                                                   |
 | Descripción  | Todo contacto con el internet se corta si se apaga el `RTR-BORDE`. Hay un único punto de fallo y una nula redundancia. |
 | Activo       | Disponibilidad de los servicios que ofrece la empresa.                                                                 |
-| Amenaza      |                                                                                                                        |
+| Amenaza      | ISP con fallas de conectividad.                                                                                        |
 | Impacto      | (5) Crítico                                                                                                            |
 | Probabilidad | (5) Alta                                                                                                               |
 | Riesgo       | (25) Crítico                                                                                                           |
@@ -58,8 +58,8 @@
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | N-06                                                                                                                                                                        |
 | Descripción  | El SSH dentro del `SW-CORE` es bastante vulnerable a ataques de diccionario debido a su contraseña débil `admin123`. También, no bloquea los intentos repetidos de ingreso. |
-| Activo       |                                                                                                                                                                             |
-| Amenaza      |                                                                                                                                                                             |
+| Activo       | `SW-CORE` y su configuración.                                                                                                                                               |
+| Amenaza      | Atacante realizando ataques de fuerza bruta o de diccionario para obtener acceso remoto al switch.                                                                          |
 | Impacto      | (5) Crítico                                                                                                                                                                 |
 | Probabilidad | (4) Alta                                                                                                                                                                    |
 | Riesgo       | (20) Crítico                                                                                                                                                                |
