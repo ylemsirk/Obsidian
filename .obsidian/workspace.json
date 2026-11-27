@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/Red.md",
+                "file": "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/Red.md",
                 "mode": "source",
                 "source": false
               },
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d1bb780c403057d7",
@@ -203,12 +202,12 @@
   },
   "active": "a5aec359dd68ae47",
   "lastOpenFiles": [
-    "Pasted.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/Red.md",
+    "Pasted.md",
     "PROYECTO.md",
     "Sin título.md",
     "Sin título.canvas",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/Red.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/TODO.md",
