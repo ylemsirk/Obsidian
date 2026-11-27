@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d1bb780c403057d7",
@@ -202,12 +203,12 @@
   },
   "active": "a5aec359dd68ae47",
   "lastOpenFiles": [
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/Red.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/Red.md",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/Red.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Mandato.md",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
     "Pasted image 20261127010717.png",
     "Pasted image 20261127005246.png",
     "Pasted image 20261127005231.png",

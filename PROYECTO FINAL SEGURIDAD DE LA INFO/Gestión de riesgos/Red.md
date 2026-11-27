@@ -65,27 +65,27 @@
 | Riesgo       | (20) Crítico                                                                                                                                                                |
 | Control      | Utilizar contraseñas robustas a la hora de configurar SSH. Limitar la cantidad de intentos fallidos y solo admitir el acceso a las VLANs designadas.                        |
 
-| Campo        | Contenido                                                                                                                  |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------- |
-| ID           | N-07                                                                                                                       |
-| Descripción  | El AP `AP-P1-CORP` cuenta con una contraseña sumamente débil (`password`) y un estándar de seguridad obsoleto (`WPA-TKIP`) |
-| Activo       |                                                                                                                            |
-| Amenaza      |                                                                                                                            |
-| Impacto      | (5) Crítico                                                                                                                |
-| Probabilidad | (5) Crítica                                                                                                                |
-| Riesgo       | (25) Crítico                                                                                                               |
-| Control      |                                                                                                                            |
+| Campo        | Contenido                                                                                                                                                           |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | N-07                                                                                                                                                                |
+| Descripción  | El AP `AP-P1-CORP`, encargado de proveer la red `DINA-CORP` cuenta con una contraseña sumamente débil (`password`) y un estándar de seguridad obsoleto (`WPA-TKIP`) |
+| Activo       | Red inalámbrica `DINA-CORP`.                                                                                                                                        |
+| Amenaza      |                                                                                                                                                                     |
+| Impacto      | (5) Crítico                                                                                                                                                         |
+| Probabilidad | (5) Crítica                                                                                                                                                         |
+| Riesgo       | (25) Crítico                                                                                                                                                        |
+| Control      | Migrar a WPA2-Enterprise como mínimo o WPA3-Enterprise. Y aplicar una buena configuración en el servidor RADIUS.                                                    |
 
-| Campo        | Contenido                                                                              |
-| ------------ | -------------------------------------------------------------------------------------- |
-| ID           | N-08                                                                                   |
-| Descripción  | Un servidor Rogue DHCP puede conectarse al `SW-IDF01` y crear pools sin restricciones. |
-| Activo       |                                                                                        |
-| Amenaza      |                                                                                        |
-| Impacto      | (4) Alto                                                                               |
-| Probabilidad | (3) Media                                                                              |
-| Riesgo       | (12) Alto                                                                              |
-| Control      |                                                                                        |
+| Campo        | Contenido                                                                                                                                                        |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | N-08                                                                                                                                                             |
+| Descripción  | Un servidor Rogue DHCP puede conectarse al `SW-IDF01` y crear pools sin restricciones.                                                                           |
+| Activo       |                                                                                                                                                                  |
+| Amenaza      |                                                                                                                                                                  |
+| Impacto      | (4) Alto                                                                                                                                                         |
+| Probabilidad | (3) Media                                                                                                                                                        |
+| Riesgo       | (12) Alto                                                                                                                                                        |
+| Control      | Aplicar `DHCP Snooping` en el switch `SW-IDF01` y solo utilizar `trust` en el puerto correspondiente donde se tiene la conexión hacia el servidor DHCP legítimo. |
 
 | Campo        | Contenido                                                                                  |
 | ------------ | ------------------------------------------------------------------------------------------ |
@@ -96,7 +96,7 @@
 | Impacto      | (5) Crítico                                                                                |
 | Probabilidad | (3) Media                                                                                  |
 | Riesgo       | (15) Alto                                                                                  |
-| Control      |                                                                                            |
+| Control      | Implementar una DMZ, el uso de NGFW y WAFs con configuraciones estrictas.                  |
 
 | Campo        | Contenido                                                                                                                    |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------- |
