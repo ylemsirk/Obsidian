@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "d1bb780c403057d7",
@@ -203,13 +202,14 @@
   },
   "active": "a5aec359dd68ae47",
   "lastOpenFiles": [
-    "Sin título.md",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/Red.md",
+    "Pasted image 20261126214708.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/WEB.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/Pentesting/Red.md",
+    "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
+    "Sin título.md",
     "Pasted image 20261126190846.png",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Gestión de riesgos/WEB.md",
     "PROYECTO FINAL SEGURIDAD DE LA INFO/Recursos/Imágenes/A08 1.png",
-    "PROYECTO FINAL SEGURIDAD DE LA INFO/DETALLES PRE-HARDENING.md",
     "PROYECTO.md",
     "Pasted.md",
     "Pasted image 20261126175435.png",
@@ -248,7 +248,6 @@
     "Misc/Darko.canvas",
     "Excalidraw/Drawing 2026-10-16 01.02.53.excalidraw.md",
     "Excalidraw/Drawing 2026-09-11 22.52.00.excalidraw.md",
-    "Misc/Sin título.md",
     "IT Help Desk Preparation/Maps",
     "Project Soul Absorber/Color Palettes",
     "Project Soul Absorber",
