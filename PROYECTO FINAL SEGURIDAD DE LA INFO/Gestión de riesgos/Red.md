@@ -16,7 +16,7 @@
 | Descripción  | Todos los puertos de `SW-IDF0` se encuentran en la VLAN1. Hay una segmentación nula. Toda la red está bajo el mismo dominio de broadcast (máscara /16). |
 | Activo       | Infraestructura completa de red.                                                                                                                        |
 | Amenaza      | Cualquier máquina atacante o malware que esté dentro de la red.                                                                                         |
-| Impacto      | (5) Alto                                                                                                                                                |
+| Impacto      | (5) Crítico                                                                                                                                             |
 | Probabilidad | (4) Alta                                                                                                                                                |
 | Riesgo       | (20) Crítico                                                                                                                                            |
 | Control      | Aplicar VLANs según su uso o departamento.                                                                                                              |
@@ -70,7 +70,7 @@
 | ID           | N-07                                                                                                                                                                |
 | Descripción  | El AP `AP-P1-CORP`, encargado de proveer la red `DINA-CORP` cuenta con una contraseña sumamente débil (`password`) y un estándar de seguridad obsoleto (`WPA-TKIP`) |
 | Activo       | Red inalámbrica `DINA-CORP`.                                                                                                                                        |
-| Amenaza      |                                                                                                                                                                     |
+| Amenaza      | Atacante realizando ataques de fuerza bruta o de diccionario para ingresar a la red corporativa.                                                                    |
 | Impacto      | (5) Crítico                                                                                                                                                         |
 | Probabilidad | (5) Crítica                                                                                                                                                         |
 | Riesgo       | (25) Crítico                                                                                                                                                        |
@@ -80,8 +80,8 @@
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ID           | N-08                                                                                                                                                             |
 | Descripción  | Un servidor Rogue DHCP puede conectarse al `SW-IDF01` y crear pools sin restricciones.                                                                           |
-| Activo       |                                                                                                                                                                  |
-| Amenaza      |                                                                                                                                                                  |
+| Activo       | Configuración IP de la red y sus equipos.                                                                                                                        |
+| Amenaza      | Atacante conectando un servidor DHCP malicioso para realizar ataques como DNS spoofing o MitM.                                                                   |
 | Impacto      | (4) Alto                                                                                                                                                         |
 | Probabilidad | (3) Media                                                                                                                                                        |
 | Riesgo       | (12) Alto                                                                                                                                                        |
