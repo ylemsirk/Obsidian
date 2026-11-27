@@ -74,3 +74,14 @@
 | Probabilidad |           |
 | Riesgo       |           |
 | Control      |           |
+
+| Campo        | Contenido |
+| ------------ | --------- |
+| ID           | N-08      |
+| Descripción  |           |
+| Activo       |           |
+| Amenaza      |           |
+| Impacto      |           |
+| Probabilidad |           |
+| Riesgo       |           |
+| Control      |           |
