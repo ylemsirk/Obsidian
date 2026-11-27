@@ -21,7 +21,7 @@ COMPONENTES DEL PROYECTO
 - [x] ✓ Segmentación (VLANs) ✅ 2026-11-27
 - [x] ✓ DMZ ✅ 2026-11-27
 - [x] ✓ Firewall ✅ 2026-11-27
-- [ ] ✓ IDS/IPS
+- [x] ✓ IDS/IPS ✅ 2026-11-27
 - [ ] Entregable:
 - [x] • Simulación en Packet Tracer / GNS3 / Herramienta de Diseño Deseada ✅ 2026-11-27
 4. [ ] Seguridad de Infraestructura (Capítulo IV)
