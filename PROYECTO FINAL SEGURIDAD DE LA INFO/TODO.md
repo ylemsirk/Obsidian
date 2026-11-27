@@ -1,13 +1,11 @@
 ## General
-- [ ] Identificar y realizar triaje de vulnerabilidades, riesgos, amenazas y posibles ataques.
-- [ ] Realizar gestión de riesgos.
-- [ ] Definir la historia con Peldet
+- [ ] queue
 
 ## Departamento de Redes
 - [ ] Aplicar los controles y generar una nueva topología con los controles aplicados.
 
 ## Vulnerabilidades
-- [ ] Página web
+- [x] Página web ✅ 2026-11-26
 - [ ] Operacionales
 - [ ] Físicas
 - [ ] Técnicos
