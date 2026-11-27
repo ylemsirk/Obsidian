@@ -17,7 +17,7 @@
 | Amenaza      |                                                                                                                                                         |
 | Impacto      | (4) Alto                                                                                                                                                |
 | Probabilidad | (4) Alta                                                                                                                                                |
-| Riesgo       | (16) Crítico                                                                                                                                            |
+| Riesgo       | (16) Alto                                                                                                                                               |
 | Control      |                                                                                                                                                         |
 
 | Campo        | Contenido                                                            |
@@ -31,57 +31,57 @@
 | Riesgo       | (12) Alto                                                            |
 | Control      |                                                                      |
 
-| Campo        | Contenido                                                      |
-| ------------ | -------------------------------------------------------------- |
-| ID           | N-04                                                           |
-| Descripción  | Toda la red se queda inoperable cuando se apaga el `SW-CORE`,  |
-| Activo       |                                                                |
-| Amenaza      |                                                                |
-| Impacto      | (5) Crítico                                                    |
-| Probabilidad | (3) Media                                                      |
-| Riesgo       | (15) Crítico                                                   |
-| Control      |                                                                |
+| Campo        | Contenido                                                                                                         |
+| ------------ | ----------------------------------------------------------------------------------------------------------------- |
+| ID           | N-04                                                                                                              |
+| Descripción  | Toda la red se queda inoperable cuando se apaga el `SW-CORE`. Hay un único punto de fallo y una nula redundancia. |
+| Activo       |                                                                                                                   |
+| Amenaza      |                                                                                                                   |
+| Impacto      | (5) Crítico                                                                                                       |
+| Probabilidad | (4) Alta                                                                                                          |
+| Riesgo       | (20) Crítico                                                                                                      |
+| Control      |                                                                                                                   |
 
-| Campo        | Contenido |
-| ------------ | --------- |
-| ID           | N-05      |
-| Descripción  |           |
-| Activo       |           |
-| Amenaza      |           |
-| Impacto      |           |
-| Probabilidad |           |
-| Riesgo       |           |
-| Control      |           |
+| Campo        | Contenido    |
+| ------------ | ------------ |
+| ID           | N-05         |
+| Descripción  |              |
+| Activo       |              |
+| Amenaza      |              |
+| Impacto      | (5) Crítico  |
+| Probabilidad | (5) Alta     |
+| Riesgo       | (25) Crítico |
+| Control      |              |
 
-| Campo        | Contenido |
-| ------------ | --------- |
-| ID           | N-06      |
-| Descripción  |           |
-| Activo       |           |
-| Amenaza      |           |
-| Impacto      |           |
-| Probabilidad |           |
-| Riesgo       |           |
-| Control      |           |
+| Campo        | Contenido                                                                                                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ID           | N-06                                                                                                                                                                        |
+| Descripción  | El SSH dentro del `SW-CORE` es bastante vulnerable a ataques de diccionario debido a su contraseña débil `admin123`. También, no bloquea los intentos repetidos de ingreso. |
+| Activo       |                                                                                                                                                                             |
+| Amenaza      |                                                                                                                                                                             |
+| Impacto      | (5) Crítico                                                                                                                                                                 |
+| Probabilidad | (4) Alta                                                                                                                                                                    |
+| Riesgo       | (20) Crítico                                                                                                                                                                |
+| Control      |                                                                                                                                                                             |
 
-| Campo        | Contenido |
-| ------------ | --------- |
-| ID           | N-07      |
-| Descripción  |           |
-| Activo       |           |
-| Amenaza      |           |
-| Impacto      |           |
-| Probabilidad |           |
-| Riesgo       |           |
-| Control      |           |
+| Campo        | Contenido                    |
+| ------------ | ---------------------------- |
+| ID           | N-07                         |
+| Descripción  | El AP `AP-P1-CORP` cuenta co |
+| Activo       |                              |
+| Amenaza      |                              |
+| Impacto      | (5) Crítico                  |
+| Probabilidad | (5) Crítica                  |
+| Riesgo       | (25) Crítico                 |
+| Control      |                              |
 
-| Campo        | Contenido |
-| ------------ | --------- |
-| ID           | N-08      |
-| Descripción  |           |
-| Activo       |           |
-| Amenaza      |           |
-| Impacto      |           |
-| Probabilidad |           |
-| Riesgo       |           |
-| Control      |           |
+| Campo        | Contenido                                                                              |
+| ------------ | -------------------------------------------------------------------------------------- |
+| ID           | N-08                                                                                   |
+| Descripción  | Un servidor Rogue DHCP puede conectarse al `SW-IDF01` y crear pools sin restricciones. |
+| Activo       |                                                                                        |
+| Amenaza      |                                                                                        |
+| Impacto      | (4) Alto                                                                               |
+| Probabilidad | (3) Media                                                                              |
+| Riesgo       | (12) Alto                                                                              |
+| Control      |                                                                                        |
